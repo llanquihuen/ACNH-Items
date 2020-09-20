@@ -547,7 +547,7 @@ function Check(id,item){
                     })
                     Display(filtro,fetchAsyncId,xPag,estaPag)
                     Paginacion(filtro, paginacionId, xPag )
-                    console.log("filtro")
+                    // console.log("filtro")
                 }
             }
         })
