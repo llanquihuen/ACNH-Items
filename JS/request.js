@@ -195,57 +195,57 @@ function Check(id,item){
                 };
                 //PRECIOS
                 if(unItem[0]["buy-price"] == null){
-                    itemElement.innerHTML += `<p class="precios opacity4"> No se compra </p><p class="precios" style="color:black"><br>Venta: ${(unItem[0]["sell-price"])}<img class="bayas" src="/assets/bayas.png" alt="bayas"></p>`
+                    itemElement.innerHTML += `<p class="precios opacity4"> No se compra </p><p class="precios" style="color:black"><br>Venta: ${(unItem[0]["sell-price"])}<img class="bayas" src="assets/bayas.png" alt="bayas"></p>`
                 }else{
-                    itemElement.innerHTML += `<p class="precios">Compra: ${(unItem[0]["buy-price"])}<img class="bayas" src="/assets/bayas.png" alt="bayas"><br>Venta: ${(unItem[0]["sell-price"])}<img class="bayas" src="/assets/bayas.png" alt="bayas"></p>`
+                    itemElement.innerHTML += `<p class="precios">Compra: ${(unItem[0]["buy-price"])}<img class="bayas" src="assets/bayas.png" alt="bayas"><br>Venta: ${(unItem[0]["sell-price"])}<img class="bayas" src="assets/bayas.png" alt="bayas"></p>`
                 }
 
                 //GRID
 
-                itemElement.innerHTML += `<img class="grilla" src="/assets/grid/${unItem[0]["size"].trim()}.png" alt="bayas">`
+                itemElement.innerHTML += `<img class="grilla" src="assets/grid/${unItem[0]["size"].trim()}.png" alt="bayas">`
 
 
                 //SOURCE (Esta mal optimizado, por el texto traducido)
                 if((unItem[0]["source"]) == "Crafting"){
-                    itemElement.innerHTML +=  '<img class="comprar" src="/assets/DIY.png" alt="DIY"><p class="ctext">Crafteable</p>'
+                    itemElement.innerHTML +=  '<img class="comprar" src="assets/DIY.png" alt="DIY"><p class="ctext">Crafteable</p>'
                 }else if((unItem[0]["source"]) == "Nook's Cranny"){
-                    itemElement.innerHTML +=  '<img class="comprar nook" src="/assets/nook.png" alt="nook"><p class="ctext text_center">  Tienda Mini Nook</p>'
+                    itemElement.innerHTML +=  '<img class="comprar nook" src="assets/nook.png" alt="nook"><p class="ctext text_center">  Tienda Mini Nook</p>'
                 }else if((unItem[0]["source"]) == "Nook Miles Redemption"){
-                    itemElement.innerHTML +=  '<img class="comprar miles" src="/assets/Nook_Miles.png" alt="millas"><p class="ctext">Millas Nook</p>'
+                    itemElement.innerHTML +=  '<img class="comprar miles" src="assets/Nook_Miles.png" alt="millas"><p class="ctext">Millas Nook</p>'
                 }else if((unItem[0]["source"]) == "Cyrus"){
-                    itemElement.innerHTML +=  '<img class="comprar boda" src="/assets/cyrus.png" alt="boda"> <p class="ctext">Evento de Boda</p>'
+                    itemElement.innerHTML +=  '<img class="comprar boda" src="assets/cyrus.png" alt="boda"> <p class="ctext">Evento de Boda</p>'
                 }else  if((unItem[0]["source"]) == "Nook Shopping Promotion"){
-                    itemElement.innerHTML +=  '<img class="comprar " src="/assets/pocket.png" alt="pocket"> <p class="ctext">Pocket Camp</p>'
+                    itemElement.innerHTML +=  '<img class="comprar " src="assets/pocket.png" alt="pocket"> <p class="ctext">Pocket Camp</p>'
                 }else  if((unItem[0]["source"]) == "Flick"){
-                    itemElement.innerHTML +=  '<img class="comprar " src="/assets/kamilo.png" alt="kamilo"> <p class="ctext">Kamilo</p>'
+                    itemElement.innerHTML +=  '<img class="comprar " src="assets/kamilo.png" alt="kamilo"> <p class="ctext">Kamilo</p>'
                 }else  if((unItem[0]["source"]) == "Bug-Off"){
-                    itemElement.innerHTML +=  '<img class="comprar " src="/assets/Net2.png" alt="insectos"> <p class="ctext">Caza de Insectos</p>'
+                    itemElement.innerHTML +=  '<img class="comprar " src="assets/Net2.png" alt="insectos"> <p class="ctext">Caza de Insectos</p>'
                 }else  if((unItem[0]["source"]) == "Fishing Tourney"){
-                    itemElement.innerHTML +=  '<img class="comprar " src="/assets/Fishing.png" alt="pesca"> <p class="ctext">Torneo de Pesca</p>'
+                    itemElement.innerHTML +=  '<img class="comprar " src="assets/Fishing.png" alt="pesca"> <p class="ctext">Torneo de Pesca</p>'
                 }else  if((unItem[0]["source"]) == "C.J."){
-                    itemElement.innerHTML +=  '<img class="comprar " src="/assets/cj2.png" alt="cj"> <p class="ctext">C.J.</p>'
+                    itemElement.innerHTML +=  '<img class="comprar " src="assets/cj2.png" alt="cj"> <p class="ctext">C.J.</p>'
                 }else  if((unItem[0]["source"]) == "Nook Shopping Seasonal"){
-                    itemElement.innerHTML +=  '<img class="comprar " src="/assets/especial.png" alt="especial"> <p class="ctext">Nook Fechas Especiales </p>'
+                    itemElement.innerHTML +=  '<img class="comprar " src="assets/especial.png" alt="especial"> <p class="ctext">Nook Fechas Especiales </p>'
                 }else  if((unItem[0]["source"]) == "HHA"){
-                    itemElement.innerHTML +=  '<img class="comprar " src="/assets/AAD.png" alt="aad"> <p class="ctext">Academia de Artes<br> Decorativas </p>'
+                    itemElement.innerHTML +=  '<img class="comprar " src="assets/AAD.png" alt="aad"> <p class="ctext">Academia de Artes<br> Decorativas </p>'
                 }else  if((unItem[0]["source"]) == "Birthday"){
-                    itemElement.innerHTML +=  '<img class="comprar cumple" src="/assets/cupcake.png" alt="birthday"> <p class="ctext">Cumpleaños</p>'
+                    itemElement.innerHTML +=  '<img class="comprar cumple" src="assets/cupcake.png" alt="birthday"> <p class="ctext">Cumpleaños</p>'
                 }else  if((unItem[0]["source"]) == "Mom"){
-                    itemElement.innerHTML +=  '<img class="comprar mom" src="/assets/mom2.png" alt="birthday"> <p class="ctext">Regalo Mamá</p>'
+                    itemElement.innerHTML +=  '<img class="comprar mom" src="assets/mom2.png" alt="birthday"> <p class="ctext">Regalo Mamá</p>'
                 }else  if((unItem[0]["source"]) == "Gulliver"){
-                    itemElement.innerHTML +=  '<img class="comprar gul" src="/assets/Gulliver.png" alt="gulliver"> <p class="ctext">Gulliver</p>'
+                    itemElement.innerHTML +=  '<img class="comprar gul" src="assets/Gulliver.png" alt="gulliver"> <p class="ctext">Gulliver</p>'
                 }else  if((unItem[0]["source"]) == "Gullivarrr"){
-                    itemElement.innerHTML +=  '<img class="comprar gull" src="/assets/Gullivarrr.png" alt="gulliver2"> <p class="ctext">Gullivarrr</p>'
+                    itemElement.innerHTML +=  '<img class="comprar gull" src="assets/Gullivarrr.png" alt="gulliver2"> <p class="ctext">Gullivarrr</p>'
                 }else  if((unItem[0]["source"]) == "International Museum Day"){
-                    itemElement.innerHTML +=  '<img class="comprar gul" src="/assets/museo.png" alt="museo"> <p class="ctext">Dia del Museo</p>'
+                    itemElement.innerHTML +=  '<img class="comprar gul" src="assets/museo.png" alt="museo"> <p class="ctext">Dia del Museo</p>'
                 }else  if((unItem[0]["source"]) == "Starting items"){
-                    itemElement.innerHTML +=  '<img class="comprar gull" src="/assets/tent.png" alt="birthday"> <p class="ctext">Items del Comienzo</p>'
+                    itemElement.innerHTML +=  '<img class="comprar gull" src="assets/tent.png" alt="birthday"> <p class="ctext">Items del Comienzo</p>'
                 }else  if((unItem[0]["source"]) == "Dodo Airlines"){
-                    itemElement.innerHTML +=  '<img class="comprar" src="/assets/dodo.png" alt="dodo"> <p class="ctext">Dodo Airlines</p>'
+                    itemElement.innerHTML +=  '<img class="comprar" src="assets/dodo.png" alt="dodo"> <p class="ctext">Dodo Airlines</p>'
                 }else  if((unItem[0]["source"]) == "Luna"){
-                    itemElement.innerHTML +=  '<img class="comprar" src="/assets/Alakama.png" alt="cama"> <p class="ctext">Alakama</p>'
+                    itemElement.innerHTML +=  '<img class="comprar" src="assets/Alakama.png" alt="cama"> <p class="ctext">Alakama</p>'
                 }else  if((unItem[0]["source"]) == "Nintendo; Nook Shopping"){
-                    itemElement.innerHTML +=  '<img class="comprar nint" src="/assets/nintendo.png" alt="cama"> <p class="ctext">Nintendo Update<br>Millas Nook</p>'
+                    itemElement.innerHTML +=  '<img class="comprar nint" src="assets/nintendo.png" alt="cama"> <p class="ctext">Nintendo Update<br>Millas Nook</p>'
                 }
                 else{
                     itemElement.innerHTML +=  `<p class="ctext">${(unItem[0]["source"])}</p>`
