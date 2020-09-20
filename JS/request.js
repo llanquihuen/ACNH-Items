@@ -453,6 +453,10 @@ function Check(id,item){
             tipoButton.classList.remove("boton_activo")
 
             filtroTipo.classList.toggle("nodisplay")
+            identCheck = [...document.getElementsByClassName("boton_check")]
+            identCheck.forEach((ide) => {
+                    ide.checked = true
+            })
             const searchBar = document.getElementById("searchBar");
             searchBar.value="";
             items=itemsRes
@@ -548,6 +552,10 @@ function Check(id,item){
                     Display(filtro,fetchAsyncId,xPag,estaPag)
                     Paginacion(filtro, paginacionId, xPag )
                     // console.log("filtro")
+                }else{
+                    color = document.getElementById("maxcol")
+                    color.classList.add("redback")
+                    setTimeout(()=>{color.classList.remove("redback"); }, 1000);
                 }
             }
         })
