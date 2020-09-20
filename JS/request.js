@@ -31,9 +31,9 @@ const getData = async (direccion) => {
 (async ()=>{
 
 ////-----------------OBTENER ITEMS
-let item1 =  await getData("http://acnhapi.com/v1a/houseware");
-let item2 = await getData("http://acnhapi.com/v1a/misc");
-let item3 = await getData("http://acnhapi.com/v1a/wallmounted");
+let item1 =  await getData("https://acnhapi.com/v1a/houseware");
+let item2 = await getData("https://acnhapi.com/v1a/misc");
+let item3 = await getData("https://acnhapi.com/v1a/wallmounted");
 let items = item1.concat(item2,item3);
 
 let itemsC =[];
