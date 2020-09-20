@@ -1,0 +1,992 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-image: url(/assets/y5mzeig307b41.png);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+}
+
+header{
+    display: none;
+    position: relative;
+    top:0;
+    background: green;
+    color:wheat;
+    font-size:1.5rem;
+    text-align: center;
+    width: 100vw;
+    padding: 1rem;
+    z-index: 10;
+    opacity: 0.9;
+    justify-self: center;
+}
+footer{
+    position: relative;
+    bottom:0;
+    background: green;
+    color:wheat;
+    font-size:1.5rem;
+    text-align: center;
+    width: 100vw;
+    padding: 1rem;
+    z-index: 10;
+    opacity: 0.9;
+    padding-bottom: 30px;
+}
+#title_buscador{
+    position: relative;
+    display: grid;
+
+
+}
+::placeholder {
+    font-weight: bold;
+    color: rgb(33, 172, 33);
+}
+.inicio{
+    display: flex;
+    align-items: flex-end;
+
+}
+.maxcol{
+    color:  rgb(33, 172, 33);
+    position: absolute;
+    top: 2px;
+}
+#logo{
+    justify-self: center;
+}
+#logo img{
+    margin-top: 15px;
+    margin-left: 15px;
+    max-height: 200px;
+    justify-self: center;
+}
+.div_buscador{
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    /* background-color: rgba(232, 255, 232, 0.623); */
+
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.div_buscador h2{
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    font-weight: bolder;
+    color:  rgb(33, 172, 33);
+
+
+}
+.buscador{
+    flex-grow: 1;
+    position: relative;
+    margin:0rem 3rem 1rem 3rem;
+    background-color: rgb(216, 241, 216);
+    font-weight: bold;
+    color:  rgb(33, 172, 33);
+    border: rgb(101, 199, 123) solid 2px;
+    border-radius: 5px;
+    min-height: 38px;
+    font-size: 1.4rem;
+}
+.buscador:focus{
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid  rgb(192, 178, 98);
+}
+#check_btns{
+    display: flex;
+    justify-content: center;
+
+
+}
+.checkers{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+
+
+}
+.checkers label{
+    margin-left: 5px;
+    align-self: center;
+
+}
+
+.ordenar_t{
+    text-align: center;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: bolder;
+    color:  rgb(33, 172, 33);
+
+
+}
+.che{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 6fr 1fr 6fr;
+    margin:0 5rem;
+    padding: 1rem 1rem;
+    width: 50%;
+    justify-self: center;
+    margin-bottom: 1rem;
+    border: rgba(101, 199, 123) solid  2px;
+    border-radius: 15px;
+    background-color: #d8f1d8;
+    transition: all ease-in-out 0.2s;
+    overflow-y: hidden;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.281);
+
+}
+.boton_check {
+    margin-left: 1rem;
+	-webkit-appearance: none;
+	background-color: rgb(240, 235, 204);
+	border: 2px solid #78d8a3;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+    position: relative;
+    align-self: center;
+    height: 20px;
+    width:20px;
+}
+.boton_check:active, .boton_check:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.boton_check:focus{
+    outline: none;
+    border: 2px solid  rgb(192, 178, 98);
+}
+
+.boton_check:checked {
+	background-color:  rgb(0, 206, 120);
+    border: rgb(33, 172, 33) solid 2px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+    height: 20px;
+    width:20px;
+}
+.boton_check:checked:after {
+	content: '\2714';
+	font-size: 13px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #fcff68;
+}
+.boton_org{
+    background-color:  #00ce78;
+    font-size: 19px;
+    border: #21ac21 solid 2px;
+    border-radius: 10px;
+    color: rgb(223, 255, 225);
+    margin:1rem 1rem;
+    width: 150px;
+    height: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 2px 2px rgb(126, 230, 153);
+
+}
+.boton_org:focus{
+    outline: none;
+    border: 2px solid  #21ac21;
+}
+.disabled{
+    background-color:  #00ce78;
+
+}
+.boton_activo{
+    border: grey 2px;
+    background-color:  #00ad65;
+    box-shadow: inset 2px 1px 4px 2px rgb(61, 110, 74);
+
+
+
+}
+.colores_select{
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+
+    justify-self: center;
+    justify-content: center;
+    padding: 1.4rem 2rem 1rem 2rem;
+    margin:0rem 3rem;
+    background-color: #d8f1d8;
+    font-weight: bold;
+    margin-bottom: 14px;
+
+    border: #21ac21 solid 2px;
+    border-radius: 25px;
+    min-height: 38px;
+    font-size: 1.4rem;
+    opacity: 1;
+    transition: opacity ease-in-out 0.3s;
+    overflow-y: hidden;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.281);
+}
+
+
+.colores_btn{
+    margin: 2px;
+
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border: hidden;
+    cursor: pointer;
+    border: rgba(255, 255, 255, 0.247) double 10px;
+
+    /* border:rgba(136, 136, 136, 0.575) solid 2px; */
+    filter: drop-shadow(4px);
+}
+.buttonClicked{
+    border: rgba(255, 255, 255, 0.247) double 10px;
+    /* border-radius: 15px; */
+}
+.buttonClicked:after{
+    content: '\2714';
+    font-size: 28px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.589);
+
+	color: #000000;
+
+}
+
+.colores_btn:focus{
+    outline: none;
+    justify-content: space-between;
+}
+.empty-div{
+    width: 60px;
+}
+#Red{
+    background-color: rgb(223, 0, 0);
+}
+#Pink{
+    background-color: rgb(255, 205, 214)    ;
+}
+#Purple{
+    background-color: purple;}
+#Blue{
+    background-color: rgb(0, 0, 219);}
+.lightblue{
+    background-color: #add8e6;
+}
+#Green{
+    background-color: green;
+}
+#Yellow{
+    background-color: yellow;
+}
+#Beige{
+    background-color: rgb(224, 224, 184);
+}
+#Orange{
+    background-color: orange;
+}
+#Brown{
+    background-color: rgb(165, 87, 42);
+}
+#Black{
+    background-color: black;
+}
+#Gray{
+    background-color: gray;
+}
+#White{
+    background-color: rgb(243, 243, 243);
+}
+#Colorful{
+    background: linear-gradient(90deg, rgba(255, 59, 59, 0.666) 5%, rgb(224, 84, 180) 23%, rgba(0,255,43,1) 42%, rgb(0, 247, 255) 75%, rgb(255, 56, 56) 96%);
+}
+.nodisplay{
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    left:-500px;
+    height:0px;
+    margin:-20px;
+    padding: 0px;
+    /* visibility: hidden; */
+    transition: opacity ease-in-out 0.2s;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    display: flex row;
+    font-size: 1.2rem;
+    min-width: 500px;
+    margin:0.5rem 3rem ;
+    width: auto;
+    height:auto;
+    filter: drop-shadow(20px 20px 20px  black);
+}
+#items-titulo{
+    text-align: center;
+    padding: 1rem;
+}
+.mini{
+    text-align: start;
+}
+#lositems{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+    padding: 4rem 3rem 4rem 3rem;
+    justify-content: space-evenly;
+
+}
+#casilla{
+    height: 400px;
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
+    grid-template-rows: 0.5fr 1.7fr 1.3fr  1.3fr 1.5fr 1.5fr;
+
+    justify-content: center;
+    text-align: left;
+    /* display: flex;
+    justify-content: space-between;  */
+    padding: 0px;
+    border:3px solid rgba(0, 128, 0, 0.459);
+    border-radius: 15px;
+    background-color: rgba(238, 255, 218, 0.692);
+    /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
+
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+
+    grid-template-areas:
+    "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
+    "photo  photo  photo   photo   precios precios precios precios "
+    "photo  photo  photo   photo   comprar ctext ctext ctext "
+    "photo  photo  photo   photo   extra   extra   extra   grilla   "
+    "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
+    "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
+
+}
+.opacity4{
+    opacity: 0.4;
+}
+
+.nombre{
+    grid-area: nombre;
+    text-align: center;
+    align-self: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-right: 45px;
+
+
+    background-color: rgba(196, 193, 13, 0.274);
+
+}
+.photo{
+    grid-area: photo;
+    width:162px;
+    height: 162x;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-self: center
+}
+
+.colors0{
+    /* margin-top: 3px;
+    margin-left: 10px;
+    margin-bottom: 3px; */
+
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors0;
+}
+.colors1{
+    /* margin-top: 3px; */
+
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors1;
+}
+
+.colors2{
+    /* margin-top: 3px; */
+
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors2;
+
+}
+.colors3{
+    /* margin-top: 3px; */
+
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors3;
+}
+.colors4{
+    /* margin-left: 10px; */
+
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors4;
+}
+.colors5{
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors5;
+}
+.colors6{
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors6;
+}
+.colors7{
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors7;
+}
+.bb{
+    margin-left: 5px;
+    margin-top: 30px;
+    max-height: 140%;
+    max-width: 90%;
+    border-radius: 5px;
+
+}
+.imagenpeq:hover{
+    background-color: rgba(64, 224, 208, 0.329);
+}
+.imagenpeq{
+    border-radius: 5px;
+background-color: rgba(64, 224, 208, 0.116);
+}
+.activeimag{
+    background-color: rgba(64, 224, 208, 0.521);
+}
+.bayas{
+    margin-top: -10px;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top:6px;
+}
+
+
+
+
+.precios{
+    margin-top: 1rem;
+    grid-area: precios;
+
+}
+.comprar{
+    grid-area: comprar;
+    height: 35px;
+    width: 35px;
+    justify-self: left;
+    align-self: center;
+
+
+
+}
+.ctext{
+    margin: 0 2px;
+    font-size: 12px;
+    grid-area: ctext;
+    align-self: center;
+    justify-self: start;
+    text-align: center;
+}
+.extra{
+    font-size: 11px;
+    grid-area: extra;
+    align-self: center;
+}
+.grilla{
+    grid-area: grilla;
+
+    position: relative;
+    top:-179px;
+    right: 5px;
+    height: 30px;
+    justify-self: right;
+
+}
+.cumple{
+    width: 25px;
+}
+
+.nook{
+    align-self: center;
+    margin-top: 0px;
+    width:100%;
+    height: auto;
+    border-radius: 6px;
+    border:solid 1px black
+}
+.miles{
+    width: 60%;
+    height: auto;
+}
+.text_center{
+    justify-self: center;
+
+}
+.boda{
+    margin-top: 15px;
+    margin-left: -10px;
+    height: 30px;
+    width: 62px;
+}
+.mom{
+    margin-top: 18px;
+    height: 24px;
+    width: 33px;
+    border-radius: 5px;
+}
+.gul{
+    width:42px
+}
+.gull{
+    width:60px
+}
+.nint{
+    margin-left: -13px;
+    width:55px;
+    height: 40px;
+}
+.displaynone{
+    display: none;
+}
+#canela{
+    position: relative;
+align-self: center;
+    top:-285px;
+    height: 300px;
+    width: 314px;
+}
+
+
+
+
+
+#contgrid{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding-bottom: 3rem;
+}
+#paginacion{
+    margin-top: 2rem;
+    position: relative;
+    justify-self: center; /* ESTE SIRVE */
+
+}
+.pag-boton{
+    background-color: rgb(172, 235, 172);
+    border: rgb(101, 199, 123) solid 2px;
+    border-radius: 5px;
+    min-height: 38px;
+    min-width: 38px;
+
+    padding:5px;
+    margin:5px;
+    cursor: pointer
+}
+.pag-boton:focus{
+outline: none;
+border-radius: 5px;
+border: 3px solid  rgb(255, 191, 166);
+}
+.pag-boton:hover {
+    background-color: rgb(219, 253, 219);
+}
+.primerp{
+    margin-right: 15px;
+    background-color: rgb(130, 231, 130);
+
+}
+.ultimop{
+    margin-left: 15px;
+
+    background-color: rgb(130, 231, 130);
+
+}
+.active{
+    background-color: rgb(255, 191, 166);
+}
+
+
+
+.tcontainer{
+    color: rgb(238, 238, 238);
+    font-size: 25px;
+    font-weight: bolder;
+    background-color:rgb(0, 206, 120);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.itemcontainer{
+    background-color:rgb(131, 255, 168);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: 200px;
+}
+
+
+
+
+@media (max-width: 1462px){
+    .boton_check {
+        margin-left: 20px;
+        margin-right: 0px;
+        font-size: 10px;
+    }
+    label{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 14px;
+    }
+
+    .precios{
+        margin-top:13px;
+        font-size: 14px;
+    }
+
+    .ordenar_t{
+        text-align: center;
+        align-self: center;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .checkers{
+        margin-bottom: 0;
+    }
+    .che{
+        width: 60%;
+    }
+    #check_btns{
+        display: block;
+    }
+    .container{
+        margin:0.5rem  3rem;
+        min-width: 300px;
+    }
+
+    #lositems{
+        /* gap: 15px; */
+        grid-template-columns: repeat(auto-fit, minmax(305px, auto));
+        /* padding: 4rem 1rem 4rem 1rem; */
+    }
+    .photo{
+        width:152px;
+        height: 152px;
+    }
+@media (max-width: 1162px){
+    .container{
+        margin:0.5rem  0rem;
+        min-width: 300px;
+    }
+    #lositems{
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+        padding: 2rem 0.3rem 2rem 0.3rem;
+
+    }
+    .inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo img{
+        margin: 5px;
+        max-height: 100px;
+        justify-self: left;
+    }
+    .div_buscador h2{
+        margin-top:16px;
+        margin-right:48px ;
+        justify-content: center;
+        text-align: center;
+    }
+    .colores_select{
+        width: 450px;
+    }
+
+@media (max-width: 933px){
+
+    .photo{
+        width:132px;
+        height: 132px;
+    }
+}
+
+
+@media (max-width: 700px){
+
+    .boton_check {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 10px;
+    }
+    label{
+        padding-left: 5px;
+        padding-right: 35px;
+        font-size: 14px;
+    }
+    .colores_select{
+        width: auto;
+        margin: 1rem 1rem;
+    }
+    .colores_btn{
+        width: 50px;
+        height: 50px;
+    }
+    .buttonClicked:after{
+        font-size: 21px;
+    }
+    .photo{
+        width:110px;
+        height:110px;
+
+    }
+    .che{
+        width: 90%;
+        margin:0 1rem;
+        margin-bottom: 1rem;
+    }
+    .container{
+        margin:0.5rem  0rem;
+        min-width: 300px;
+    }
+    #lositems{
+        gap: 4px;
+        grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+        padding: 4rem 0.3rem 4rem 0.3rem;
+
+    }
+    .precios{
+        padding-top: 0;
+        margin-top:23px;
+        font-size: 10px;
+    }
+    .bayas{
+        height: 15px;
+        width: 15px;
+    }
+    .comprar{
+        width: 90%;
+    }
+    .imagenpeq{
+        height: auto;
+        width: 80%;
+    }
+    #casilla{
+        height: 289px;
+        min-width: 200px;
+    }
+    .grilla{
+        top: -130px;
+    }
+    .extra{
+        font-size: 9px;
+    }
+    .ctext{
+        font-size:10px;
+    }
+    .nook{
+        width: 30px;
+        height: 12px;
+    }
+     .nombre{
+        font-size: 14px;
+    }
+}
+@media (max-width: 495px){
+    .mini{
+        font-size: 9px;
+    }
+    #logo img{
+        margin: 5px;
+        max-height: 40px;
+        justify-self: center;
+    }
+    .colores_btn{
+        width: 30px;
+        height: 30px;
+    }
+    .colores_select{
+        padding: 10px;
+    }
+    #lositems{
+        gap: 2px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        padding: 0.2rem 0.3rem 4rem 0.3rem;
+
+    }
+    #casilla{
+        grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
+
+        grid-template-rows: 2fr 2fr 1fr  1fr 2fr 2fr;
+
+        max-height: 200px;
+        min-width: 150px;
+        grid-template-areas:
+        "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
+        "photo  photo  photo   photo   precios precios precios precios "
+        "photo  photo  photo   photo   ctext   comprar  ctext ctext "
+        "photo  photo  photo   photo   extra   extra   extra   extra   "
+        "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
+        "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
+    }
+    .nombre{
+        padding-top: 10px ;
+        padding-bottom: 5px;
+        align-self: start;
+        padding-right: 22px;
+        font-size: 10px;
+    }
+    .photo{
+        width:88px;
+        height:88px;
+        margin-top: -2px;
+    }
+    .imagenpeq{
+        /* margin-top: 10px; */
+
+        width:100%;
+    }
+    .precios{
+        margin-top: 5px;
+        font-size: 8px;
+    }
+    .bayas{
+        height: 13px;
+        width: 13px;
+    }
+    .bb{
+        margin-top: 20px;
+        margin-left: 0;
+
+    }
+    .colors0,
+    .colors4{
+        margin-left: 0;
+    }
+    .comprar{
+        margin-top:-20px;
+        height:90%;
+        width: auto;
+        align-self: center;
+    }
+    .ctext{
+        font-size: 8px;
+        text-align: end;
+        margin-right: 5px;
+        display: none;
+    }
+    .nook{
+        height: 40%;
+    }
+    .boda{
+        height: 60%;
+        align-self: center;
+
+    }
+    .miles{
+        height: 60%;
+        align-self: center;
+    }
+
+    .bayas{
+        top: 3px;
+    }
+    .boton_org{
+        text-align: center;
+        font-size: 14px;
+
+    }
+    .boton_check {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 10px;
+    }
+    label{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 10px;
+    }
+    .tcontainer{
+        font-size: 15px;
+    }
+    #items-titulo{
+        padding:4px;
+    }
+    .container{
+        margin:0rem  0rem;
+        min-width: 300px;
+    }
+    .div_buscador h2{
+        margin:5px 5px;
+        font-size:10px
+    }
+    .buscador{
+        margin:0 20px;
+        font-size: 15px;
+        min-height: 30px;
+    }
+    .ordenar_t{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .boton_org{
+        width: 80px;
+        height: 35px;
+    }
+    .grilla{
+        position: relative;
+        top:-96px;
+        right: 4px;
+        height: 20px;
+        justify-self: right;
+
+    }
+    .pag-boton{
+
+        min-height: 30px;
+        min-width: 30px;
+
+        padding:5px;
+        margin:5px;
+    }
+    #contgrid{
+        grid-template-columns: 0fr 1fr 0fr;
+    }
+    .maxcol{
+        
+        font-size: 8px;
+        top: 0px;
+    }
+}
+}}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver 1</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>Sitio ACNH</header>
+    <main>
+        <section id="title_buscador">
+            <div class="inicio">
+            <a id="logo"href="#" target="_blank" rel="noopener noreferrer"><img  src="/assets/logo.png" alt="logo"></a>
+            <div class="div_buscador">
+                <h2>Busca aquí tu item de Animal Crossing New Horizons</h2>
+            <input id="searchBar" class="buscador" type="search" placeholder="Buscar...">
+            </div>
+        </div>
+            <div id="check_btns">
+               
+                <p class="ordenar_t">Filtrar por</p>
+                <div class="checkers">
+                    <button class="boton_org" id="colores" type="submit">Colores</button>
+                    <button class="boton_org" id="tipo" type="submit">Tipo</button>
+                </div>
+                
+            </div>
+            <div id="filtro_tipo" class="checkers che nodisplay">
+                <input class="boton_check" type="checkbox" name="items" id="misc" checked>
+                <label for="misc"> Elementos Pequeños <br>(Misceláneas)</label>
+                <input class="boton_check" type="checkbox" name="items" id="house" checked>
+                <label for="house"> Elementos Grandes<br> (Muebles)</label>
+                <input class="boton_check" type="checkbox" name="items" id="wall" checked>
+                <label for="wall"> Murales<br> (Para colgar)</label>
+            </div>
+            <div id="coloresSelect" class="colores_select nodisplay">
+                <p class="maxcol">Maximo 2 colores</p>
+
+                <button class="colores_btn nodisplay" id="Red"></button>
+                <button class="colores_btn nodisplay" id="Pink"></button>
+                <button class="colores_btn nodisplay" id="Purple"></button>
+                <button class="colores_btn nodisplay" id="Blue"></button>
+                <button class="colores_btn nodisplay lightblue" id="Light blue"></button>
+                <button class="colores_btn nodisplay" id="Green"></button>
+                <button class="colores_btn nodisplay" id="Yellow"></button>
+                <button class="colores_btn nodisplay" id="Beige"></button>
+                <button class="colores_btn nodisplay" id="Orange"></button>
+                <button class="colores_btn nodisplay" id="Brown"></button>
+                <button class="colores_btn nodisplay" id="Black"></button>
+                <button class="colores_btn nodisplay" id="Gray"></button>
+                <button class="colores_btn nodisplay" id="White"></button>
+                <button class="colores_btn nodisplay" id="Colorful"></button>
+            </div> 
+        </section>  
+        <section class="container">
+            <div id="items-titulo" class="tcontainer">ITEMS </div>
+        
+            <div id="lositems"class="itemcontainer">
+                
+            </div>
+            <img id="canela" class="displaynone" src="/assets/canela.gif" alt="">
+            
+
+                </div>
+            </div>
+
+        </section>
+            <div id="contgrid">
+                <div>
+                </div>
+                <div id="paginacion">
+                </div>
+                <div></div>
+            </div>
+    </main>
+<footer>Creado por mi</footer>
+<script src="JS/request.js"></script>
+
+
+</body>
+</html>
