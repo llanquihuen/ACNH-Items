@@ -104,6 +104,7 @@ tipoButton.addEventListener ("click", (e)=>{
             imag.classList.toggle("nodisplay")
             })
 
+            colorButtonActive = [...document.getElementsByClassName("buttonClicked")];
             if(colorButtonActive.length!=0){
                 colorButton.forEach((col) => {
                     col.classList.remove("buttonClicked")
@@ -134,6 +135,12 @@ function Check(id,item){
             })
             Display(filtro,fetchAsyncId,xPag,estaPag)
             Paginacion(filtro, paginacionId, xPag )
+            if(filtro.length==0){
+                document.getElementById("canela").classList.remove("displaynone")
+            }else{
+                document.getElementById("canela").classList.add("displaynone")
+            }
+            
         }else{
             items =  RestarArray(items,item)
             Ordenar(items)
@@ -149,6 +156,11 @@ function Check(id,item){
             })
             Display(filtro,fetchAsyncId,xPag,estaPag)
             Paginacion(filtro, paginacionId, xPag )
+            if(filtro.length==0){
+                document.getElementById("canela").classList.remove("displaynone")
+            }else{
+                document.getElementById("canela").classList.add("displaynone")
+            }
         }
     })
     ;
@@ -427,7 +439,6 @@ function Check(id,item){
     
     colorGrande.addEventListener ("click", (e)=>{
         colores.classList.toggle("boton_activo")
-
         coloresSelect.classList.toggle("nodisplay")
         if (tipoButton.classList.contains('disabled')){
             tipoButton.classList.remove('disabled')
@@ -520,6 +531,13 @@ function Check(id,item){
                         })
                             Display(filtro,fetchAsyncId,xPag,estaPag)
                             Paginacion(filtro, paginacionId, xPag )
+                            
+                            if(filtro.length==0){
+                                document.getElementById("canela").classList.remove("displaynone")
+                            }else{
+                                document.getElementById("canela").classList.add("displaynone")
+                            }
+                            
                     }
 
                 }
@@ -527,8 +545,7 @@ function Check(id,item){
  
             }else{
                 if(colorButtonActive.length<2){
-
-                    col.classList.add("buttonClicked")
+                col.classList.add("buttonClicked")
 
                     itemsC=[]
                     for (i = 0; i < items.length; i++){
@@ -551,6 +568,9 @@ function Check(id,item){
                     })
                     Display(filtro,fetchAsyncId,xPag,estaPag)
                     Paginacion(filtro, paginacionId, xPag )
+                    if(filtro.length==0){
+                        document.getElementById("canela").classList.remove("displaynone")
+                    }
                     // console.log("filtro")
                 }else{
                     color = document.getElementById("maxcol")
@@ -565,9 +585,9 @@ function Check(id,item){
     const searchBar = document.getElementById("searchBar");
 
     searchBar.addEventListener("search", (e)=> {e.target.value="";
-        Display(items,fetchAsyncId,xPag,estaPag)
-        Paginacion(items, paginacionId, xPag )
-
+    Display(items,fetchAsyncId,xPag,estaPag)
+    Paginacion(items, paginacionId, xPag )
+    
     });
 
     searchBar.addEventListener("keyup", (e)=>{
