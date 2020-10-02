@@ -22,7 +22,8 @@ let item1 =  await getData("https://acnhapi.com/v1a/houseware");
 let item2 = await getData("https://acnhapi.com/v1a/misc");
 let item3 = await getData("https://acnhapi.com/v1a/wallmounted");
 let items = item1.concat(item2,item3);
-
+// let clothes =  await getData("./assets/items.json");
+// console.log(clothes)
 let itemsC =[];
 
 Ordenar(items)
@@ -168,6 +169,7 @@ function Check(id,item){
             }else if (estaPag >= totalPag-3){
                 let ini = PaginationButton(1,items)
                 fragmentDom.appendChild(ini);
+                let i=0
                 for(i=estaPag-2;i<=totalPag;i++){
                     let btn = PaginationButton(i, items);
                     fragmentDom.appendChild(btn);
@@ -176,6 +178,7 @@ function Check(id,item){
             }else{
                 let ini = PaginationButton(1,items)
                 fragmentDom.appendChild(ini);
+                let i =0;
                 for(i=estaPag-2;i<=(estaPag+2);i++){
                     let btn = PaginationButton(i, items);
                     fragmentDom.appendChild(btn);
@@ -291,6 +294,12 @@ function Check(id,item){
                     const filtro = items.filter(elem => {
                         return ((removeAccents(elem[0]["name"]["name-USes"])).toLowerCase()).includes(searchString)
                     })
+                    // console.log("filtro")
+                    if(filtro.length==0){
+                        document.getElementById("canela").classList.remove("displaynone")
+                    }else{
+                        document.getElementById("canela").classList.add("displaynone")
+                    }
                     Display(filtro,fetchAsyncId,xPag,estaPag)
                     Paginacion(filtro, paginacionId, xPag)
 
@@ -308,10 +317,10 @@ function Check(id,item){
                             let unItemAll=(items[i])
 
                             let newArray = unItemAll.filter(function (el) {
+                                console.log(el["color-1"])
                             return el["color-1"] == color ||
                             el["color-2"] == color
                             });
-
                             if (newArray.length !== 0){
                                 itemsC.push(newArray)
                             }
@@ -364,7 +373,6 @@ function Check(id,item){
                     if(filtro.length==0){
                         document.getElementById("canela").classList.remove("displaynone")
                     }
-                    // console.log("filtro")
                 }else{
                     let color = document.getElementById("maxcol");
                     color.classList.add("redback")
