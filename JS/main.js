@@ -22,8 +22,78 @@ let item1 =  await getData("https://acnhapi.com/v1a/houseware");
 let item2 = await getData("https://acnhapi.com/v1a/misc");
 let item3 = await getData("https://acnhapi.com/v1a/wallmounted");
 let items = item1.concat(item2,item3);
-// let clothes =  await getData("./assets/items.json");
-// console.log(clothes)
+let all =  await getData("./assets/items.json");
+
+//-----------VESTIDOS
+let dressup=[];
+all.forEach((clo)=>{
+    if(clo.sourceSheet == "Dress-Up"){
+        dressup.push(clo)
+    }
+    // console.log("nop")
+    // console.log(clo.sourceSheet);
+})
+
+//------------NOMBRE
+let dress_tr = await getData("./assets/dresses.json")
+let dress_var = await getData("./assets/dressesvariants.json")
+
+function Translate (array,tr,varia){
+    array.forEach((clo)=>{
+        // console.log(dress_tr.includes(clo.clothGroupId));
+        let index = tr.findIndex(x => x.id === clo.clothGroupId);
+        console.log(tr[index].locale["USes"]);
+        // console.log(clo.variants)
+        clo.variants.forEach((vari)=>{
+            // console.log(vari.internalId)
+            let index2 = varia.findIndex(x => x.id === vari.internalId)
+            try {
+                console.log(varia[index2].locale["USes"])
+            }catch{
+                console.log(vari.variation)
+            }
+        })
+        console.log("*********************")
+    //console.log(dress_var[index2].locale["USes"]);
+    })
+}
+// Translate(dressup,dress_tr,dress_var)
+
+function Contar (array){
+    let i = 0;
+    for (i = 0; i < items.length; i++){
+
+    let contarArray = Object.keys(array).length;
+    return contarArray
+    }
+}
+dressup.forEach((clo)=>{
+    // console.log(clo.variants[0].buy)
+    // console.log(clo["size".trim()])
+    // console.log(clo.variants[0]["source"])
+    // console.log(clo.style1)
+    // console.log(Contar(clo.variants))
+    // if (Contar(clo.variants)<=4){
+    //     let i2= 0;
+    //     for (i2 = 0;i2 < Contar(clo.variants); i2++){
+    //         if(i2==0){
+    //             console.log(i2)
+    //             try{console.log(clo.variants[i2].closetImage);
+    //             }catch{console.log("no1");
+    //             }
+    //         }else{
+    //             console.log(i2)
+
+    //             try{console.log(clo.variants[i2].closetImage);
+    //             }catch{console.log("no2");
+    //             }
+    //         }
+    //     }
+    // }
+    // console.log(clo.variants[0].closetImage)
+})
+
+
 let itemsC =[];
 
 Ordenar(items)
@@ -317,7 +387,7 @@ function Check(id,item){
                             let unItemAll=(items[i])
 
                             let newArray = unItemAll.filter(function (el) {
-                                console.log(el["color-1"])
+                                // console.log(el["color-1"])
                             return el["color-1"] == color ||
                             el["color-2"] == color
                             });
@@ -351,7 +421,9 @@ function Check(id,item){
                     itemsC=[]
                     let i=0;
                     for (i = 0; i < items.length; i++){
+                        // console.log(items)
                         let unItemAll=(items[i])
+                        // console.log(unItemAll)
 
                         let newArray = unItemAll.filter(function (el) {
                         return el["color-1"] == col.id ||

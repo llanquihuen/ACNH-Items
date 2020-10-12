@@ -1,0 +1,1243 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-image: url(../assets/y5mzeig307b41.png);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+}
+
+header{
+    display: none;
+    position: relative;
+    top:0;
+    background: green;
+    color:wheat;
+    font-size:1.5rem;
+    text-align: center;
+    width: 100vw;
+    padding: 1rem;
+    z-index: 10;
+    opacity: 0.9;
+    justify-self: center;
+}
+footer{
+    position: relative;
+    bottom:0;
+    background: green;
+    color:wheat;
+    font-size:1rem;
+    text-align: center;
+    width: 100vw;
+    padding-top: 1rem;
+    z-index: 10;
+    opacity: 0.9;
+    margin-top: 5vh;
+    padding-bottom: 30px;
+}
+#title_buscador{
+    position: relative;
+    display: grid;
+}
+::placeholder {
+    font-weight: bold;
+    color: rgb(33, 172, 33);
+}
+.inicio{
+    display: flex;
+    align-items: flex-end;
+
+}
+.boton_top{
+    margin:1rem 3rem;
+    align-self: start;
+    background-color: rgb(152, 193, 255);
+    color: rgb(60, 78, 105);
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: solid 2px rgb(25, 75, 133);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgb(222, 239, 255), 2px 2px 4px rgba(56, 56, 56, 0.5);
+}
+
+#logo{
+    justify-self: center;
+}
+#logo img{
+    margin-top: 15px;
+    margin-left: 15px;
+    max-height: 200px;
+    justify-self: center;
+}
+#logotrini img{
+    max-height: 100px;
+
+
+}
+.div_buscador{
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    /* background-color: rgba(232, 255, 232, 0.623); */
+
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.select-items{
+    background-color: rgb(240, 223, 240);
+}
+.select-items:hover{
+    background-color: rgb(172, 97, 172);
+}
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+.div_buscador_trini{
+    display: flex;
+    flex-direction: row;
+
+    flex-grow: 1;
+    /* background-color: rgba(232, 255, 232, 0.623); */
+
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.div_buscador h2{
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    font-weight: bolder;
+    color:  rgb(33, 172, 33);
+
+
+}
+.buscador{
+    flex-grow: 1;
+    position: relative;
+    margin:0rem 3rem 1rem 3rem;
+    background-color: rgb(216, 241, 216);
+    font-weight: bold;
+    color:  rgb(33, 172, 33);
+    border: rgb(101, 199, 123) solid 2px;
+    border-radius: 5px;
+    min-height: 38px;
+    font-size: 1.4rem;
+}
+
+.trini{
+    display: flex;
+    background-color: rgba(83, 20, 83, 0.7);
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: solid 2px rgb(83, 20, 83);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(10, 0, 0, 0.5), inset 3px 3px 3px rgba(187, 187, 187, 0.671);
+
+
+}
+
+
+.disabled{
+    background-color:  #00ce78;
+
+}
+
+
+
+
+.nodisplay{
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    left:-500px;
+    height:0px;
+    margin:-20px;
+    padding: 0px;
+    /* visibility: hidden; */
+    transition: opacity ease-in-out 0.2s;
+}
+.displaynone{
+    display: none;
+}
+.displayhidden{
+    opacity: 0.3;
+}
+.realhidden{
+    opacity:0;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 1.2rem;
+    margin:0.5rem 3rem ;
+    min-height: 700px;
+    width: auto;
+    height:auto;
+    filter: drop-shadow(20px 20px 20px  black);
+}
+#items-titulo{
+    text-align: center;
+    padding: 1rem;
+}
+.mini{
+    text-align: start;
+}
+.trinip {
+    cursor: pointer;
+    width:73px;
+    margin:0 3px;
+
+}
+.photo_trini{
+    margin-top: 4px;
+    background-color: rgb(200, 149, 229);
+    border: solid 2px rgba(194, 123, 202, 0.692);
+    border-radius: 7px;
+    box-shadow: 0px 2px 4px rgba(10, 0, 0, 0.5), inset 3px 3px 3px rgba(223, 223, 223, 0.705);
+
+
+}
+.trinip img{
+    padding-top: 5px;
+    justify-self: center;
+    width:67px;
+    height: auto;
+}
+.trinip p{
+    width:70px;
+    text-align: center;
+    font-size: 10px;
+
+}
+.opacity4{
+    opacity: 0.4;
+}
+
+.photo{
+    grid-area: photo;
+    width:162px;
+    height: 162px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-self: center
+}
+.photo_trini{
+    width:72px;
+    height: 72px;
+}
+.photo_triniBIG{
+    display: block;
+    margin: auto;
+    margin-top:-15px;
+    width: 120px;
+    height: 120px;
+}
+.overf{
+    overflow: visible;
+}
+
+
+.casillas{
+    margin: 10px 0;
+}
+#casilla1,#casilla2,#casilla3,#casilla4,#casilla5{
+    max-height: 130px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0px 0px 0px 0px;
+    /* grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr 1fr;
+    column-gap: 5px; */
+    
+    justify-content: center;
+    text-align: left;
+    /* display: flex;
+    justify-content: space-between;  */
+    border:3px solid rgba(107, 0, 128, 0.459);
+    border-radius: 15px;
+    background-color: rgba(251, 218, 255, 0.692);
+    /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
+    
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+
+
+
+/* ---------CASILLAS CATALOGO GRID------------------ */
+/* ---------CASILLAS CATALOGO GRID------------------ */
+/* ---------CASILLAS CATALOGO GRID------------------ */
+
+.casilla{
+    height: 400px;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
+    grid-template-rows: 0.5fr 1.7fr 1.3fr  1.3fr 1.5fr 1.5fr;
+    
+    justify-content: center;
+    text-align: left;
+    /* display: flex;
+    justify-content: space-between;  */
+    padding: 0px;
+    border:3px solid rgba(28, 0, 128, 0.459);
+    border-radius: 15px;
+    background-color: rgba(218, 225, 255, 0.692);
+    /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
+    
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+    
+    grid-template-areas:
+    "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
+    "photo  photo  photo   photo   precios precios precios precios "
+    "photo  photo  photo   photo   comprar ctext ctext ctext "
+    "photo  photo  photo   photo   extra   extra   extra   grilla   "
+    "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
+    "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
+    
+}
+
+.colors0{
+    /* margin-top: 3px;
+    margin-left: 10px;
+    margin-bottom: 3px; */
+    
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors0;
+}
+.colors1{
+    /* margin-top: 3px; */
+    
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors1;
+}
+
+.colors2{
+    /* margin-top: 3px; */
+    
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors2;
+    
+}
+.colors3{
+    /* margin-top: 3px; */
+    
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors3;
+}
+.colors4{
+    /* margin-left: 10px; */
+    
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors4;
+}
+.colors5{
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors5;
+}
+.colors6{
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors6;
+}
+.colors7{
+    max-height: 90%;
+    max-width: 90%;
+    grid-area: colors7;
+}
+.bb{
+    margin-left: 5px;
+    margin-top: 30px;
+    max-height: 140%;
+    max-width: 90%;
+    border-radius: 5px;
+}
+.imagenpeq:hover{
+    box-shadow: inset 0px 0px 3px rgb(0, 0, 0), 0px 0px 3px rgba(56, 56, 56, 0.5);
+}
+.imagenpeq{
+    box-shadow: inset 1px 1px 3px rgb(212, 212, 212), 2px 2px 3px rgba(56, 56, 56, 0.5);
+
+    border-radius: 5px;
+    background-color: rgba(67, 64, 224, 0.329);
+}
+.activeimag{
+    box-shadow: inset 2px 2px 3px rgb(44, 44, 44), 2px 2px 3px rgba(206, 206, 206, 0.5);
+    background-color: rgba(46, 50, 238, 0.842);
+}
+.bayas{
+    margin-top: -10px;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top:6px;
+}
+.nombre{
+    grid-area: nombre;
+    text-align: center;
+    align-self: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-right: 45px;
+    background-color: rgba(13, 56, 196, 0.274);
+}
+.precios{
+    margin-top: 1rem;
+    grid-area: precios;
+    overflow-y: hidden;
+    
+}
+.comprar{
+    grid-area: comprar;
+    height: 35px;
+    width: 35px;
+    justify-self: left;
+    align-self: center;
+}
+.ctext{
+    margin: 0 2px;
+    font-size: 12px;
+    grid-area: ctext;
+    align-self: center;
+    justify-self: start;
+    text-align: center;
+}
+.extra{
+    font-size: 11px;
+    grid-area: extra;
+    align-self: center;
+}
+.grilla{
+    position: relative;
+    top:-77px;
+    left: 40px;
+    height: 20px;
+    justify-self: right;
+
+}
+.cumple{
+    width: 25px;
+}
+.nook{
+    align-self: center;
+    margin-top: 0px;
+    width:100%;
+    height: auto;
+    border-radius: 6px;
+    border:solid 1px black
+}
+.sister{
+    align-self: center;
+    margin-top: 0px;
+    width:100%;
+    height: auto;
+    border-radius: 6px;
+}
+.miles{
+    width: 60%;
+    height: auto;
+}
+.text_center{
+    justify-self: center;
+}
+.boda{
+    margin-top: 15px;
+    margin-left: -10px;
+    height: 30px;
+    width: 62px;
+}
+.mom{
+    margin-top: 18px;
+    height: 24px;
+    width: 33px;
+    border-radius: 5px;
+}
+.gul{
+    width:42px
+}
+.gull{
+    width:60px
+}
+.nint{
+    margin-left: -13px;
+    width:55px;
+    height: 40px;
+}
+.displaynone{
+    display: none;
+}
+#canela{
+    position: relative;
+    align-self: center;
+    top:-285px;
+    height: 300px;
+    width: 314px;
+}
+#triniG{
+    position: relative;
+    height: 100%;
+    width: auto;
+}
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+.verde{
+    background-color: rgb(152, 255, 178);
+    color: rgb(60, 105, 74);
+    box-shadow: inset 3px 3px 3px rgb(194, 253, 204), 2px 2px 4px rgba(56, 56, 56, 0.5);
+    border: solid 2px rgb(25, 133, 39);
+}
+
+
+
+
+
+
+
+
+
+#contgrid{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding-bottom: 3rem;
+}
+
+.tcontainer{
+    color: rgb(238, 238, 238);
+    font-size: 25px;
+    font-weight: bolder;
+    background-color:rgb(0, 206, 120);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.itemcontainer{
+    background-color:rgb(131, 255, 168);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: 40vh;
+}
+.redback{
+    border-radius: 3px;
+    padding: 2px;
+    animation: flickerAnimation 1.1s;
+}
+
+
+
+
+
+/* ------------------ TRINI----------------- */
+
+.tricontainer{
+    color: rgb(218, 218, 218);
+    font-size: 25px;
+    font-weight: bolder;
+    background-color:rgb(27, 11, 29);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.itemcontainer2{
+    background-color:rgb(154, 112, 189);
+}
+.itemcontainer2::-webkit-scrollbar {
+    width: 20px;
+}
+
+.itemcontainer2::-webkit-scrollbar-track {
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .itemcontainer2::-webkit-scrollbar-thumb {
+    background-image: url(/assets/updown.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 27px;
+    background-color: tomato;
+
+    outline: 2px solid rgb(169, 20, 199);
+    border-radius: 2px;
+    box-shadow: 0 0 0 3pt rgb(119, 0, 255);
+
+  }
+
+.item_trini{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+    background-color:rgb(154, 112, 189);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: 60vh;
+    justify-items: center;
+}
+.trini_img{
+    /* margin:10%; */
+    width: 200px;
+    margin:0 10px;
+
+}
+.trini_grid1{
+    background-color: rgba(177, 177, 177, 0.274);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    align-items: center;
+    justify-items: center;
+}
+.flexB{
+    height: 130px;
+}
+
+#descr_1{
+    display: grid;
+    row-gap: 6px;
+    grid-template-columns: 1fr 1fr;
+}
+.descr{
+    font-weight: 800;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.tachado{
+    text-decoration:line-through
+}
+.vestir_mono{
+    padding-top: 20px ;
+    margin: 20px 0;
+    margin-right: 20px;
+    display:grid;
+    align-items:center;
+    background-color: rgba(255, 255, 240, 0.315);
+    height: 600px;
+    box-shadow: inset 2px 2px 3px rgb(212, 212, 212), 2px 2px 3px rgba(56, 56, 56, 0.5);
+    border:1px solid transparent;
+    border-radius: 3px;
+}
+/* .vestir_mono::after{
+    font-size: 10px;
+    content: "* falda estampado animal";
+    margin-bottom: 20px;
+} */
+#cabezaT{
+    margin: 0px;
+}
+#cabezaT img{
+    width: 100px;
+    height: auto;
+    }
+#dressT{
+    position: relative;
+    z-index: 2;
+    margin-top: -95px;
+}
+.bigger img{
+    margin-top: 2px;
+    width: 180px;
+    height: auto;
+}
+#panT{
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+}
+#calceT{
+    margin-top: -50px;
+    margin-left: 220px;
+}
+#zapaT{
+    margin-top: -110px;
+}
+#zapaT img{
+width: 100px;
+height: auto;
+}
+#acceT{
+    margin-top: -50px;
+
+    margin-right: 230px;
+
+}
+#mochiT{
+
+    margin-top: -570px;
+
+    margin-left: 220px;
+}
+
+#random{
+
+    /* margin:1rem 0rem 1rem 15rem; */
+    margin-top: -50px;
+    justify-self: center;
+    background-color: rgba(230, 141, 141, 0.658);
+    color: rgb(49, 49, 49);
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    border: solid 2px rgb(133, 25, 92);
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 3px rgb(212, 212, 212), 2px 2px 4px rgba(56, 56, 56, 0.5);
+    cursor: pointer;
+    width: 50%;
+
+}
+.estiloprimero{
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 20px;
+    position: relative;
+    z-index: 4;
+    margin-top:-200px ;
+    text-align: center;
+    cursor: default;
+}
+#random:focus{
+    outline: none;
+    border: solid 2px rgb(85, 15, 58);
+}
+.qEstilo{
+    background-color: rgb(88, 0, 139);
+    border-bottom: 4px crimson solid;
+    margin: auto;
+    padding: 0.5rem;
+    color: rgb(209, 209, 209);
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+.estilocont{
+    margin: auto;
+    background-color: rgb(88, 0, 139);
+    padding: 0 5rem;
+    border: 3px solid  rgba(80, 23, 133, 0.473);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.div_buscador2{
+    display: inline;
+    color: rgb(65, 0, 13);
+    font-weight: bolder;
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 1rem 2rem;
+    outline: 4px dotted rgba(201, 111, 243, 0.527);
+    outline-offset: 8px;
+    margin: auto;
+
+}
+.div_buscador2:hover{
+    background-color: rgb(255, 240, 235);
+}
+
+.div_buscador2 .select-items{
+    background-color: rgb(251, 232, 255)
+}
+.div_buscador2 .select-items:hover{
+    background-color: rgb(212, 0, 255)
+}
+
+
+.activeimag2{
+    margin-top: 4px;
+    background-color: rgba(122, 65, 155, 0.644);
+    border: solid 2px rgba(201, 201, 201, 0.692);
+    border-radius: 7px;
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.589), inset 3px 3px 3px rgba(58, 58, 58, 0.705);
+}
+
+.div_buscador2:focus{
+    outline: none;
+    border: 3px solid  rgb(92, 15, 155);
+}
+#elestilo{
+    color: seashell;
+    padding:0 2rem;
+    font-weight: 500;
+    font-size: 24px;
+    margin: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+    width:11ch;
+    text-shadow: -2px -2px 5px rgb(70, 1, 70);
+
+}
+#elestilo2{
+
+    font-weight: 400;
+    font-size: 16px;
+    margin-top:-70px;
+    text-align: center;
+    justify-self: center;
+    width:11ch
+}
+
+.flexB{
+    display: flex;
+    column-gap: 5px;
+}
+.flexB .descr{
+    flex:1 1 auto;
+}
+.flexB #busquedaA{
+    flex:2 4 auto;
+}
+#busquedaA{
+    justify-self: center;
+    background-color: rgba(147, 141, 230, 0.658);
+    color: rgb(49, 49, 49);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: solid 2px rgb(32, 25, 133);
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 3px rgb(212, 212, 212), 2px 2px 4px rgba(56, 56, 56, 0.5);
+    cursor: pointer;
+    margin: 5px 10px;
+    width: 20ch;
+}
+
+.redback2{
+    animation: flickerAnimation2 1.8s;
+
+}
+#ropaDetalle{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.casilla{
+    margin: 10px 5px 5px 5px;
+    grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
+
+    grid-template-rows: 2fr 2fr 1fr  1fr 2fr 2fr;
+
+    max-height: 200px;
+    min-width: 180px;
+    max-width: 210px;
+    grid-template-areas:
+    "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
+    "photo  photo  photo   photo   precios precios precios precios "
+    "photo  photo  photo   photo   ctext   comprar  ctext ctext "
+    "photo  photo  photo   photo   extra   extra   extra   extra   "
+    "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
+    "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
+}
+
+.nombre{
+    padding-top: 10px ;
+    padding-bottom: 5px;
+    align-self: start;
+    padding-right: 22px;
+    font-size: 11px;
+}
+.photo{
+    width:80px;
+    height:auto;
+    margin-top: -9px;
+}
+.imagenpeq{
+    width:80%;
+}
+.bb{
+    width:100%;
+    margin-top: 20px;
+    margin-left: 0;
+}
+.precios{
+    margin-top: 5px;
+    font-size: 10px;
+}
+.bayas{
+    height: 14px;
+    width: 14px;
+}
+.comprar{
+    margin-top:-20px;
+    height:90%;
+    width: auto;
+    align-self: center;
+}
+.ctext{
+    font-size: 8px;
+    text-align: end;
+    margin-right: 5px;
+    display: none;
+}
+.extra{
+    font-size: 9px;
+}
+.flexcol{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1462px){
+    .trini_grid1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .trini_img{
+        display: none;
+    }
+    .container{
+        margin:0.5rem  3rem;
+    }
+}
+
+
+
+@media (max-width: 1162px){
+  
+    .container{
+        margin:0.5rem  0rem;
+    }
+    .inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo img{
+        margin: 5px;
+        max-height: 100px;
+        justify-self: left;
+    }
+}
+
+
+
+@media (max-width: 933px){
+    #logo img{
+        max-height: 60px;
+    }
+     .tcontainer,.tricontainer{
+        font-size: 20px;
+    }
+    #items-titulo{
+        padding:10px;
+    }
+    .buttonClicked:after{
+        font-size: 18px;
+    }
+    .container{
+        margin:0.5rem  0rem;
+    }
+    /* #casilla{
+        height: 289px;
+        min-width: 200px;
+    } */
+    .nook{
+        width: 30px;
+        height: 12px;
+    }
+}
+
+
+
+@media (max-width: 709px){
+    .mini{
+        font-size: 9px;
+    }
+    #logo img{
+        margin: 5px;
+        max-height: 40px;
+        justify-self: center;
+    }
+    .tcontainer,.tricontainer{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        font-size: 15px;
+    }
+    .container{
+        margin:0rem  0rem;
+    }
+    #contgrid{
+        grid-template-columns: 0fr 1fr 0fr;
+    }
+    .trini_grid1{
+        width: 65vw;
+    }
+    #casilla1,#casilla2,#casilla3,#casilla4,#casilla5{
+       margin-right: 20px;
+        width: 32vw
+    }
+    .flexcol{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width: 557px){
+ 
+    /* -----------TRINI----------- */
+    .casilla{
+        margin: 6px 0px 3px 0px;
+        max-height: 200px;
+        min-width: 160px;
+        max-width: 170px;
+ 
+    }
+    #casilla1,#casilla2,#casilla3,#casilla4,#casilla5{
+        margin: 0 0px;
+        height: 100px;
+        width: 42vw
+      }
+    .trini_grid1{
+        width: 55vw;
+    }
+    .trini_img{
+    width:90% ;
+    }
+    .boton_top{
+        margin:0.3rem 1rem;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 0.8em 1.3em;
+    }
+    .photo_triniBIG{
+        width: 90px;
+        height: 90px;
+    }
+    .bigger img{
+        margin-bottom: -50px;
+        width: 135px;
+        height: auto;
+    }
+    .photo_trini{
+        width:52px;
+        height: 52px;
+    }
+    .trinip img{
+        padding-top: 0px;
+        width:46px;
+        height: auto;
+    }
+    .trinip {
+        width:53px;
+        margin:0 3px;
+    }
+    .trinip p{
+        width:50px;
+        font-size: 8px;
+    }
+    .vestir_mono{
+        display: grid;
+        width: 220px;
+        height: 455px;
+        margin-bottom: 5px;
+        margin-left:20px ;
+    }
+    #cabezaT{
+        margin-left: -50px;
+        margin-bottom: 20px;
+    }
+    #dressT{
+        margin-bottom: -75px;
+        margin-left: -50px;
+    }
+    #zapaT{
+        margin-bottom:-300px;
+        margin-left: -50px;
+    }
+    #panT{
+        margin-bottom: -45px;
+        margin-left: -50px;
+    }
+    #mochiT{
+        margin-bottom: -540px;
+        margin-left: 100px;
+    }
+    #calceT{
+        margin-bottom: -195px;
+        margin-left: 110px;
+    }
+    #panT{
+        margin-bottom: -130px;
+    }
+    #mochiT img,#cabezaT img,#calceT img,#acceT img,#zapaT img{
+        width: 70px;
+        height: auto;
+    }
+    #acceT{
+        margin-bottom: 10px;
+        margin-right: -100px;
+    }
+    #random{
+        margin: auto;
+        margin-top: 90px;
+        margin-bottom: -45px;
+        font-size: 16px;
+        width: auto;
+    }
+    .estilocont{
+        /* width: 50%; */
+        padding: 0 5rem;
+        margin: auto;
+        margin-bottom: 0;
+
+    }
+    .qEstilo{
+        font-size: 1rem;
+    }
+    .trini{
+        padding: 0;
+        margin-left: 10px;
+        margin-bottom: 3px;
+        align-self: stretch;
+        font-size: 13px;
+    }
+    .trini img{
+    width: 54px;
+    height: auto;
+
+    }
+    .grid_1{
+        margin-left: 15px;
+        align-self: center;
+    }
+    .flexB{
+        align-items: flex-end;
+        height: 165px;
+        gap: 0;
+    }
+    #descr_1{
+        row-gap: 0px;
+    }
+    .descr{
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 10px;
+        margin: 0px -1px 3px 3px;
+        overflow-y: hidden;
+    }
+    .flexB .descr{
+        flex: 1 1 auto;
+    }
+    .flexB #busquedaA{
+        flex: 1 1 auto;
+    }
+    #busquedaA{
+        /* align-self: center; */
+        margin: 23px 3px;
+        font-size: 10px;
+        width: 68px;
+        height: 70px;
+        padding: 0 5px;
+    }
+    #elestilo{
+        padding: 0;
+    }
+    .nombre{
+        padding-top: 10px ;
+        padding-bottom: 5px;
+        align-self: start;
+        padding-right: 22px;
+        font-size: 10px;
+    }
+    .photo{
+        width:80px;
+        height:auto;
+        margin-top: -9px;
+    }
+    .imagenpeq{
+        width:80%;
+    }
+    .bb{
+        width:100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .precios{
+        margin-top: 5px;
+        font-size: 8px;
+    }
+    .bayas{
+        height: 13px;
+        width: 13px;
+    }
+    .comprar{
+        margin-top:-20px;
+        height:90%;
+        width: auto;
+        align-self: center;
+    }
+    .ctext{
+        font-size: 8px;
+        text-align: end;
+        margin-right: 5px;
+        display: none;
+    }
+    .extra{
+        font-size: 9px;
+    }
+    
+    
+}
+
+
+@keyframes flickerAnimation {
+    0%   {background-color: rgba(255, 127, 80, 0);color:  rgb(33, 172, 33);}
+    50%   {background-color: rgb(255, 80, 80);color:  rgb(226, 226, 226);}
+
+    100% {background-color: rgba(255, 127, 80, 0);color:  rgb(33, 172, 33);}
+}
+
+@keyframes flickerAnimation2 {
+    0%   {background-color: rgba(255, 255, 255, 0);color:  rgba(255, 255, 255, 0);}
+    20%   {background-color: rgba(199, 30, 0, 0.795);color:  rgb(255, 255, 255);}
+    80%   {background-color: rgba(199, 30, 0, 0.795);color:  rgb(255, 255, 255);}
+
+    100% {background-color: rgba(255, 255, 255, 0);color:  rgba(255, 255, 255, 0);}
+}
+
+
+
+

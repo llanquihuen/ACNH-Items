@@ -17,7 +17,7 @@ export default function Display (items,wrapper, elemXpag,page) {
     const titleCase = (string) => {return string.charAt(0).toUpperCase() + string.slice(1)};
 
     //CANTIDAD ITEMS
-    itemsTitle.innerHTML =`ITEMS <p class="mini">Items: ${items.length}</p>`
+    itemsTitle.innerHTML =`ITEMS <p class="mini">N° de Items: ${items.length}</p>`
     wrapper.innerHTML="";
     page--;
     let totalPag = Math.ceil(items.length/ elemXpag)
