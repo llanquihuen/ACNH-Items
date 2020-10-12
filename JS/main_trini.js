@@ -103,16 +103,18 @@ function Translate (array,tr,varia,idioma){
         //console.log(dress_var[index2].locale["USes"]);
     })
 }
+function TranslateAll(lang){
+Translate(dress,dress_tr,dress_var,lang)
+Translate(cltop,cltop_tr,cltop_var,lang)
+Translate(clbottom,clbottom_tr,clbottom_var,lang)
 
-Translate(dress,dress_tr,dress_var,"USes")
-Translate(cltop,cltop_tr,cltop_var,"USes")
-Translate(clbottom,clbottom_tr,clbottom_var,"USes")
-
-Translate(head,head_tr,head_var,"USes")
-Translate(accessories,accessories_tr,accessories_var,"USes")
-Translate(shoes,shoes_tr,shoes_var,"USes")
-Translate(socks,socks_tr,socks_var,"USes")
-Translate(bags,bags_tr,bags_var,"USes")
+Translate(head,head_tr,head_var,lang)
+Translate(accessories,accessories_tr,accessories_var,lang)
+Translate(shoes,shoes_tr,shoes_var,lang)
+Translate(socks,socks_tr,socks_var,lang)
+Translate(bags,bags_tr,bags_var,lang)
+}
+TranslateAll("USes")
 // console.log(bags)
 
 let dressup = dress.concat(cltop,clbottom,head,accessories,shoes,socks,bags);
@@ -160,35 +162,35 @@ async function DisplayTrini (items,wrapper, elemXpag,page) {
             itemElement.classList.add("trinip");
             if (unItem.sourceSheet == "Headwear"){
                 itemElement.classList.add("head")
-                itemElement.innerHTML +=`<img id="trini_imagen${i}_0" class="photo_trini" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
+                itemElement.innerHTML +=`<img id="trini_imagen${i}_0" class="photo_trini" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 
             }else if(unItem.sourceSheet == "Dress-Up"){
                 itemElement.classList.add("dress","dresup");
-                itemElement.innerHTML +=`<img id="trini_imagen${i}_1" class="photo_trini dress" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
+                itemElement.innerHTML +=`<img id="trini_imagen${i}_1" class="photo_trini dress" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 
             }else if(unItem.sourceSheet == "Tops"){
                 itemElement.classList.add("top","dresup");
-                itemElement.innerHTML +=`<img id="trini_imagen${i}_1" class="photo_trini top" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
+                itemElement.innerHTML +=`<img id="trini_imagen${i}_1" class="photo_trini top" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 
             }else if(unItem.sourceSheet == "Bottoms"){
                 itemElement.classList.add("botto");
-                itemElement.innerHTML +=`<img id="trini_imagen${i}_2" class="photo_trini bottom" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
+                itemElement.innerHTML +=`<img id="trini_imagen${i}_2" class="photo_trini bottom" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 
             }else if(unItem.sourceSheet == "Shoes"){
                 itemElement.classList.add("shoe");
-                itemElement.innerHTML +=`<img id="trini_imagen${i}_4" class="photo_trini" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
+                itemElement.innerHTML +=`<img id="trini_imagen${i}_4" class="photo_trini" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 
             }else if(unItem.sourceSheet == "Socks"){
                 itemElement.classList.add("sock");
-                itemElement.innerHTML +=`<img id="trini_imagen${i}_3" class="photo_trini" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
+                itemElement.innerHTML +=`<img id="trini_imagen${i}_3" class="photo_trini" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 
             }else if(unItem.sourceSheet == "Accessories"){
                 itemElement.classList.add("accessorie");
-                itemElement.innerHTML +=`<img id="trini_imagen${i}_5" class="photo_trini" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
+                itemElement.innerHTML +=`<img id="trini_imagen${i}_5" class="photo_trini" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 
             }else if(unItem.sourceSheet == "Bags"){
                 itemElement.classList.add("bag");
-                itemElement.innerHTML +=`<img id="trini_imagen${i}_6" class="photo_trini" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
+                itemElement.innerHTML +=`<img id="trini_imagen${i}_6" class="photo_trini" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 
             }
 

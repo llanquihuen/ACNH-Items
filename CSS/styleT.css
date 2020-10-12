@@ -748,6 +748,8 @@ height: auto;
     border-top-right-radius: 10px;
 
 }
+select { width: 400px; text-align-last:center; }
+
 .div_buscador2{
     display: inline;
     color: rgb(65, 0, 13);
@@ -981,6 +983,9 @@ height: auto;
 
 
 @media (max-width: 709px){
+    .div_buscador_trini{
+        margin: 0;
+    }
     .mini{
         font-size: 9px;
     }
@@ -1153,8 +1158,8 @@ height: auto;
     }
     .descr{
         font-weight: 600;
-        line-height: 1.5;
-        font-size: 10px;
+        line-height: 1.4;
+        font-size: 9px;
         margin: 0px -1px 3px 3px;
         overflow-y: hidden;
     }

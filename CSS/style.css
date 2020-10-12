@@ -690,7 +690,19 @@ footer{
     box-shadow: inset 2px 2px 5px rgb(1, 0, 80), 2px 2px 3px rgba(255, 255, 255, 0.5);
     background-color: rgb(128, 132, 255);
 }
+#lositems .imagenpeq:hover{
+    box-shadow: inset 0px 0px 3px rgb(104, 104, 104), 0px 0px 3px rgba(56, 56, 56, 0.5);
+}
+#lositems .imagenpeq{
+    box-shadow: inset 1px 1px 3px rgb(191, 235, 199), 2px 2px 3px rgba(56, 56, 56, 0.5);
 
+    border-radius: 5px;
+    background-color: rgba(125, 196, 118, 0.329);
+}
+#lositems .activeimag{
+    box-shadow: inset 2px 2px 5px rgb(0, 80, 27), 2px 2px 3px rgba(255, 255, 255, 0.5);
+    background-color: rgb(90, 206, 105);
+}
 .bayas{
     margin-top: -10px;
     position: relative;
@@ -975,12 +987,20 @@ border: 3px solid  rgb(255, 191, 166);
         grid-template-columns: repeat(auto-fit, minmax(305px, auto));
         /* padding: 4rem 1rem 4rem 1rem; */
     }
+    #lositemsropa{
+        grid-template-columns: repeat(auto-fit, minmax(305px, auto));
+    }
     .photo{
         width:152px;
         height: 152px;
     }
 }
 @media (max-width: 1162px){
+    .boton_top{
+        padding: 0.8rem 1.8rem;
+
+        align-self: center;
+    }
     .precios{
         font-size: 13px;
     }
@@ -988,6 +1008,12 @@ border: 3px solid  rgb(255, 191, 166);
         margin:0.5rem  0rem;
     }
     #lositems{
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+        padding: 2rem 0.3rem 2rem 0.3rem;
+
+    }
+    #lositemsropa{
         gap: 12px;
         grid-template-columns: repeat(auto-fit, minmax(280px, auto));
         padding: 2rem 0.3rem 2rem 0.3rem;
@@ -1079,6 +1105,11 @@ border: 3px solid  rgb(255, 191, 166);
         gap: 3px;
         grid-template-columns: repeat(auto-fit, minmax(225px, auto));
     }
+    #lositemsropa{
+        gap: 3px;
+        grid-template-columns: repeat(auto-fit, minmax(225px, auto));
+    }
+
     .precios{
         padding-top: 0;
         margin-top:23px;
@@ -1119,6 +1150,10 @@ border: 3px solid  rgb(255, 191, 166);
     }
 }
 @media (max-width: 709px){
+    .boton_top{
+        padding: 0.5rem 1.0rem;
+        font-size: 16px;
+    }
     .mini{
         font-size: 9px;
     }
@@ -1156,8 +1191,24 @@ border: 3px solid  rgb(255, 191, 166);
         grid-template-rows: 2fr 2fr 1fr  1fr 2fr 2fr;
 
         max-height: 200px;
-        min-width: 150px;
-        max-width: 160px;
+        min-width: 165px;
+        max-width: 170px;
+        grid-template-areas:
+        "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
+        "photo  photo  photo   photo   precios precios precios precios "
+        "photo  photo  photo   photo   ctext   comprar  ctext ctext "
+        "photo  photo  photo   photo   extra   extra   extra   extra   "
+        "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
+        "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
+    }
+    #casilla{
+        grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
+
+        grid-template-rows: 2fr 2fr 1fr  1fr 2fr 2fr;
+
+        max-height: 200px;
+        min-width: 165px;
+        max-width: 170px;
         grid-template-areas:
         "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
         "photo  photo  photo   photo   precios precios precios precios "
