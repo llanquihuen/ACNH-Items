@@ -266,7 +266,7 @@ footer{
     margin:0px 0px 0px 0px;
     /* grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr 1fr;
     column-gap: 5px; */
-    
+
     justify-content: center;
     text-align: left;
     /* display: flex;
@@ -275,7 +275,7 @@ footer{
     border-radius: 15px;
     background-color: rgba(251, 218, 255, 0.692);
     /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
-    
+
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
@@ -294,7 +294,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
     grid-template-rows: 0.5fr 1.7fr 1.3fr  1.3fr 1.5fr 1.5fr;
-    
+
     justify-content: center;
     text-align: left;
     /* display: flex;
@@ -304,11 +304,11 @@ footer{
     border-radius: 15px;
     background-color: rgba(218, 225, 255, 0.692);
     /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
-    
+
     color: rgb(0, 0, 0);
     font-weight: bold;
-    
-    
+
+
     grid-template-areas:
     "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
     "photo  photo  photo   photo   precios precios precios precios "
@@ -316,21 +316,21 @@ footer{
     "photo  photo  photo   photo   extra   extra   extra   grilla   "
     "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
     "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
-    
+
 }
 
 .colors0{
     /* margin-top: 3px;
     margin-left: 10px;
     margin-bottom: 3px; */
-    
+
     max-height: 90%;
     max-width: 90%;
     grid-area: colors0;
 }
 .colors1{
     /* margin-top: 3px; */
-    
+
     max-height: 90%;
     max-width: 90%;
     grid-area: colors1;
@@ -338,22 +338,22 @@ footer{
 
 .colors2{
     /* margin-top: 3px; */
-    
+
     max-height: 90%;
     max-width: 90%;
     grid-area: colors2;
-    
+
 }
 .colors3{
     /* margin-top: 3px; */
-    
+
     max-height: 90%;
     max-width: 90%;
     grid-area: colors3;
 }
 .colors4{
     /* margin-left: 10px; */
-    
+
     max-height: 90%;
     max-width: 90%;
     grid-area: colors4;
@@ -413,7 +413,7 @@ footer{
     margin-top: 1rem;
     grid-area: precios;
     overflow-y: hidden;
-    
+
 }
 .comprar{
     grid-area: comprar;
@@ -618,7 +618,7 @@ footer{
     justify-items: center;
 }
 .flexB{
-    height: 130px;
+    height: 115px;
 }
 
 #descr_1{
@@ -653,6 +653,7 @@ footer{
 } */
 #cabezaT{
     margin: 0px;
+    margin-bottom: 20px;
 }
 #cabezaT img{
     width: 100px;
@@ -661,7 +662,7 @@ footer{
 #dressT{
     position: relative;
     z-index: 2;
-    margin-top: -95px;
+    margin-top: -55px;
 }
 .bigger img{
     margin-top: 2px;
@@ -671,28 +672,28 @@ footer{
 #panT{
     position: relative;
     z-index: 1;
-    margin-top: -30px;
+    margin-top: -40px;
 }
 #calceT{
     margin-top: -50px;
     margin-left: 220px;
 }
 #zapaT{
-    margin-top: -110px;
+    margin-top: -85px;
 }
 #zapaT img{
 width: 100px;
 height: auto;
 }
 #acceT{
-    margin-top: -50px;
+    margin-top: -100px;
 
     margin-right: 230px;
 
 }
 #mochiT{
 
-    margin-top: -570px;
+    margin-top: -480px;
 
     margin-left: 220px;
 }
@@ -700,7 +701,7 @@ height: auto;
 #random{
 
     /* margin:1rem 0rem 1rem 15rem; */
-    margin-top: -50px;
+    /* margin-top: 150px; */
     justify-self: center;
     background-color: rgba(230, 141, 141, 0.658);
     color: rgb(49, 49, 49);
@@ -936,7 +937,7 @@ select { width: 400px; text-align-last:center; }
 
 
 @media (max-width: 1162px){
-  
+
     .container{
         margin:0.5rem  0rem;
     }
@@ -1021,14 +1022,15 @@ select { width: 400px; text-align-last:center; }
 
 
 @media (max-width: 557px){
- 
+
     /* -----------TRINI----------- */
+    
     .casilla{
         margin: 6px 0px 3px 0px;
         max-height: 200px;
         min-width: 160px;
         max-width: 170px;
- 
+
     }
     #casilla1,#casilla2,#casilla3,#casilla4,#casilla5{
         margin: 0 0px;
@@ -1052,8 +1054,8 @@ select { width: 400px; text-align-last:center; }
         height: 90px;
     }
     .bigger img{
-        margin-bottom: -50px;
-        width: 135px;
+        margin-bottom: -40px;
+        width: 128px;
         height: auto;
     }
     .photo_trini{
@@ -1085,11 +1087,11 @@ select { width: 400px; text-align-last:center; }
         margin-bottom: 20px;
     }
     #dressT{
-        margin-bottom: -75px;
+        margin-bottom: 0px;
         margin-left: -50px;
     }
     #zapaT{
-        margin-bottom:-300px;
+        margin-bottom:-160px;
         margin-left: -50px;
     }
     #panT{
@@ -1097,28 +1099,28 @@ select { width: 400px; text-align-last:center; }
         margin-left: -50px;
     }
     #mochiT{
-        margin-bottom: -540px;
+        margin-bottom: -320px;
         margin-left: 100px;
     }
     #calceT{
-        margin-bottom: -195px;
+        margin-bottom: -105px;
         margin-left: 110px;
     }
     #panT{
-        margin-bottom: -130px;
+        margin-bottom: -60px;
     }
     #mochiT img,#cabezaT img,#calceT img,#acceT img,#zapaT img{
         width: 70px;
         height: auto;
     }
     #acceT{
-        margin-bottom: 10px;
+        margin-bottom: -30px;
         margin-right: -100px;
     }
     #random{
-        margin: auto;
-        margin-top: 90px;
-        margin-bottom: -45px;
+        margin: 0 auto;
+        /* margin-top: 90px; */
+        /* margin-bottom: -45px; */
         font-size: 16px;
         width: auto;
     }
@@ -1149,8 +1151,8 @@ select { width: 400px; text-align-last:center; }
         align-self: center;
     }
     .flexB{
-        align-items: flex-end;
-        height: 165px;
+        align-items: flex-start;
+        height: 115px;
         gap: 0;
     }
     #descr_1{
@@ -1223,8 +1225,8 @@ select { width: 400px; text-align-last:center; }
     .extra{
         font-size: 9px;
     }
-    
-    
+
+
 }
 
 
