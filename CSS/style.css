@@ -138,6 +138,17 @@ footer{
 
 
 }
+.trini{
+    display: flex;
+    background-color: rgba(83, 20, 83, 0.7);
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: solid 2px rgb(83, 20, 83);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(10, 0, 0, 0.5), inset 3px 3px 3px rgba(187, 187, 187, 0.671);
+
+
+}
 .buscador{
     flex-grow: 1;
     position: relative;
@@ -1086,7 +1097,7 @@ border: 3px solid  rgb(255, 191, 166);
         height: auto;
         width: 80%;
     }
-    #casilla{
+    #lositemsropa #casilla{
         height: 289px;
         min-width: 200px;
     }
@@ -1133,14 +1144,20 @@ border: 3px solid  rgb(255, 191, 166);
         padding: 0.1rem 0.3rem 4rem 0.1rem;
 
     }
-    #casilla{
+    #lositemsropa{
+        gap: 2px;
+        grid-template-columns: repeat(auto-fit, minmax(174px, auto));
+        padding: 0.1rem 0.3rem 4rem 0.1rem;
+
+    }
+    #lositemsropa #casilla{
         grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
 
         grid-template-rows: 2fr 2fr 1fr  1fr 2fr 2fr;
 
         max-height: 200px;
         min-width: 150px;
-        max-width: 200px;
+        max-width: 160px;
         grid-template-areas:
         "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
         "photo  photo  photo   photo   precios precios precios precios "
@@ -1282,6 +1299,18 @@ border: 3px solid  rgb(255, 191, 166);
     #check_btns2{
         column-gap: 10px;
         grid-template-columns: 1fr 2fr;
+    }
+    .trini{
+        padding: 0;
+        margin-left: 25px;
+        margin-bottom: 3px;
+        align-self: stretch;
+        font-size: 13px;
+    }
+    .trini img{
+    width: 54px;
+    height: auto;
+
     }
 }
 
