@@ -29,7 +29,8 @@ const removeAccents = (str) => {return str.normalize("NFD").replace(/[\u0300-\u0
 (async ()=>{
 
 ////-----------------OBTENER ITEMS
-let all =  await getData("./assets/items.json");
+let all =  await getData("./assets/ropa.json");
+
 
 //-----------ROPA
 let dress=[];all.forEach((clo)=>{if(clo.sourceSheet == "Dress-Up"){dress.push(clo)}
@@ -103,6 +104,25 @@ function Translate (array,tr,varia,idioma){
         //console.log(dress_var[index2].locale["USes"]);
     })
 }
+
+let idioma = ""
+console.log(localStorage.getItem("idioma"))
+if (localStorage.getItem("idioma")=== null){localStorage.setItem("idioma", "USes");}
+if (localStorage.getItem("idioma")=== "USen") idioma = ("USen");
+if (localStorage.getItem("idioma")=== "EUen") idioma = ("EUen");
+if (localStorage.getItem("idioma")=== "EUde") idioma = ("EUde");
+if (localStorage.getItem("idioma")=== "EUes") idioma = ("EUes");
+if (localStorage.getItem("idioma")=== "USes") idioma = ("USes");
+if (localStorage.getItem("idioma")=== "EUfr") idioma = ("EUfr");
+if (localStorage.getItem("idioma")=== "USfr") idioma = ("USfr");
+if (localStorage.getItem("idioma")=== "EUit") idioma = ("EUit");
+if (localStorage.getItem("idioma")=== "EUnl") idioma = ("EUnl");
+if (localStorage.getItem("idioma")=== "CNzh") idioma = ("CNzh");
+if (localStorage.getItem("idioma")=== "TWzh") idioma = ("TWzh");
+if (localStorage.getItem("idioma")=== "JPja") idioma = ("JPja");
+if (localStorage.getItem("idioma")=== "KRko") idioma = ("KRko");
+if (localStorage.getItem("idioma")=== "EUru") idioma = ("EUru");
+
 function TranslateAll(lang){
 Translate(dress,dress_tr,dress_var,lang)
 Translate(cltop,cltop_tr,cltop_var,lang)
@@ -114,7 +134,8 @@ Translate(shoes,shoes_tr,shoes_var,lang)
 Translate(socks,socks_tr,socks_var,lang)
 Translate(bags,bags_tr,bags_var,lang)
 }
-TranslateAll("USes")
+TranslateAll(idioma)
+
 // console.log(bags)
 
 let dressup = dress.concat(cltop,clbottom,head,accessories,shoes,socks,bags);
@@ -205,7 +226,8 @@ async function DisplayTrini (items,wrapper, elemXpag,page) {
     }
 
 }
-
+const randomRopa = document.getElementById("random");
+const buscaTrinii = document.getElementById("buscaTrini");
 
 async function PrimerDisplay(){
     await DisplayTrini(head,fetchAsyncId,xPag,estaPag)
@@ -217,8 +239,11 @@ async function PrimerDisplay(){
     LosItems ()
     FotoPersonajes()
     DetallesAbajo()
-    
-
+    document.getElementById("loadin").classList.add("displaynone")
+    if (buscaTrinii.value == 1){
+        randomRopa.classList.add("displayhidden")
+        randomRopa.classList.remove("realhidden")    
+    }
 };
 
 PrimerDisplay()
@@ -282,11 +307,8 @@ function FotoPersonaje (lugarID, lugarHTML, clase,id) {
 
 }
 
-const randomRopa = document.getElementById("random");
-const buscaTrinii = document.getElementById("buscaTrini");
 if (buscaTrinii.value == 1){
     randomRopa.classList.add("displayhidden")
-
 }
 
 function buscarRopa (ropa, donde){
@@ -321,6 +343,18 @@ function buscarRopa (ropa, donde){
     })
 
 }
+
+let queIdioma = document.getElementById("translate");
+console.log(queIdioma)
+queIdioma.addEventListener("change", (e)=>{
+    idioma = queIdioma.value
+    buscaTrinii.value = 1
+    document.getElementById("elestilo").innerHTML = ""
+    TranslateAll(idioma)
+    PrimerDisplay()
+
+    localStorage.setItem("idioma", idioma);
+})
 
 buscarRopa(head,fetchAsyncId)
 buscarRopa(dresses,fetchAsyncId2)

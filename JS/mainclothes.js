@@ -18,11 +18,8 @@ const removeAccents = (str) => {return str.normalize("NFD").replace(/[\u0300-\u0
 (async ()=>{
 
 ////-----------------OBTENER ITEMS
-let item1 =  await getData("https://acnhapi.com/v1a/houseware");
-let item2 = await getData("https://acnhapi.com/v1a/misc");
-let item3 = await getData("https://acnhapi.com/v1a/wallmounted");
-let items = item1.concat(item2,item3);
-let all =  await getData("./assets/items.json");
+
+let all =  await getData("./assets/ropa.json");
 
 
 //-----------ROPA
@@ -102,17 +99,46 @@ function Translate (array,tr,varia,idioma){
     })
 }
 
-Translate(dress,dress_tr,dress_var,"USes")
-Translate(cltop,cltop_tr,cltop_var,"USes")
-Translate(clbottom,clbottom_tr,clbottom_var,"USes")
+let idioma = ""
+console.log(localStorage.getItem("idioma"))
+if (localStorage.getItem("idioma")=== null){localStorage.setItem("idioma", "USes");}
+if (localStorage.getItem("idioma")=== "USen") idioma = ("USen");
+if (localStorage.getItem("idioma")=== "EUen") idioma = ("EUen");
+if (localStorage.getItem("idioma")=== "EUde") idioma = ("EUde");
+if (localStorage.getItem("idioma")=== "EUes") idioma = ("EUes");
+if (localStorage.getItem("idioma")=== "USes") idioma = ("USes");
+if (localStorage.getItem("idioma")=== "EUfr") idioma = ("EUfr");
+if (localStorage.getItem("idioma")=== "USfr") idioma = ("USfr");
+if (localStorage.getItem("idioma")=== "EUit") idioma = ("EUit");
+if (localStorage.getItem("idioma")=== "EUnl") idioma = ("EUnl");
+if (localStorage.getItem("idioma")=== "CNzh") idioma = ("CNzh");
+if (localStorage.getItem("idioma")=== "TWzh") idioma = ("TWzh");
+if (localStorage.getItem("idioma")=== "JPja") idioma = ("JPja");
+if (localStorage.getItem("idioma")=== "KRko") idioma = ("KRko");
+if (localStorage.getItem("idioma")=== "EUru") idioma = ("EUru");
 
-Translate(head,head_tr,head_var,"USes")
-Translate(accessories,accessories_tr,accessories_var,"USes")
-Translate(shoes,shoes_tr,shoes_var,"USes")
-Translate(socks,socks_tr,socks_var,"USes")
-Translate(bags,bags_tr,bags_var,"USes")
+function TranslateAll(lang){
+Translate(dress,dress_tr,dress_var,lang)
+Translate(cltop,cltop_tr,cltop_var,lang)
+Translate(clbottom,clbottom_tr,clbottom_var,lang)
+
+Translate(head,head_tr,head_var,lang)
+Translate(accessories,accessories_tr,accessories_var,lang)
+Translate(shoes,shoes_tr,shoes_var,lang)
+Translate(socks,socks_tr,socks_var,lang)
+Translate(bags,bags_tr,bags_var,lang)
+}
+TranslateAll(idioma)
+
 // console.log(bags)
-
+let queIdioma = document.getElementById("translate");
+console.log(queIdioma)
+queIdioma.addEventListener("change", (e)=>{
+    idioma = queIdioma.value
+    TranslateAll(idioma)
+    DisplayLocal(dressup,fetchAsyncId,xPag,estaPag)
+    localStorage.setItem("idioma", idioma);
+})
 
 
 
@@ -134,36 +160,36 @@ function Contar (array){
     return contarArray
     }
 }
-dressup.forEach((clo)=>{
-    // console.log(clo.variants[0].buy)
-    // console.log(clo["size".trim()])
-    // console.log(clo.variants[0]["source"])
-    // console.log(clo.style1)
-    // console.log(Contar(clo.variants))
-    // if (Contar(clo.variants)<=4){
-    //     let i2= 0;
-    //     for (i2 = 0;i2 < Contar(clo.variants); i2++){
-    //         if(i2==0){
-    //             console.log(i2)
-    //             try{console.log(clo.variants[i2].closetImage);
-    //             }catch{console.log("no1");
-    //             }
-    //         }else{
-    //             console.log(i2)
+// dressup.forEach((clo)=>{
+//     // console.log(clo.variants[0].buy)
+//     // console.log(clo["size".trim()])
+//     // console.log(clo.variants[0]["source"])
+//     // console.log(clo.style1)
+//     // console.log(Contar(clo.variants))
+//     // if (Contar(clo.variants)<=4){
+//     //     let i2= 0;
+//     //     for (i2 = 0;i2 < Contar(clo.variants); i2++){
+//     //         if(i2==0){
+//     //             console.log(i2)
+//     //             try{console.log(clo.variants[i2].closetImage);
+//     //             }catch{console.log("no1");
+//     //             }
+//     //         }else{
+//     //             console.log(i2)
 
-    //             try{console.log(clo.variants[i2].closetImage);
-    //             }catch{console.log("no2");
-    //             }
-    //         }
-    //     }
-    // }
-    // console.log(clo.variants[0].closetImage)
+//     //             try{console.log(clo.variants[i2].closetImage);
+//     //             }catch{console.log("no2");
+//     //             }
+//     //         }
+//     //     }
+//     // }
+//     // console.log(clo.variants[0].closetImage)
 
-    clo.variants.forEach((va)=>{
-        // console.log(clo.variants)
-    })
+//     clo.variants.forEach((va)=>{
+//         // console.log(clo.variants)
+//     })
 
-})
+// })
 
 
 

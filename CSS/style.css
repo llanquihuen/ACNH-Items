@@ -670,7 +670,6 @@ footer{
     grid-area: colors7;
 }
 .bb{
-    margin-left: 5px;
     margin-top: 30px;
     max-height: 140%;
     max-width: 90%;
@@ -678,8 +677,13 @@ footer{
 
 }
 .imagenpeq:hover{
-    box-shadow: inset 0px 0px 3px rgb(104, 104, 104), 0px 0px 3px rgba(56, 56, 56, 0.5);
+    box-shadow: inset 1px 1px 5px rgba(121, 121, 121, 0.534), 1px 1px 1px rgba(134, 134, 134, 0.5);
 }
+.imagenpeq:active{
+    box-shadow: inset 2px 2px 4px rgb(44, 44, 44), 2px 2px 3px rgba(206, 206, 206, 0.5);
+    background-color: rgba(67, 64, 224, 0.664);
+}
+
 .imagenpeq{
     box-shadow: inset 1px 1px 3px rgb(212, 212, 212), 2px 2px 3px rgba(56, 56, 56, 0.5);
 
@@ -687,8 +691,8 @@ footer{
     background-color: rgba(67, 64, 224, 0.329);
 }
 .activeimag{
-    box-shadow: inset 2px 2px 5px rgb(1, 0, 80), 2px 2px 3px rgba(255, 255, 255, 0.5);
-    background-color: rgb(128, 132, 255);
+    box-shadow: inset 2px 2px 4px rgb(44, 44, 44), 2px 2px 3px rgba(206, 206, 206, 0.5);
+    background-color: rgba(67, 64, 224, 0.664);
 }
 #lositems .imagenpeq:hover{
     box-shadow: inset 0px 0px 3px rgb(104, 104, 104), 0px 0px 3px rgba(56, 56, 56, 0.5);
@@ -793,7 +797,8 @@ footer{
     width:42px
 }
 .gull{
-    width:60px
+    width:42px;
+    height: auto;
 }
 .nint{
     margin-left: -13px;
@@ -935,8 +940,22 @@ border: 3px solid  rgb(255, 191, 166);
     border-top-right-radius: 10px;
 }
 
-
-
+#loadin{
+    margin:0 auto;
+    width: 85%;
+    height: auto;
+    align-self: center;
+}
+#gridTr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 3rem;
+}
+#translate{
+    width: fit-content;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
 
 
 @media (max-width: 1462px){
@@ -1126,9 +1145,13 @@ border: 3px solid  rgb(255, 191, 166);
     }
     .imagenpeq{
         height: auto;
-        width: 80%;
+        min-width: 60%;
     }
     #lositemsropa #casilla{
+        height: 289px;
+        min-width: 200px;
+    }
+    #casilla{
         height: 289px;
         min-width: 200px;
     }
@@ -1362,6 +1385,10 @@ border: 3px solid  rgb(255, 191, 166);
     width: 54px;
     height: auto;
 
+    }
+    #translate{
+        margin-left: 1rem;
+        margin-top: 2rem;
     }
 }
 

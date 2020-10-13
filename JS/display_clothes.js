@@ -148,7 +148,7 @@ export async function DisplayLocal (items,wrapper, elemXpag,page) {
             estaPag=totalPag
             DisplayLocal(items,fetchAsyncId,xPag,estaPag)
         }
-
+    }
         // BOTONES IMAGENES // BUSQUEDA IMAGEN
         let imagenp = [...document.getElementsByClassName("imagenpeq")];
         imagenp.forEach((imag) => {
@@ -186,7 +186,7 @@ export async function DisplayLocal (items,wrapper, elemXpag,page) {
                 }
             })
         })
-    }
+    
 }
 export async function DisplayLocalTrini (items,wrapper, elemXpag,page) {
     ////-----------------CONTAR ITEMS

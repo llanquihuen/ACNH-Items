@@ -160,7 +160,11 @@ footer{
 
 
 
-
+#loadin{
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
 .nodisplay{
     /* display: none; */
     opacity: 0;
@@ -381,7 +385,7 @@ footer{
     border-radius: 5px;
 }
 .imagenpeq:hover{
-    box-shadow: inset 0px 0px 3px rgb(0, 0, 0), 0px 0px 3px rgba(56, 56, 56, 0.5);
+    box-shadow: inset 1px 1px 1px rgba(214, 214, 214, 0.534), 1px 1px 1px rgba(56, 56, 56, 0.5);
 }
 .imagenpeq{
     box-shadow: inset 1px 1px 3px rgb(212, 212, 212), 2px 2px 3px rgba(56, 56, 56, 0.5);
@@ -390,8 +394,12 @@ footer{
     background-color: rgba(67, 64, 224, 0.329);
 }
 .activeimag{
-    box-shadow: inset 2px 2px 3px rgb(44, 44, 44), 2px 2px 3px rgba(206, 206, 206, 0.5);
-    background-color: rgba(46, 50, 238, 0.842);
+    box-shadow: inset 2px 2px 4px rgb(44, 44, 44), 2px 2px 3px rgba(206, 206, 206, 0.5);
+    background-color: rgba(67, 64, 224, 0.664);
+}
+.imagenpeq:active{
+    box-shadow: inset 2px 2px 4px rgb(44, 44, 44), 2px 2px 3px rgba(206, 206, 206, 0.5);
+    background-color: rgba(67, 64, 224, 0.664);
 }
 .bayas{
     margin-top: -10px;
@@ -523,10 +531,14 @@ footer{
 
 
 
-
+#translate{
+    width: fit-content;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
 #contgrid{
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 3rem;
 }
 
@@ -580,7 +592,7 @@ footer{
   }
 
   .itemcontainer2::-webkit-scrollbar-thumb {
-    background-image: url(/assets/updown.png);
+    background-image: url(../assets/updown.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px 27px;
@@ -729,6 +741,16 @@ height: auto;
 #random:focus{
     outline: none;
     border: solid 2px rgb(85, 15, 58);
+}
+#random:hover{
+    outline: none;
+    border: solid 2px rgb(85, 15, 58);
+    box-shadow: inset 2px 2px 3px rgb(212, 212, 212), 1px 1px 2px rgba(56, 56, 56, 0.5);
+
+}
+#random:active{
+    background-color: rgba(216, 112, 112, 0.863);
+    box-shadow: inset 3px 3px 3px rgb(58, 58, 58), 2px 2px 4px rgba(216, 216, 216, 0.5);
 }
 .qEstilo{
     background-color: rgb(88, 0, 139);
@@ -1004,7 +1026,7 @@ select { width: 400px; text-align-last:center; }
         margin:0rem  0rem;
     }
     #contgrid{
-        grid-template-columns: 0fr 1fr 0fr;
+        grid-template-columns: 1fr 1fr;
     }
     .trini_grid1{
         width: 65vw;
@@ -1022,7 +1044,11 @@ select { width: 400px; text-align-last:center; }
 
 
 @media (max-width: 557px){
-
+    #translate{
+        width: 80%;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
     /* -----------TRINI----------- */
     
     .casilla{
@@ -1091,7 +1117,7 @@ select { width: 400px; text-align-last:center; }
         margin-left: -50px;
     }
     #zapaT{
-        margin-bottom:-160px;
+        margin-bottom:-155px;
         margin-left: -50px;
     }
     #panT{
