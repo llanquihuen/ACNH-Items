@@ -206,6 +206,7 @@ footer{
     margin-right: 1rem;
 }
 .grid_1 a{
+
     font-weight: bolder;
     color: rgb(216, 216, 216);
     text-decoration: none;
@@ -213,12 +214,14 @@ footer{
 
 }
 .trini{
+    font-size: 18px;
+    padding-right: 16px;
     display: flex;
     background-color: rgba(83, 20, 83, 0.7);
     margin-right: 1rem;
     padding: 0.5rem;
     border: solid 2px rgb(83, 20, 83);
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(10, 0, 0, 0.5), inset 3px 3px 3px rgba(187, 187, 187, 0.671);
 
 
@@ -487,7 +490,7 @@ footer{
     justify-content: space-evenly;
 
 }
-#lositemsropa #casilla{
+#lositemsropa .item{
     border:3px solid rgba(28, 0, 128, 0.459);
     background-color: rgba(218, 225, 255, 0.692);
 }
@@ -495,60 +498,11 @@ footer{
     background-color: rgba(13, 56, 196, 0.274);
 }
 
-#casilla{
-    height: 400px;
-    max-width: 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
-    grid-template-rows: 0.5fr 1.7fr 1.3fr  1.3fr 1.5fr 1.5fr;
 
-    justify-content: center;
-    text-align: left;
-    /* display: flex;
-    justify-content: space-between;  */
-    padding: 0px;
-    border:3px solid rgba(0, 128, 0, 0.459);
-    border-radius: 15px;
-    background-color: rgba(238, 255, 218, 0.692);
-    /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
-
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-
-
-    grid-template-areas:
-    "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
-    "photo  photo  photo   photo   precios precios precios precios "
-    "photo  photo  photo   photo   comprar ctext ctext ctext "
-    "photo  photo  photo   photo   extra   extra   extra   grilla   "
-    "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
-    "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
-
-}
 .casillas{
     margin: 10px 0;
 }
-#casilla1,#casilla2,#casilla3,#casilla4,#casilla5{
-    max-height: 130px;
-    width: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    margin:0px 0px 0px 0px;
-    /* grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr 1fr;
-    column-gap: 5px; */
 
-    justify-content: center;
-    text-align: left;
-    /* display: flex;
-    justify-content: space-between;  */
-    border:3px solid rgba(107, 0, 128, 0.459);
-    border-radius: 15px;
-    background-color: rgba(251, 218, 255, 0.692);
-    /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
-
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
 .trinip {
     cursor: pointer;
     width:73px;
@@ -598,7 +552,9 @@ footer{
     height: 162px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    justify-self: center
+    justify-self: center;
+    z-index: 2;
+
 }
 .photo_trini{
     width:72px;
@@ -669,10 +625,78 @@ footer{
     max-width: 90%;
     grid-area: colors7;
 }
+.lapiz{
+    grid-area: lapiz;
+    position: relative;
+    align-self: center;
+    justify-self: left;
+    height: 70%;
+    z-index: 0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.interact{
+    grid-area: play;
+    position: relative;
+    align-self: center;
+    justify-self: left;
+    height: 70%;
+    z-index: 0;
+    margin-bottom: 5px;
+}
+.comprari{
+    position: relative;
+    display: flex;
+    /* gap: 10px; */
+    border: 2px solid rgb(126, 138, 16);
+    background-color: rgb(231, 233, 149);
+    box-shadow: inset 1px 1px 3px rgb(233, 233, 233), 2px 2px 3px rgba(56, 56, 56, 0.5);
+    border-radius: 12px;
+    cursor: pointer;
+    width: 250%;
+    height: 80%;
+    overflow-y: hidden;
+    align-self: center;
+}
+.comprari:hover{
+    box-shadow: inset 1px 1px 5px rgba(121, 121, 121, 0.534), 1px 1px 1px rgba(134, 134, 134, 0.5);
+}
+.comprari:active{
+    box-shadow: inset 2px 2px 4px rgb(44, 44, 44), 2px 2px 3px rgba(206, 206, 206, 0.5);
+}
+.comprari p{
+    text-align: end;
+    font-size: 1ch;
+    margin-right:auto;
+    padding-right: 10px;
+}
+.comprari img{
+    margin-left: auto;
+}
+.remak{
+    grid-area: remak;
+    position: relative;
+    justify-self: start;
+    height: 90%;
+    z-index: 0;
+}
+.remakp{
+    background-color: rgba(222, 255, 218, 0.7);
+    margin: 0;
+    padding: 0;
+    height: 1.1rem;
+    width: 1rem;
+    overflow-y: hidden;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(12, 104, 29, 0.4);
+    left: 2px;
+
+}
 .bb{
-    margin-top: 30px;
-    max-height: 140%;
-    max-width: 90%;
+    margin-top: 20px;
+    max-height: 130%;
+    width: 90%;
     border-radius: 5px;
 
 }
@@ -681,15 +705,15 @@ footer{
 }
 .imagenpeq:active{
     box-shadow: inset 2px 2px 4px rgb(44, 44, 44), 2px 2px 3px rgba(206, 206, 206, 0.5);
-    background-color: rgba(67, 64, 224, 0.664);
 }
 
 .imagenpeq{
     box-shadow: inset 1px 1px 3px rgb(212, 212, 212), 2px 2px 3px rgba(56, 56, 56, 0.5);
-
+    justify-self: center;
     border-radius: 5px;
     background-color: rgba(67, 64, 224, 0.329);
 }
+
 .activeimag{
     box-shadow: inset 2px 2px 4px rgb(44, 44, 44), 2px 2px 3px rgba(206, 206, 206, 0.5);
     background-color: rgba(67, 64, 224, 0.664);
@@ -699,9 +723,13 @@ footer{
 }
 #lositems .imagenpeq{
     box-shadow: inset 1px 1px 3px rgb(191, 235, 199), 2px 2px 3px rgba(56, 56, 56, 0.5);
-
+    justify-self: center;
     border-radius: 5px;
     background-color: rgba(125, 196, 118, 0.329);
+}
+#lositems .imagenpeq:active{
+    box-shadow: inset 2px 2px 5px rgb(0, 80, 27), 2px 2px 3px rgba(255, 255, 255, 0.5);
+
 }
 #lositems .activeimag{
     box-shadow: inset 2px 2px 5px rgb(0, 80, 27), 2px 2px 3px rgba(255, 255, 255, 0.5);
@@ -747,8 +775,8 @@ footer{
 .grilla{
     grid-area: grilla;
 
-    position: relative;
-    top:-179px;
+    position: absolute;
+    top:-160px;
     right: 5px;
     height: 30px;
     justify-self: right;
@@ -847,6 +875,16 @@ footer{
     margin:5px;
     cursor: pointer
 }
+
+.pag-boton2{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    width:0 20px;
+    place-items: center;
+
+}
 .pag-boton:focus{
 outline: none;
 border-radius: 5px;
@@ -863,6 +901,11 @@ border: 3px solid  rgb(255, 191, 166);
 .ultimop{
     margin-left: 15px;
 
+    background-color: rgb(130, 231, 130);
+
+}
+
+.ultimop2{
     background-color: rgb(130, 231, 130);
 
 }
@@ -899,21 +942,35 @@ border: 3px solid  rgb(255, 191, 166);
     padding: 2px;
     animation: flickerAnimation 1.1s;
 }
-
-#casilla{
+.manyimg{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top:67%;
+    column-gap:2%;
+    row-gap: 12px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.imagplus{
+    width: 22%;
+}
+.item{
+    position: relative;
+    overflow-y: visible;
     height: 400px;
     max-width: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
-    grid-template-rows: 0.5fr 1.7fr 1.3fr  1.3fr 1.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1.7fr 1.3fr  1.3fr 1fr 1.5fr 1.5fr;
 
     justify-content: center;
     text-align: left;
     /* display: flex;
     justify-content: space-between;  */
     padding: 0px;
-    border:3px solid rgba(0, 128, 0, 0.459);
-    border-radius: 15px;
+    border:3px solid rgb(110, 191, 110);
+    border-radius: 10px;
     background-color: rgba(238, 255, 218, 0.692);
     /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
 
@@ -926,10 +983,28 @@ border: 3px solid  rgb(255, 191, 166);
     "photo  photo  photo   photo   precios precios precios precios "
     "photo  photo  photo   photo   comprar ctext ctext ctext "
     "photo  photo  photo   photo   extra   extra   extra   grilla   "
+    "remak  lapiz  play   light   extra   extra   extra   grilla   "
     "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
     "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
 
 }
+.item::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(196, 193, 13, 0.274);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.item::-webkit-scrollbar-thumb {
+    background: rgb(110, 191, 110);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+  }
+.item::-webkit-scrollbar-thumb:hover {
+    background: rgb(15, 168, 61);
+  }
 
 .ropac{
     color: rgb(238, 238, 238);
@@ -956,6 +1031,77 @@ border: 3px solid  rgb(255, 191, 166);
     margin-left: 4rem;
     margin-top: 2rem;
 }
+
+/* display: grid;
+grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
+grid-template-rows: 0.5fr 1.7fr 1.3fr  1.3fr 1fr 1.5fr 1.5fr;
+
+justify-content: center;
+text-align: left;
+/* display: flex;
+cpadding: 0px;
+border:3px solid rgb(110, 191, 110);
+border-radius: 10px; */
+.itemReceta{
+    position: absolute;
+    background-color: rgba(228, 248, 214, 0.95);
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.foto_receta{
+    width: 40%;
+    height: auto;
+    
+}
+.cantidad_receta{
+    display: absolute;
+    text-align: center;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 1.5rem;
+    color: black;
+    background-color: whitesmoke;
+}
+.obj_receta{
+    margin: auto 0;
+    width: 30%;
+    height: auto;
+}
+.obj_receta img{
+    margin-top: -30%;
+    width: 100%;
+    height:auto;
+}
+.recetaFlex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+}
+.compraris{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.compr2{
+    height: 50%;
+}
+.volver{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    right: 0;
+}
+.ctext2{
+    position: relative;;
+    font-size: 12px;
+    top: 35px;
+}
+
 
 
 @media (max-width: 1462px){
@@ -1069,6 +1215,13 @@ border: 3px solid  rgb(255, 191, 166);
     }
 }
 @media (max-width: 933px){
+    .remakp{
+        margin-top: -7px;
+        font-size: 12px;
+        width: 10px;
+        height: 13px;
+        border-radius: 10px;
+    }
     #logo img{
         max-height: 60px;
     }
@@ -1143,22 +1296,40 @@ border: 3px solid  rgb(255, 191, 166);
         height: auto;
         width: 90%;
     }
+    .comprari{
+    height: 80%;
+    width: 250%;
+    }
+    .comprari img{
+        height: 30px;
+        width: 30px;
+    }
+    .comprari p{
+        font-size: 8px;
+    }
+
     .imagenpeq{
         height: auto;
         min-width: 60%;
     }
-    #lositemsropa #casilla{
+    .imagplus{
+        width: 22%;
+        min-width: 0;
+    }
+
+    #lositemsropa .item{
         height: 289px;
         min-width: 200px;
     }
-    #casilla{
+    .item{
         height: 289px;
         min-width: 200px;
     }
     .grilla{
-        top: -130px;
+        top: -120px;
     }
     .extra{
+        margin-top:-25px;
         font-size: 9px;
     }
     .ctext{
@@ -1173,6 +1344,11 @@ border: 3px solid  rgb(255, 191, 166);
     }
 }
 @media (max-width: 709px){
+    .extra{
+        margin-top:-14px;
+        margin-right: -16px;
+        font-size: 8px;
+    }
     .boton_top{
         padding: 0.5rem 1.0rem;
         font-size: 16px;
@@ -1208,10 +1384,10 @@ border: 3px solid  rgb(255, 191, 166);
         padding: 0.1rem 0.3rem 4rem 0.1rem;
 
     }
-    #lositemsropa #casilla{
+    #lositemsropa .item{
         grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
 
-        grid-template-rows: 2fr 2fr 1fr  1fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr 1fr  1fr 1fr 2fr 2fr;
 
         max-height: 200px;
         min-width: 165px;
@@ -1224,10 +1400,10 @@ border: 3px solid  rgb(255, 191, 166);
         "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
         "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
     }
-    #casilla{
+    .item{
         grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
 
-        grid-template-rows: 2fr 2fr 1fr  1fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr 1fr  1fr 1fr 2fr 2fr;
 
         max-height: 200px;
         min-width: 165px;
@@ -1237,6 +1413,7 @@ border: 3px solid  rgb(255, 191, 166);
         "photo  photo  photo   photo   precios precios precios precios "
         "photo  photo  photo   photo   ctext   comprar  ctext ctext "
         "photo  photo  photo   photo   extra   extra   extra   extra   "
+        "remak  lapiz  play   light   extra   extra   extra   grilla   "
         "colors0 colors0 colors1 colors1 colors2 colors2 colors3 colors3 "
         "colors4 colors4 colors5 colors5 colors6 colors6 colors7 colors7 ";
     }
@@ -1257,10 +1434,10 @@ border: 3px solid  rgb(255, 191, 166);
 
         width:80%;
     }
-    .bb{
-        width:100%;
-
+    .imagplus{
+        width: 22%;
     }
+
     .precios{
         margin-top: 5px;
         font-size: 8px;
@@ -1283,6 +1460,21 @@ border: 3px solid  rgb(255, 191, 166);
         height:90%;
         width: auto;
         align-self: center;
+    }
+    .comprari{
+        margin-top:-10px;
+        height:100%;
+        width: 200%;
+        border-radius: 5px;
+        align-self: center;
+    }
+    .comprari img{
+        height: 100%;
+        width: auto;
+        margin: auto;
+    }
+    .comprari p{
+        display: none;
     }
     .ctext{
         font-size: 8px;
@@ -1347,12 +1539,13 @@ border: 3px solid  rgb(255, 191, 166);
         width: 80px;
         height: 35px;
     }
+    .remak img{
+        height: 100%;
+    }
     .grilla{
-        position: relative;
-        top:-96px;
+        top:-86px;
         right: 4px;
         height: 20px;
-        justify-self: right;
 
     }
     .pag-boton{
@@ -1375,13 +1568,15 @@ border: 3px solid  rgb(255, 191, 166);
         grid-template-columns: 1fr 2fr;
     }
     .trini{
-        padding: 0;
-        margin-left: 25px;
-        margin-bottom: 3px;
+        padding-right: 5px;
+        margin:1rem;
+        margin-right: 0;
         align-self: stretch;
-        font-size: 13px;
+        font-size: 14px;
     }
+
     .trini img{
+        margin-right: 5px;
     width: 54px;
     height: auto;
 
@@ -1389,6 +1584,20 @@ border: 3px solid  rgb(255, 191, 166);
     #translate{
         margin-left: 1rem;
         margin-top: 2rem;
+    }
+    .remakp{
+        margin-top: -7px;
+        font-size: 10px;
+        width: 9px;
+        height: 11px;
+        border-radius: 10px;
+    }
+    .lapiz{
+        margin-bottom: 2px;
+    }
+    .interact{
+        margin-bottom: 2px;
+
     }
 }
 

@@ -28,17 +28,16 @@ export async function DisplayLocal (items,wrapper, elemXpag,page) {
     let jsonItems = items.slice(desde, hasta)
     for (let i = 0; i < jsonItems.length; i++){
         let unItem = jsonItems[i];
-        console.log(unItem)
+        // console.log(unItem)
         if (unItem.length == 0){
             console.log("vacio")
         }else{
             let itemElement = document.createElement("div");
-            itemElement.setAttribute("id", "casilla");
+            itemElement.setAttribute("id", `item_${unItem.variants[0].internalId}`);
             itemElement.classList.add("item");
-            // console.log(unItem)
 
             //NOMBRE
-            // console.log(unItem)
+            console.log(unItem)
             itemElement.innerHTML = `<p class="nombre">${titleCase(unItem.name)}</p>`
 
             //PRECIOS
@@ -49,13 +48,14 @@ export async function DisplayLocal (items,wrapper, elemXpag,page) {
             }
 
             //GRID
-
             itemElement.innerHTML += `<img class="grilla" src="assets/grid/${unItem["size"].trim()}.png" alt="bayas">`
 
-
             //SOURCE (Esta mal optimizado, por el texto traducido)
-            if((unItem.variants[0]["source"]) == "Crafting"){
-                itemElement.innerHTML +=  '<img class="comprar" src="assets/DIY.png" alt="DIY"><p class="ctext">Crafteable</p>'
+            if((unItem.variants[0]["source"][0]) == "Crafting"){
+                let comprari = document.createElement("div");
+                comprari.classList.add(`comprari`); 
+                comprari.innerHTML +=  '<img class="comprar" src="assets/DIY.png" alt="DIY"><p class="ctext">Crafteable</p>'
+                itemElement.appendChild(comprari)
             }else if((unItem.variants[0]["source"]) == "Jack"){
                 itemElement.innerHTML +=  '<img class="comprar" src="assets/soponcio.png" alt="jack"><p class="ctext text_center">Soponcio</p>'
             }else if((unItem.variants[0]["source"]) == "Label"){
@@ -104,6 +104,7 @@ export async function DisplayLocal (items,wrapper, elemXpag,page) {
 
             //STYLE
             itemElement.innerHTML += `<p class="extra">${unItem.style1}-${unItem.style2}`
+            // console.log (unItem.variants.length)
 
             // FOTO COLORES
             if (Contar(unItem.variants)<=4){
@@ -237,7 +238,6 @@ export async function DisplayLocalTrini (items,wrapper, elemXpag,page) {
             //GRID
 
             itemElement.innerHTML += `<img class="grilla" src="assets/grid/${unItem["size"].trim()}.png" alt="bayas">`
-
 
             //SOURCE (Esta mal optimizado, por el texto traducido)
             if((unItem.variants[0]["source"]) == "Crafting"){

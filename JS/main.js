@@ -1,6 +1,6 @@
 import getData from "./fetch.js"
 import Display from "./display_items.js"
-import Ordenar from "./order.js"
+import Ordenare from "./order2.js";
 
 let fetchAsyncId = document.getElementById("lositems"),
 paginacionId = document.getElementById("paginacion"),
@@ -14,50 +14,93 @@ xPag=24;
 const removeAccents = (str) => {return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")};
 
 
-
 (async ()=>{
+let fetchAsyncId = document.getElementById("lositems");
 
 ////-----------------OBTENER ITEMS
-let item1 =  await getData("https://acnhapi.com/v1a/houseware");
-let item2 = await getData("https://acnhapi.com/v1a/misc");
-let item3 = await getData("https://acnhapi.com/v1a/wallmounted");
-let items = item1.concat(item2,item3);
-let all =  await getData("./assets/items.json");
 
-//-----------VESTIDOS
-let dressup=[];
-all.forEach((clo)=>{
-    if(clo.sourceSheet == "Dress-Up"){
-        dressup.push(clo)
-    }
-    // console.log("nop")
-    // console.log(clo.sourceSheet);
-})
+let all =  await getData("./assets/itemsMuebles.json");
+
+let item1=[];all.forEach((clo)=>{if(clo.sourceSheet == "Housewares"){item1.push(clo)}})
+let item2=[];all.forEach((clo)=>{if(clo.sourceSheet == "Miscellaneous"){item2.push(clo)}})
+let item3=[];all.forEach((clo)=>{if(clo.sourceSheet == "Wall-mounted"){item3.push(clo)}})
+let items= item1.concat(item2,item3)
 
 //------------NOMBRE
-let dress_tr = await getData("./assets/dresses.json")
-let dress_var = await getData("./assets/dressesvariants.json")
+let furniture_tr = await getData("./assets/translation/furniture2.json")
+let furniture_var = await getData("./assets/translation/variants.json")
+let furniture_hha = await getData("./assets/translation/hhasituation.json")
 
-function Translate (array,tr,varia){
+
+function Translate (array,tr,hha,idioma){
     array.forEach((clo)=>{
-        // console.log(dress_tr.includes(clo.clothGroupId));
-        let index = tr.findIndex(x => x.id === clo.clothGroupId);
-        console.log(tr[index].locale["USes"]);
-        // console.log(clo.variants)
-        clo.variants.forEach((vari)=>{
-            // console.log(vari.internalId)
-            let index2 = varia.findIndex(x => x.id === vari.internalId)
-            try {
-                console.log(varia[index2].locale["USes"])
-            }catch{
-                console.log(vari.variation)
+        let index = tr.findIndex(x => +x.id.match(/\d+/g)[0] === clo.variants[0].internalId);
+        try {
+            clo.name=tr[index].locale[idioma]
+            // let nume = (varia[1].variant_id.match(/\d+/g)[0])
+            // console.log(varia[1].variant_id.match(/\d+/g)[1])
+
+        }catch{
+            // console.log(clo.name)
+            // console.log(index)
+            // console.log("*********************")
+        }
+
+        // console.log(clo.variants[0].internalId)
+
+            let index1 = hha.findIndex(x => x.locale["USen"] === clo.variants[0].themes[0])
+            let index2 = hha.findIndex(x => x.locale["USen"] === clo.variants[0].themes[1])
+
+            if(clo.variants[0].themes[1]){
+                clo.variants[0].themes[1]=hha[index2].locale[idioma]
             }
-        })
-        console.log("*********************")
-    //console.log(dress_var[index2].locale["USes"]);
+            if(clo.variants[0].themes[0]){
+                clo.variants[0].themes[0]=hha[index1].locale[idioma]
+            }
+
+
+
+
+    //     clo.variants.forEach((vari)=>{
+    //         let index2 = varia.findIndex(x => +x.locale."USen" === vari.internalId)
+    //         try {
+    //             clo.name=tr[index].locale[idioma]
+    //         }catch{
+    //             console.log(clo.name)
+    //             console.log("*********************")
+    //         }
+    //     })
+    // //console.log(dress_var[index2].locale["USes"]);
     })
 }
-// Translate(dressup,dress_tr,dress_var)
+let idioma = ""
+console.log(localStorage.getItem("idioma"))
+if (localStorage.getItem("idioma")=== null){localStorage.setItem("idioma", "USes");}
+if (localStorage.getItem("idioma")=== "USen") idioma = ("USen");
+if (localStorage.getItem("idioma")=== "EUen") idioma = ("EUen");
+if (localStorage.getItem("idioma")=== "EUde") idioma = ("EUde");
+if (localStorage.getItem("idioma")=== "EUes") idioma = ("EUes");
+if (localStorage.getItem("idioma")=== "USes") idioma = ("USes");
+if (localStorage.getItem("idioma")=== "EUfr") idioma = ("EUfr");
+if (localStorage.getItem("idioma")=== "USfr") idioma = ("USfr");
+if (localStorage.getItem("idioma")=== "EUit") idioma = ("EUit");
+if (localStorage.getItem("idioma")=== "EUnl") idioma = ("EUnl");
+if (localStorage.getItem("idioma")=== "CNzh") idioma = ("CNzh");
+if (localStorage.getItem("idioma")=== "TWzh") idioma = ("TWzh");
+if (localStorage.getItem("idioma")=== "JPja") idioma = ("JPja");
+if (localStorage.getItem("idioma")=== "KRko") idioma = ("KRko");
+if (localStorage.getItem("idioma")=== "EUru") idioma = ("EUru");
+
+Translate(items,furniture_tr,furniture_hha,idioma)
+
+let queIdioma = document.getElementById("translate");
+// console.log(queIdioma)
+queIdioma.addEventListener("change", (e)=>{
+    idioma = queIdioma.value
+    localStorage.setItem("idioma", idioma);
+    Translate(items,furniture_tr,furniture_hha,idioma)
+    Display(items,fetchAsyncId,xPag,estaPag)
+})
 
 function Contar (array){
     let i = 0;
@@ -67,40 +110,45 @@ function Contar (array){
     return contarArray
     }
 }
-dressup.forEach((clo)=>{
-    // console.log(clo.variants[0].buy)
-    // console.log(clo["size".trim()])
-    // console.log(clo.variants[0]["source"])
-    // console.log(clo.style1)
-    // console.log(Contar(clo.variants))
-    // if (Contar(clo.variants)<=4){
-    //     let i2= 0;
-    //     for (i2 = 0;i2 < Contar(clo.variants); i2++){
-    //         if(i2==0){
-    //             console.log(i2)
-    //             try{console.log(clo.variants[i2].closetImage);
-    //             }catch{console.log("no1");
-    //             }
-    //         }else{
-    //             console.log(i2)
 
-    //             try{console.log(clo.variants[i2].closetImage);
-    //             }catch{console.log("no2");
-    //             }
-    //         }
-    //     }
-    // }
-    // console.log(clo.variants[0].closetImage)
+items.forEach((clo)=>{
+
+    // console.log(clo.versionAdded)
+    // console.log(clo.unlocked)
+    // console.log(clo.unlockNotes)
+    // console.log(clo.set)
+    // console.log(clo.series)
+    // console.log(clo.customizationKitCost)
+
+
+//     console.log(Contar(clo.variants))
+//     if (Contar(clo.variants)<=4){
+//         let i2= 0;
+//         for (i2 = 0;i2 < Contar(clo.variants); i2++){
+//             if(i2==0){
+//                 console.log(i2)
+//                 try{console.log(clo.variants[i2].closetImage);
+//                 }catch{console.log("no1");
+//                 }
+//             }else{
+//                 console.log(i2)
+//              try{console.log(clo.variants[i2].closetImage);
+//             }catch{console.log("no2");
+//             }
+//         }
+//     }
+// }
+//  console.log(clo.variants[0].closetImage)
 })
 
 
 let itemsC =[];
 
-Ordenar(items)
+Ordenare(items)
 let itemsRes =items
 
 function RestarArray (total, restar){
-    let cosa = total.filter(a => !restar.map(b=>b[0]).includes(a[0]));
+    let cosa = total.filter(a => !restar.map(b=>b).includes(a));
     return cosa
 }
 
@@ -123,6 +171,7 @@ tipoButton.addEventListener ("click", (e)=>{
                 const searchBar = document.getElementById("searchBar");
                 searchBar.value="";
                 items=itemsRes
+                console.log("itemsRes")
                 Display(items,fetchAsyncId,xPag,estaPag)
                 Paginacion(items, paginacionId, xPag)
                 document.getElementById("canela").classList.add("displaynone")
@@ -153,7 +202,12 @@ tipoButton.addEventListener ("click", (e)=>{
             }
         const searchBar = document.getElementById("searchBar");
         searchBar.value="";
+        console.log(items)
         items=itemsRes
+        console.log(items)
+
+        console.log("itemsRes")
+
         Display(items,fetchAsyncId,xPag,estaPag)
         Paginacion(items, paginacionId, xPag)
         document.getElementById("canela").classList.add("displaynone")
@@ -168,11 +222,12 @@ function Check(id,item){
         const searchString = (removeAccents(searchBar.value)).toLowerCase().trim();
 
        if  (ident.checked == true){
+           console.log("if")
             items = items.concat(item)
-            Ordenar(items)
+            Ordenare(items)
 
             const filtro = items.filter(elem => {
-                return ((removeAccents(elem[0]["name"]["name-USes"])).toLowerCase()).includes(searchString)
+                return ((removeAccents(elem.name)).toLowerCase()).includes(searchString)
             })
             Display(filtro,fetchAsyncId,xPag,estaPag)
             Paginacion(filtro, paginacionId, xPag )
@@ -183,17 +238,24 @@ function Check(id,item){
             }
 
         }else{
+            console.log(items)
+
             items =  RestarArray(items,item)
-            Ordenar(items)
+            console.log(items)
+            Ordenare(items)
+            console.log("else1")
+
 
             if (items.length==0){
+
                 document.getElementById("canela").classList.remove("displaynone")
         }else{
+            console.log("else2")
+
             document.getElementById("canela").classList.add("displaynone")
             }
-            // console.log(items)
             const filtro = items.filter(elem => {
-                return ((removeAccents(elem[0]["name"]["name-USes"])).toLowerCase()).includes(searchString)
+                return ((removeAccents(elem.name)).toLowerCase()).includes(searchString)
             })
             Display(filtro,fetchAsyncId,xPag,estaPag)
             Paginacion(filtro, paginacionId, xPag )
@@ -207,9 +269,9 @@ function Check(id,item){
     ;
 }
 
-    Check("misc",item2)
-    Check("house",item1)
-    Check("wall", item3)
+Check("misc",item2)
+Check("wall", item3)
+Check("house",item1)
 
     ////-----------------MOSTRAR ITEMS
     document.getElementById("canela").classList.add("displaynone");
@@ -295,164 +357,158 @@ function Check(id,item){
         Paginacion(items, paginacionId, xPag )
 
 
-    ////-----------------FILTRO COLORES
-    let colorGrande= document.getElementById("colores"),
-    coloresSelect = document.getElementById("coloresSelect");
+
+ ////-----------------FILTRO COLORES
+ let colorGrande= document.getElementById("colores"),
+ coloresSelect = document.getElementById("coloresSelect");
 
 
-    colorGrande.addEventListener ("click", (e)=>{
-        colores.classList.toggle("boton_activo")
-        coloresSelect.classList.toggle("nodisplay")
-        if (tipoButton.classList.contains('disabled')){
-            tipoButton.classList.remove('disabled')
-            let colorButtonActive = [...document.getElementsByClassName("buttonClicked")];
+ colorGrande.addEventListener ("click", (e)=>{
+     colores.classList.toggle("boton_activo")
+     coloresSelect.classList.toggle("nodisplay")
+     if (tipoButton.classList.contains('disabled')){
+         tipoButton.classList.remove('disabled')
+         let colorButtonActive = [...document.getElementsByClassName("buttonClicked")];
 
-            if(colorButtonActive.length!=0){
-                colorButton.forEach((col) => {
-                    col.classList.remove("buttonClicked")
-                })
-                const searchBar = document.getElementById("searchBar");
-                searchBar.value="";
+         if(colorButtonActive.length!=0){
+             colorButton.forEach((col) => {
+                 col.classList.remove("buttonClicked")
+             })
+             const searchBar = document.getElementById("searchBar");
+             searchBar.value="";
+             items=itemsRes
+             Display(items,fetchAsyncId,xPag,estaPag)
+             Paginacion(items, paginacionId, xPag)
+             document.getElementById("canela").classList.add("displaynone")
+         }
+     }else{
+         tipoButton.classList.add('disabled')
+     }
+
+     if(colorGrande.classList.contains('disabled')){
+         colorGrande.classList.remove('disabled')
+         tipoButton.classList.remove("boton_activo")
+
+         filtroTipo.classList.toggle("nodisplay")
+         let identCheck = [...document.getElementsByClassName("boton_check")]
+         identCheck.forEach((ide) => {
+                 ide.checked = true
+         })
+         const searchBar = document.getElementById("searchBar");
+         searchBar.value="";
+         items=itemsRes
+         Display(items,fetchAsyncId,xPag,estaPag)
+         Paginacion(items, paginacionId, xPag)
+         document.getElementById("canela").classList.add("displaynone")
+     }
+ })
+
+ let colorButton=[...document.getElementsByClassName("colores_btn")];
+ colorButton.forEach((imag) => {
+     colorGrande.addEventListener ("click", (e)=>{
+         imag.classList.toggle("nodisplay")
+     })
+
+ })
+
+
+
+colorButton.forEach((col) => {
+    col.addEventListener ("click", (e)=>{
+        const searchBar = document.getElementById("searchBar");
+        const searchString = (removeAccents(searchBar.value)).toLowerCase().trim();
+        let colorButtonActive = [...document.getElementsByClassName("buttonClicked")];
+        if (col.classList.contains("buttonClicked")){
+            if(colorButtonActive.length=1){
+                colorButtonActive = [...document.getElementsByClassName("buttonClicked")];
+                col.classList.remove("buttonClicked")
+
                 items=itemsRes
-                Display(items,fetchAsyncId,xPag,estaPag)
-                Paginacion(items, paginacionId, xPag)
-                document.getElementById("canela").classList.add("displaynone")
-            }
-        }else{
-            tipoButton.classList.add('disabled')
-        }
+                console.log(items, itemsC)
 
-        if(colorGrande.classList.contains('disabled')){
-            colorGrande.classList.remove('disabled')
-            tipoButton.classList.remove("boton_activo")
+                const filtro = items.filter(elem => {
+                // console.log(elem.name)
 
-            filtroTipo.classList.toggle("nodisplay")
-            let identCheck = [...document.getElementsByClassName("boton_check")]
-            identCheck.forEach((ide) => {
-                    ide.checked = true
-            })
-            const searchBar = document.getElementById("searchBar");
-            searchBar.value="";
-            items=itemsRes
-            Display(items,fetchAsyncId,xPag,estaPag)
-            Paginacion(items, paginacionId, xPag)
-            document.getElementById("canela").classList.add("displaynone")
-        }
-    })
-
-    let colorButton=[...document.getElementsByClassName("colores_btn")];
-    colorButton.forEach((imag) => {
-        colorGrande.addEventListener ("click", (e)=>{
-            imag.classList.toggle("nodisplay")
-        })
-
-    })
-
-
-
-    colorButton.forEach((col) => {
-        col.addEventListener ("click", (e)=>{
-            const searchBar = document.getElementById("searchBar");
-            const searchString = (removeAccents(searchBar.value)).toLowerCase().trim();
-            let colorButtonActive = [...document.getElementsByClassName("buttonClicked")];
-            if (col.classList.contains("buttonClicked")){
-                if(colorButtonActive.length=1){
-                    colorButtonActive = [...document.getElementsByClassName("buttonClicked")];
-                    col.classList.remove("buttonClicked")
-
-                    items=itemsRes
-                    const filtro = items.filter(elem => {
-                        return ((removeAccents(elem[0]["name"]["name-USes"])).toLowerCase()).includes(searchString)
-                    })
-                    // console.log("filtro")
-                    if(filtro.length==0){
-                        document.getElementById("canela").classList.remove("displaynone")
-                    }else{
-                        document.getElementById("canela").classList.add("displaynone")
-                    }
-                    Display(filtro,fetchAsyncId,xPag,estaPag)
-                    Paginacion(filtro, paginacionId, xPag)
-
-
-                }if(colorButtonActive.length=2){
-                    colorButtonActive = [...document.getElementsByClassName("buttonClicked")];
-                    if(colorButtonActive.length!=0){
-                        let color=(colorButtonActive[0].id)
-                        col.classList.remove("buttonClicked")
-
-                        itemsC=[]
-                        let i=0;
-
-                        for (i = 0; i < items.length; i++){
-                            let unItemAll=(items[i])
-
-                            let newArray = unItemAll.filter(function (el) {
-                                // console.log(el["color-1"])
-                            return el["color-1"] == color ||
-                            el["color-2"] == color
-                            });
-                            if (newArray.length !== 0){
-                                itemsC.push(newArray)
-                            }
-                        }
-
-                        items=itemsC
-                        const filtro = items.filter(elem => {
-                            return ((removeAccents(elem[0]["name"]["name-USes"])).toLowerCase()).includes(searchString)
-                        })
-                            Display(filtro,fetchAsyncId,xPag,estaPag)
-                            Paginacion(filtro, paginacionId, xPag )
-
-                            if(filtro.length==0){
-                                document.getElementById("canela").classList.remove("displaynone")
-                            }else{
-                                document.getElementById("canela").classList.add("displaynone")
-                            }
-
-                    }
-
-                }
-
-
-            }else{
-                if(colorButtonActive.length<2){
-                col.classList.add("buttonClicked")
-
-                    itemsC=[]
-                    let i=0;
-                    for (i = 0; i < items.length; i++){
-                        // console.log(items)
-                        let unItemAll=(items[i])
-                        // console.log(unItemAll)
-
-                        let newArray = unItemAll.filter(function (el) {
-                        return el["color-1"] == col.id ||
-                        el["color-2"] == col.id
-                        });
-
-                        // console.log(newArray)
-                        if (newArray.length !== 0){
-                            itemsC.push(newArray)
-                        }
-                    }
-                    items=itemsC
-
-                    const filtro = items.filter(elem => {
-                        return ((removeAccents(elem[0]["name"]["name-USes"])).toLowerCase()).includes(searchString)
-                    })
-                    Display(filtro,fetchAsyncId,xPag,estaPag)
-                    Paginacion(filtro, paginacionId, xPag )
-                    if(filtro.length==0){
-                        document.getElementById("canela").classList.remove("displaynone")
-                    }
+                    return ((removeAccents(elem.name)).toLowerCase()).includes(searchString)
+                })
+                // console.log("filtro")
+                if(filtro.length==0){
+                    document.getElementById("canela").classList.remove("displaynone")
                 }else{
-                    let color = document.getElementById("maxcol");
-                    color.classList.add("redback")
-                    setTimeout(()=>{color.classList.remove("redback"); }, 1000);
+                    document.getElementById("canela").classList.add("displaynone")
                 }
+                Display(filtro,fetchAsyncId,xPag,estaPag)
+                Paginacion(filtro, paginacionId, xPag)
+
+
+            }if(colorButtonActive.length=2){
+                colorButtonActive = [...document.getElementsByClassName("buttonClicked")];
+                if(colorButtonActive.length!=0){
+                    let color=(colorButtonActive[0].id)
+                    col.classList.remove("buttonClicked")
+                    items=itemsRes
+
+                    itemsC = items
+                    .filter((el)=>
+                        el.variants.some((subel)=>subel.colors.some((co)=> co == color)))
+                    .map(el =>{
+                        let n = Object.assign({},el, {variants : el.variants.filter(subel => subel.colors[0] == color||subel.colors[1] == color)})
+                        return n
+                    });
+                    console.log(items, itemsC,"=2")
+                    items=itemsC
+                    const filtro = items.filter(elem => {
+                        // console.log(elem.name)
+                        return ((removeAccents(elem.name)).toLowerCase()).includes(searchString)
+                    })
+                        Display(filtro,fetchAsyncId,xPag,estaPag)
+                        Paginacion(filtro, paginacionId, xPag )
+
+                        if(filtro.length==0){
+                            document.getElementById("canela").classList.remove("displaynone")
+                        }else{
+                            document.getElementById("canela").classList.add("displaynone")
+                        }
+
+                }
+
             }
-        })
+
+
+        }else{
+            if(colorButtonActive.length<2){
+            col.classList.add("buttonClicked")
+            let itemsC=[]
+
+                itemsC = items
+                .filter((el)=>
+                    el.variants.some((subel)=>subel.colors.some((co)=> co == col.id)))
+                .map(el =>{
+                    let n = Object.assign({},el, {variants : el.variants.filter(subel => subel.colors[0] == col.id||subel.colors[1] == col.id)})
+                    return n
+                });
+                console.log(items, itemsC,"<2")
+
+                items=itemsC
+
+                const filtro = items.filter(elem => {
+                    // console.log(elem.name)
+                    return ((removeAccents(elem.name)).toLowerCase()).includes(searchString)
+                })
+                Display(filtro,fetchAsyncId,xPag,estaPag)
+                Paginacion(filtro, paginacionId, xPag )
+                if(filtro.length==0){
+                    document.getElementById("canela").classList.remove("displaynone")
+                }
+            }else{
+                let color = document.getElementById("maxcol");
+                color.classList.add("redback")
+                setTimeout(()=>{color.classList.remove("redback"); }, 1000);
+            }
+        }
     })
+})
+
 
 
     ////-----------------BUSCADOR
@@ -467,7 +523,7 @@ function Check(id,item){
     searchBar.addEventListener("keyup", (e)=>{
         const searchString = (removeAccents(e.target.value)).toLowerCase().trim();
         const filtro = items.filter(elem => {
-            return ((removeAccents(elem[0]["name"]["name-USes"])).toLowerCase()).includes(searchString)
+            return ((removeAccents(elem.name)).toLowerCase()).includes(searchString)
             // ||((removeAccents(elem[0].tag)).toLowerCase()).includes(searchString)||((removeAccents(elem[0]["source"])).toLowerCase()).includes(searchString)
         })
         if (filtro.length == 0){
@@ -479,6 +535,14 @@ function Check(id,item){
         Display(filtro,fetchAsyncId,xPag,estaPag)
         Paginacion(filtro, paginacionId, xPag)
     })
+
+
+        
+        // for (let i = 0; i < recetas.length; i++){
+        //         }
+
+
+
 })();
 
 

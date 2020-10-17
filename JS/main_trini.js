@@ -18,7 +18,7 @@ acceTrini= document.getElementById("acceT"),
 mochiTrini= document.getElementById("mochiT");
 
 let estaPag=1,
-xPag=249;
+xPag=255;
 
 
 // const titleCase = (string) => {return string.charAt(0).toUpperCase() + string.slice(1)};
@@ -33,7 +33,7 @@ let all =  await getData("./assets/ropa.json");
 
 
 //-----------ROPA
-let dress=[];all.forEach((clo)=>{if(clo.sourceSheet == "Dress-Up"){dress.push(clo)}
+let dress=[];all.forEach((clo)=>{if(clo.sourceSheet == "Dress-Up" || clo.sourceSheet == "Clothing Other"){dress.push(clo)}
 // console.log("nop")
 // console.log(clo.sourceSheet);
 })
@@ -186,6 +186,10 @@ async function DisplayTrini (items,wrapper, elemXpag,page) {
                 itemElement.innerHTML +=`<img id="trini_imagen${i}_0" class="photo_trini" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 
             }else if(unItem.sourceSheet == "Dress-Up"){
+                itemElement.classList.add("dress","dresup");
+                itemElement.innerHTML +=`<img id="trini_imagen${i}_1" class="photo_trini dress" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
+
+            }else if(unItem.sourceSheet == "Clothing Other"){
                 itemElement.classList.add("dress","dresup");
                 itemElement.innerHTML +=`<img id="trini_imagen${i}_1" class="photo_trini dress" loading="lazy" src="${unItem.variants[0]["closetImage"]}" alt="foto">`;
 

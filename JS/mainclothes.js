@@ -23,7 +23,7 @@ let all =  await getData("./assets/ropa.json");
 
 
 //-----------ROPA
-let dress=[];all.forEach((clo)=>{if(clo.sourceSheet == "Dress-Up"){dress.push(clo)}
+let dress=[];all.forEach((clo)=>{if(clo.sourceSheet == "Dress-Up" || clo.sourceSheet == "Clothing Other"){dress.push(clo)}
     // console.log("nop")
     // console.log(clo.sourceSheet);
 })
@@ -68,17 +68,17 @@ let bags_var = await getData("./assets/translation/bagsvariants.json")
 
 
 
+
 function Translate (array,tr,varia,idioma){
     array.forEach((clo)=>{
-        let index = tr.findIndex(x => x.id === clo.clothGroupId);
-
+        let index = tr.findIndex(x => x.id == clo.clothGroupId);
         // console.log(dress_tr.includes(clo.clothGroupId));
 
-        //  console.log(tr[index].locale["USes"]);
         try{
-        clo.name=tr[index].locale[idioma]
+            clo.name=tr[index].locale[idioma]
         }catch{
-            console.log(clo);
+            console.log(index);
+            console.log(clo.clothGroupId);
         }
 
 
