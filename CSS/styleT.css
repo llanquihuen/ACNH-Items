@@ -635,7 +635,7 @@ footer{
     grid-template-columns: 1fr 1fr;
     column-gap: 0.5rem;
     background-color:rgb(154, 112, 189);
-    background: linear-gradient( rgba(154, 112, 189, 0.8), rgba(154, 112, 189, 0.8)), url("assets/AC-Pattern-1.png");
+    background: linear-gradient( rgba(154, 112, 189, 0.8), rgba(154, 112, 189, 0.8)), url("../assets/AC-Pattern-1.png");
 
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
