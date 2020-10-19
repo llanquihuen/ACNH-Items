@@ -187,7 +187,7 @@ async function DisplayTrini (items,wrapper, elemXpag,page) {
     const titleCase = (string) => {return string.charAt(0).toUpperCase() + string.slice(1)};
 
     //CANTIDAD ITEMS
-    itemsTitle.innerHTML =``
+    itemsTitle.innerHTML +=``
     wrapper.innerHTML="";
     page--;
     let totalPag = Math.ceil(items.length/ elemXpag)
@@ -336,6 +336,7 @@ if (buscaTrinii.value == 1){
     randomRopa.classList.add("displayhidden")
 }
 
+  
 function buscarRopa (ropa, donde){
 
     buscaTrinii.addEventListener("change", (e)=>{
@@ -353,10 +354,13 @@ function buscarRopa (ropa, donde){
             randomRopa.classList.remove("displayhidden")
             const filtro = ropa.filter(elem => {return (elem.variants.some((eleme)=>eleme.labelThemes.some((el)=> el == buscaTrinii.value)))})
             let estilo = document.getElementById("elestilo")
-            let estilo2 = document.getElementById("elestilo2")
+            // let estilo2 = document.getElementById("elestilo2")
 
             let descripcion =  buscaTrinii.options[buscaTrinii.selectedIndex].text
             estilo.innerHTML = descripcion
+
+            estilo.innerHTML = estilo.innerHTML[0].toUpperCase() +  estilo.innerHTML.slice(1); 
+
             //estilo2.innerHTML = descripcion
 
             DisplayTrini(filtro,donde,xPag,estaPag)
