@@ -130,14 +130,27 @@ Translate(bags,bags_tr,bags_var,lang)
 }
 TranslateAll(idioma)
 
+
+let otro = [...document.getElementById("translate").getElementsByClassName("select-items")]
+let indexidio = otro.findIndex(x => x.value === idioma);
+let esteidioma = (otro[indexidio].innerHTML)
+
+document.getElementById("idiomaMostrar").innerHTML=(esteidioma)
+let tempDiv = document.createElement("div");
+tempDiv.classList.add("banderas")
+tempDiv.innerHTML=`<img src="../assets/flags/${idioma}.png" alt="bandera" ></img>`
+
+document.getElementById("translate").insertAdjacentElement("afterend", tempDiv)
 // console.log(bags)
 let queIdioma = document.getElementById("translate");
 console.log(queIdioma)
 queIdioma.addEventListener("change", (e)=>{
     idioma = queIdioma.value
-    TranslateAll(idioma)
-    DisplayLocal(dressup,fetchAsyncId,xPag,estaPag)
     localStorage.setItem("idioma", idioma);
+    location.reload();
+    return false;
+    // TranslateAll(idioma)
+    // DisplayLocal(dressup,fetchAsyncId,xPag,estaPag)
 })
 
 

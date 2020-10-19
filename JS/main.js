@@ -26,6 +26,7 @@ let item2=[];all.forEach((clo)=>{if(clo.sourceSheet == "Miscellaneous"){item2.pu
 let item3=[];all.forEach((clo)=>{if(clo.sourceSheet == "Wall-mounted"){item3.push(clo)}})
 let items= item1.concat(item2,item3)
 
+
 //------------NOMBRE
 let furniture_tr = await getData("./assets/translation/furniture2.json")
 let furniture_var = await getData("./assets/translation/variants.json")
@@ -47,7 +48,7 @@ function Translate (array,tr,hha,idioma){
         }
 
         // console.log(clo.variants[0].internalId)
-
+        
             let index1 = hha.findIndex(x => x.locale["USen"] === clo.variants[0].themes[0])
             let index2 = hha.findIndex(x => x.locale["USen"] === clo.variants[0].themes[1])
 
@@ -93,13 +94,25 @@ if (localStorage.getItem("idioma")=== "EUru") idioma = ("EUru");
 
 Translate(items,furniture_tr,furniture_hha,idioma)
 
+let otro = [...document.getElementById("translate").getElementsByClassName("select-items")]
+let indexidio = otro.findIndex(x => x.value === idioma);
+let esteidioma = (otro[indexidio].innerHTML)
+
+document.getElementById("idiomaMostrar").innerHTML=(esteidioma)
+let tempDiv = document.createElement("div");
+tempDiv.classList.add("banderas")
+tempDiv.innerHTML=`<img src="../assets/flags/${idioma}.png" alt="bandera" ></img>`
+
+document.getElementById("translate").insertAdjacentElement("afterend", tempDiv)
 let queIdioma = document.getElementById("translate");
 // console.log(queIdioma)
 queIdioma.addEventListener("change", (e)=>{
     idioma = queIdioma.value
     localStorage.setItem("idioma", idioma);
-    Translate(items,furniture_tr,furniture_hha,idioma)
-    Display(items,fetchAsyncId,xPag,estaPag)
+    location.reload();
+    return false;
+    // Translate(items,furniture_tr,furniture_hha,idioma)
+    // Display(items,fetchAsyncId,xPag,estaPag)
 })
 
 function Contar (array){

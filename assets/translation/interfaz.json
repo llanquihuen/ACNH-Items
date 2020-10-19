@@ -1,0 +1,2425 @@
+[
+  {
+    "id": "Compra",
+    "version": "0",
+    "locale": {
+      "USen": "Buy",
+      "EUen": "Buy",
+      "EUde": "Kaufen",
+      "EUes": "Comprar",
+      "USes": "Comprar",
+      "EUfr": "Acheter",
+      "USfr": "Acheter",
+      "EUit": "Comprare",
+      "EUnl": "Kopen",
+      "CNzh": "买",
+      "TWzh": "買",
+      "JPja": "買う",
+      "KRko": "구매",
+      "EUru": "покупать"
+    }
+  },
+  {
+    "id": "Venta",
+    "version": "1",
+    "locale": {
+      "USen": "Sell",
+      "EUen": "Sell",
+      "EUde": "Verkaufen",
+      "EUes": "Vender",
+      "USes": "Vender",
+      "EUfr": "Vendre",
+      "USfr": "Vendre",
+      "EUit": "Vendere",
+      "EUnl": "Verkopen",
+      "CNzh": "卖",
+      "TWzh": "賣",
+      "JPja": "売る",
+      "KRko": "팔다",
+      "EUru": "продавать"
+    }
+  },
+  {
+    "id": "NoCompra",
+    "version": "2",
+    "locale": {
+      "USen": "Can't be bought",
+      "EUen": "Can't be bought",
+      "EUde": "Nicht gekauft",
+      "EUes": "No se compra",
+      "USes": "No se compra",
+      "EUfr": "Pas acheté",
+      "USfr": "Pas acheté",
+      "EUit": "Non acquistato",
+      "EUnl": "Niet gekocht",
+      "CNzh": "没买",
+      "TWzh": "沒買",
+      "JPja": "購入していません",
+      "KRko": "사지 않았다",
+      "EUru": "не купил"
+    }
+  },
+    {
+    "id": "Furniture",
+    "version": "3",
+    "locale": {
+     "USen": "Furniture",
+     "EUen": "Furniture",
+     "EUde": "Möbel",
+     "EUes": "Muebles",
+     "USes": "Muebles",
+     "EUfr": "Meubles",
+     "USfr": "Meubles",
+     "EUit": "Mobili",
+     "EUnl": "Meubels",
+     "CNzh": "家具类",
+     "TWzh": "家具類",
+     "JPja": "家具",
+     "KRko": "가구",
+     "EUru": "Мебель"
+    }
+  },
+  {
+  "id": "Clothes",
+  "version": "4",
+  "locale": {
+   "USen": "Clothes",
+   "EUen": "Clothes",
+   "EUde": "Kleider",
+   "EUes": "Ropa",
+   "USes": "Ropa",
+   "EUfr": "Vêtements",
+   "USfr": "Vêtements ",
+   "EUit": "Abiti",
+   "EUnl": "Kleren",
+   "CNzh": "衣服",
+   "TWzh": "衣服",
+   "JPja": "服",
+   "KRko": "천",
+   "EUru": "одежда"
+  }
+},
+{
+"id": "RetoModa",
+"version": "5",
+"locale": {
+ "USen": "Fashion challenge",
+ "EUen": "Fashion challenge",
+ "EUde": "Mode Herausforderung",
+ "EUes": "Reto de moda",
+ "USes": "Reto de moda",
+ "EUfr": "Défi de la mode",
+ "USfr": "Défi de la mode",
+ "EUit": "Sfida di moda",
+ "EUnl": "Mode-uitdaging",
+ "CNzh": "时尚挑战",
+ "TWzh": "時尚挑戰",
+ "JPja": "ファッションチャレンジ",
+ "KRko": "패션 도전",
+ "EUru": "модный вызов"
+}
+},
+  {
+  "id": "filtropor",
+  "version": "6",
+   "locale": {
+      "USen": "Filter by",
+      "EUen": "Filter by",
+      "EUde": "Filter nach",
+      "EUes": "Filtrar por",
+      "USes": "Filtrar por",
+      "EUfr": "Filtrer par",
+      "USfr": "Filtrer par",
+      "EUit": "Filtra per",
+      "EUnl": "Filter op",
+      "CNzh": "按筛选",
+      "TWzh": "按篩選",
+      "JPja": "漉す",
+      "KRko": "으로 필터링",
+      "EUru": "фильтровать по"
+    }
+  },
+  {
+  "id": "Colores",
+  "version": "7",
+  "locale": {
+   "USen": "Colors",
+   "EUen": "Colors",
+   "EUde": "Farben",
+   "EUes": "Colores",
+   "USes": "Colores",
+   "EUfr": "Couleurs",
+   "USfr": "Couleurs",
+   "EUit": "Colori",
+   "EUnl": "Kleuren",
+   "CNzh": "颜色",
+   "TWzh": "顏色",
+   "JPja": "色",
+   "KRko": "그림 물감",
+   "EUru": "цвета"
+  }
+},
+  {
+  "id": "Type",
+  "version": "8",
+    "locale": {
+    "USen": "Type",
+    "EUen": "Type",
+    "EUde": "Art",
+    "EUes": "Tipo",
+    "USes": "Tipo",
+    "EUfr": "Catégorie",
+    "USfr": "Catégorie ",
+    "EUit": "Genere",
+    "EUnl": "Type",
+    "CNzh": "类型",
+    "TWzh": "類型",
+    "JPja": "タイプ",
+    "KRko": "유형",
+    "EUru": "тип"
+  }
+},
+{
+"id": "Search",
+"version": "9",
+  "locale": {
+  "USen": "Search...",
+  "EUen": "Search...",
+  "EUde": "Suchen...",
+  "EUes": "Buscar...",
+  "USes": "Buscar...",
+  "EUfr": "Chercher...",
+  "USfr": "Chercher... ",
+  "EUit": "Cercare...",
+  "EUnl": "Zoeken...",
+  "CNzh": "寻找",
+  "TWzh": "尋找",
+  "JPja": "捜す",
+  "KRko": "...을 찾다",
+  "EUru": "искать"
+  }
+},
+{
+"id": "Frase",
+"version": "10",
+  "locale": {
+  "USen": "Search here for your Animal Crossing New Horizons item",
+  "EUen": "Search here for your Animal Crossing New Horizons item",
+  "EUde": "Suchen Sie hier nach Ihrem Artikel über Animal Crossing New Horizons",
+  "EUes": "Busca aquí tu item de Animal Crossing New Horizons",
+  "USes": "Busca aquí tu item de Animal Crossing New Horizons",
+  "EUfr": "Regardez ici votre article sur Animal Crossing New Horizons",
+  "USfr": "Regardez ici votre article sur Animal Crossing New Horizons ",
+  "EUit": "Cerca qui il tuo articolo di Animal Crossing New Horizons",
+  "EUnl": "Kijk hier voor uw Animal Crossing New Horizons-artikel",
+  "CNzh": "在这里查看您的“动物跨越新视野”文章",
+  "TWzh": "在這裡查看您的“動物跨越新視野”文章",
+  "JPja": "どうぶつの森の記事はこちらをご覧ください",
+  "KRko": "여기에서 'Animal Crossing New Horizons' 기사를 확인하십시오.",
+  "EUru": "Прочтите статью 'Animal Crossing New Horizons' здесь"
+  }
+},
+{
+"id": "maxcol",
+"version": "11",
+  "locale": {
+  "USen": "Choose up to 2 colors",
+  "EUen": "Choose up to 2 colors",
+  "EUde": "Wählen Sie bis zu 2 Farben",
+  "EUes": "Elige hasta 2 colores",
+  "USes": "Elige hasta 2 colores",
+  "EUfr": "Choisissez jusqu'à 2 couleurs",
+  "USfr": "Choisissez jusqu'à 2 couleurs ",
+  "EUit": "Scegli fino a 2 colori",
+  "EUnl": "Kies maximaal 2 kleuren",
+  "CNzh": "选择多达2种颜色",
+  "TWzh": "選擇多達2種顏色",
+  "JPja": "2色までお選びいただけます",
+  "KRko": "최대 2 가지 색상 선택",
+  "EUru": "Выберите до 2 цветов"
+}
+},
+{
+"id": "misc",
+"version": "12",
+  "locale": {
+  "USen": "Miscellaneous",
+  "EUen": "Miscellaneous",
+  "EUde": "Sonstiges",
+  "EUes": "Elementos Pequeños<br>(Misceláneas)",
+  "USes": "Elementos Pequeños<br>(Misceláneas)",
+  "EUfr": "Divers",
+  "USfr": "Divers ",
+  "EUit": "Miscellaneo",
+  "EUnl": "Diversen",
+  "CNzh": "杂",
+  "TWzh": "雜",
+  "JPja": "雑多",
+  "KRko": "여러 가지 잡다한",
+  "EUru": "разнообразный"
+}
+},
+{
+"id": "house",
+"version": "13",
+  "locale": {
+  "USen": "Houseware",
+  "EUen": "Houseware",
+  "EUde": "Haushaltswaren",
+  "EUes": "Elementos Grandes<br>(Muebles)",
+  "USes": "Elementos Grandes<br>(Muebles)",
+  "EUfr": "Articles ménagers",
+  "USfr": "Articles ménagers ",
+  "EUit": "Casalinghi",
+  "EUnl": "Huishoudartikelen",
+  "CNzh": "家庭用品",
+  "TWzh": "家庭用品",
+  "JPja": "家庭用品",
+  "KRko": "가정 용품",
+  "EUru": "предметы быта"
+}
+},
+{
+"id": "wall",
+"version": "14",
+  "locale": {
+  "USen": "Wall-mounted",
+  "EUen": "Wall-mounted",
+  "EUde": "An der Wand montiert",
+  "EUes": "Murales<br>(Para Colgar)",
+  "USes": "Murales<br>(Para Colgar)",
+  "EUfr": "Mural",
+  "USfr": "Mural",
+  "EUit": "Montaggio a parete",
+  "EUnl": "Op de muur gemonteerd",
+  "CNzh": "壁挂式",
+  "TWzh": "壁掛式",
+  "JPja": "壁に取り付けられた",
+  "KRko": "벽걸이 형",
+  "EUru": "Настенный"
+}
+},
+{
+"id": "vestidos",
+"version": "15",
+  "locale": {
+  "USen": "Dresses",
+  "EUen": "Dresses",
+  "EUde": "Kleider",
+  "EUes": "Vestidos <br>(Una Pieza)",
+  "USes": "Vestidos <br>(Una Pieza)",
+  "EUfr": "Robes",
+  "USfr": "Robes ",
+  "EUit": "Vestiti",
+  "EUnl": "Jurken",
+  "CNzh": "洋装",
+  "TWzh": "洋裝",
+  "JPja": "ドレス",
+  "KRko": "드레스 ",
+  "EUru": "платья"
+}
+},
+{
+"id": "tops",
+"version": "16",
+  "locale": {
+  "USen": "Tops<br>(t-shirts and coats)",
+  "EUen": "Tops<br>(t-shirts and coats)",
+  "EUde": "Tops<br>(T-Shirts und Mäntel)",
+  "EUes": "Tops<br> (Poleras y abrigos)",
+  "USes": "Tops<br> (Poleras y abrigos)",
+  "EUfr": "Tops<br>(t-shirts et manteaux)",
+  "USfr": "Tops<br>(t-shirts et manteaux)",
+  "EUit": "Tops<br>(t-shirt e cappotti)",
+  "EUnl": "Tops<br>(t-shirts en jassen)",
+  "CNzh": "T恤和外套",
+  "TWzh": "T恤和外套",
+  "JPja": "Tシャツとコート",
+  "KRko": "티셔츠와 코트 ",
+  "EUru": "Tops<br>футболки и пальто"
+}
+},
+{
+"id": "botom",
+"version": "17",
+  "locale": {
+  "USen": "Bottoms<br>(Pants)",
+  "EUen": "Bottoms<br>(Pants)",
+  "EUde": "Bottoms<br>(Hose)",
+  "EUes": "Bottoms<br>(Pantalones)",
+  "USes": "Bottoms<br>(Pantalones)",
+  "EUfr": "Bottoms<br>(Pantalons)",
+  "USfr": "Bottoms<br>(Pantalons)",
+  "EUit": "Bottoms<br>(Pantaloni)",
+  "EUnl": "Bottoms<br>(Broek)",
+  "CNzh": "裤子",
+  "TWzh": "裤子",
+  "JPja": "パンツ",
+  "KRko": "바지",
+  "EUru": "Bottoms<br>(брюки)"
+}
+},
+{
+"id": "head",
+"version": "18",
+  "locale": {
+  "USen": "Head<br>(Hats and Helmets)",
+  "EUen": "Head<br>(Hats and Helmets)",
+  "EUde": "Head<br>(Hüte und Helme)",
+  "EUes": "Head<br>(Sombreros y Cascos)",
+  "USes": "Head<br>(Sombreros y Cascos)",
+  "EUfr": "Head<br>(chapeaux et casques)",
+  "USfr": "Head<br>(chapeaux et casques)",
+  "EUit": "Head<br>(cappelli e caschi)",
+  "EUnl": "Head<br>(hoeden en helmen)",
+  "CNzh": "帽子和头盔",
+  "TWzh": "帽子和頭盔",
+  "JPja": "帽子とヘルメット",
+  "KRko": "모자와 헬멧",
+  "EUru": "Head<br>шапки и каски"
+}
+},
+{
+"id": "Accessories",
+"version": "19",
+  "locale": {
+  "USen": "",
+  "EUen": "Accessories Wallets",
+  "EUde": "Zubehör Brieftaschen",
+  "EUes": "Accesorios<br> (Accessorios Carteras)",
+  "USes": "Accesorios<br> (Accessorios Carteras)",
+  "EUfr": "Accessoires Portefeuilles",
+  "USfr": "Accessoires Portefeuilles",
+  "EUit": "Accessori Portafogli",
+  "EUnl": "Accessoires Portemonnees",
+  "CNzh": "配件<br>配件钱包",
+  "TWzh": "配件<br>配件錢包",
+  "JPja": "アクセサリー<br>アクセサリーウォレット",
+  "KRko": "액세서리 <br> (액세서리 지갑)",
+  "EUru": "Аксессуары <br> (Аксессуары Кошельки)"
+}
+},
+{
+"id": "Pies",
+"version": "20",
+  "locale": {
+  "USen": "Feet <br> (Footwear and Socks)",
+  "EUen": "Feet <br> (Footwear and Socks)",
+  "EUde": "Füße <br> (Schuhe und Socken)",
+  "EUes": "Pies<br> (Calzado y Calcetas)",
+  "USes": "Pies<br> (Calzado y Calcetas)",
+  "EUfr": "Pieds <br> (Chaussures et chaussettes)",
+  "USfr": "Pieds <br> (Chaussures et chaussettes)",
+  "EUit": "Piedi <br> (Calzature e calzini)",
+  "EUnl": "Voeten <br> (Schoenen en sokken)",
+  "CNzh": "脚<br>（鞋袜）",
+  "TWzh": "腳<br>（鞋襪）",
+  "JPja": "足<br>（履物と靴下）",
+  "KRko": "발 <br> (신발 및 양말)",
+  "EUru": "Ноги <br> (Обувь и носки)"
+}
+},
+{
+"id": "qEstilo",
+"version": "21",
+  "locale": {
+  "USen": "What style are you looking for?",
+  "EUen": "What style are you looking for?",
+  "EUde": "Welchen Stil suchst du?",
+  "EUes": "¿Que estilo buscas?",
+  "USes": "¿Que estilo buscas?",
+  "EUfr": "Quel style recherchez-vous?",
+  "USfr": "Quel style recherchez-vous?",
+  "EUit": "Che stile cerchi?",
+  "EUnl": "Welke stijl zoek je?",
+  "CNzh": "您在寻找什么风格？",
+  "TWzh": "您在尋找什麼風格？",
+  "JPja": "どんなスタイルをお探しですか？",
+  "KRko": "어떤 스타일을 찾고 계십니까?",
+  "EUru": "Какой стиль вы ищете?"
+}
+},
+{
+"id": "qEstilo2",
+"version": "22",
+  "locale": {
+  "USen": "Choose style",
+  "EUen": "Choose style",
+  "EUde": "Wähle Stil",
+  "EUes": "Elegir estilo",
+  "USes": "Elegir estilo",
+  "EUfr": "Choisissez le style",
+  "USfr": "Choisissez le style",
+  "EUit": "Scegli lo stile",
+  "EUnl": "Kies stijl",
+  "CNzh": "选择款式",
+  "TWzh": "選擇款式",
+  "JPja": "スタイルを選ぶ",
+  "KRko": "스타일 선택",
+  "EUru": "Выбери стиль"
+}
+},
+{
+"id": "random",
+"version": "23",
+  "locale": {
+  "USen": "Random clothes",
+  "EUen": "Random clothes",
+  "EUde": "Zufällige Kleidung",
+  "EUes": "Ropa al azar",
+  "USes": "Ropa al azar",
+  "EUfr": "Vêtements aléatoires",
+  "USfr": "Vêtements aléatoires",
+  "EUit": "Vestiti casuali",
+  "EUnl": "Willekeurige kleding",
+  "CNzh": "随机的衣服",
+  "TWzh": "隨機的衣服",
+  "JPja": "ランダムな服",
+  "KRko": "임의의 옷",
+  "EUru": "Случайная одежда"
+}
+},
+{
+"id": "estilo1ro",
+"version": "24",
+  "locale": {
+  "USen": "Choose style first",
+  "EUen": "Choose style first",
+  "EUde": "Wählen Sie zuerst den Stil",
+  "EUes": "Elija el estilo primero",
+  "USes": "Elija el estilo primero",
+  "EUfr": "Choisissez d'abord le style",
+  "USfr": "Choisissez d'abord le style",
+  "EUit": "Scegli prima lo stile",
+  "EUnl": "Kies eerst een stijl",
+  "CNzh": "首先选择款式",
+  "TWzh": "首先選擇款式",
+  "JPja": "最初にスタイルを選択してください",
+  "KRko": "먼저 스타일 선택",
+  "EUru": "Сначала выберите стиль"
+}
+},
+  {
+  "id": "Nook's Cranny",
+  "version": "1.0.0",
+   "locale": {
+  "USen": "Nook's Cranny",
+      "EUen": "Nook's Cranny",
+      "EUde": "Nooks Laden",
+      "EUes": "Mini Nook",
+      "USes": "Mini Nook",
+      "EUfr": "Boutique Nook",
+      "USfr": "Boutique Nook",
+      "EUit": "La bottega di Nook",
+      "EUnl": "Nooks hoek",
+      "CNzh": "Nook 商店",
+      "TWzh": "Nook 商店",
+      "JPja": "タヌキ商店",
+      "KRko": "너굴상점",
+      "EUru": "Лавка Нука"
+    }
+  },
+  {
+    "id": "Able Sisters",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Able Sisters",
+      "EUen": "Able Sisters",
+      "EUde": "Mode Schneider",
+      "EUes": "Hermanas Manitas",
+      "USes": "Hermanas Manitas",
+      "EUfr": "Soeurs Doigts de Fée",
+      "USfr": "Soeurs Doigts de Fée",
+      "EUit": "Sorelle Ago e Filo",
+      "EUnl": "Zusjes Able",
+      "CNzh": "Able Sisters",
+      "TWzh": "Able Sisters",
+      "JPja": "エイブリルシスターズ",
+      "KRko": "에이블 시스터즈",
+      "EUru": "Сёстры Эйбл"
+    }
+  },
+  {
+    "id": "Able Sisters",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Nintendo, Able Sisters",
+      "EUen": "Nintendo, Able Sisters",
+      "EUde": "Nintendo, Mode Schneider",
+      "EUes": "Nintendo, Hermanas Manitas",
+      "USes": "Nintendo, Hermanas Manitas",
+      "EUfr": "Nintendo, Soeurs Doigts de Fée",
+      "USfr": "Nintendo, Soeurs Doigts de Fée",
+      "EUit": "Nintendo, Sorelle Ago e Filo",
+      "EUnl": "Nintendo, Zusjes Able",
+      "CNzh": "Nintendo, Able Sisters",
+      "TWzh": "Nintendo, Able Sisters",
+      "JPja": "Nintendo, エイブリルシスターズ",
+      "KRko": "Nintendo, 에이블 시스터즈",
+      "EUru": "Nintendo, Сёстры Эйбл"
+    }
+  },
+  {
+    "id": "Kicks,Able Sisters",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Kicks, Able Sisters",
+      "EUen": "Kicks, Able Sisters",
+      "EUde": "Schubert, Mode Schneider",
+      "EUes": "Betunio, Hermanas Manitas",
+      "USes": "Betunio, Hermanas Manitas",
+      "EUfr": "Blaise, Soeurs Doigts de Fée",
+      "USfr": "Blaise, Soeurs Doigts de Fée",
+      "EUit": "Sciuscià, Sorelle Ago e Filo",
+      "EUnl": "Kicks, Zusjes Able",
+      "CNzh": "薛革, Able Sisters",
+      "TWzh": "薛革, Able Sisters",
+      "JPja": "シャンク, エイブリルシスターズ",
+      "KRko": "패트릭, 에이블 시스터즈",
+      "EUru": "Кикс, Сёстры Эйбл"
+    }
+  },
+	{
+    "id": "Cyrus",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Cyrus & Reese",
+      "EUen": "Cyrus & Reese",
+      "EUde": "Björn & Rosina",
+      "EUes": "Al & Paca",
+      "USes": "Al & Paca",
+      "EUfr": "Serge & Risette",
+      "USfr": "Serge & Risette",
+      "EUit": "Merino & Alpaca",
+      "EUnl": "Cyrus & Reese",
+      "CNzh": "健兆 & 莉咏",
+      "TWzh": "健兆 & 莉詠",
+      "JPja": "カイゾー & リサ",
+      "KRko": "리포 & 리사",
+      "EUru": "Сайрус & Риз"
+    }
+  },
+  {
+    "id": "alw",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Reese",
+      "EUen": "Reese",
+      "EUde": "Rosina",
+      "EUes": "Paca",
+      "USes": "Paca",
+      "EUfr": "Risette",
+      "USfr": "Risette",
+      "EUit": "Alpaca",
+      "EUnl": "Reese",
+      "CNzh": "莉咏",
+      "TWzh": "莉詠",
+      "JPja": "リサ",
+      "KRko": "리사",
+      "EUru": "Риз"
+    }
+  },
+  {
+    "id": "bev",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Chip",
+      "EUen": "Chip",
+      "EUde": "Bartholo",
+      "EUes": "Martín",
+      "USes": "Martín",
+      "EUfr": "Castor",
+      "USfr": "Castor",
+      "EUit": "Castore",
+      "EUnl": "Chip",
+      "CNzh": "俞正",
+      "TWzh": "俞正",
+      "JPja": "うおまさ",
+      "KRko": "뚱달",
+      "EUru": "Чип"
+    }
+  },
+  {
+    "id": "C.J.",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "C.J.",
+      "EUen": "C.J.",
+      "EUde": "Lomeus",
+      "EUes": "CJ",
+      "USes": "CJ",
+      "EUfr": "Pollux",
+      "USfr": "Pollux",
+      "EUit": "Castorino",
+      "EUnl": "C.J.",
+      "CNzh": "俞司廷",
+      "TWzh": "俞司廷",
+      "JPja": "ジャスティン",
+      "KRko": "저스틴",
+      "EUru": "Си-Джей"
+    }
+  },
+  {
+    "id": "boa",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Joan",
+      "EUen": "Joan",
+      "EUde": "Sigrid",
+      "EUes": "Juana",
+      "USes": "Juana",
+      "EUfr": "Porcella",
+      "USfr": "Porcella",
+      "EUit": "Nella",
+      "EUnl": "Joan",
+      "CNzh": "曹谷",
+      "TWzh": "曹谷",
+      "JPja": "カブリバ",
+      "KRko": "무파라",
+      "EUru": "Джоан"
+    }
+  },
+  {
+    "id": "boc",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Daisy Mae",
+      "EUen": "Daisy Mae",
+      "EUde": "Jorna",
+      "EUes": "Juliana",
+      "USes": "Juliana",
+      "EUfr": "Porcelette",
+      "USfr": "Porcelette",
+      "EUit": "Brunella",
+      "EUnl": "Daisy Mae",
+      "CNzh": "曹卖",
+      "TWzh": "曹賣",
+      "JPja": "ウリ",
+      "KRko": "무파니",
+      "EUru": "Дейзи-Мей"
+    }
+  },
+  {
+    "id": "bpt",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Katrina",
+      "EUen": "Katrina",
+      "EUde": "Smeralda",
+      "EUes": "Katrina",
+      "USes": "Katrina",
+      "EUfr": "Astrid",
+      "USfr": "Astrid",
+      "EUit": "Vanda",
+      "EUnl": "Katrina",
+      "CNzh": "星薇",
+      "TWzh": "星薇",
+      "JPja": "ハッケミィ",
+      "KRko": "마추릴라",
+      "EUru": "Катрина"
+    }
+  },
+  {
+    "id": "chm",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Nat",
+      "EUen": "Nat",
+      "EUde": "Carleon",
+      "EUes": "Papilo",
+      "USes": "Papilo",
+      "EUfr": "Djarod",
+      "USfr": "Djarod",
+      "EUit": "Gustavo",
+      "EUnl": "Nat",
+      "CNzh": "龙山先生",
+      "TWzh": "龍山先生",
+      "JPja": "カメヤマさん",
+      "KRko": "멜레옹",
+      "EUru": "Нат"
+    }
+  },
+  {
+    "id": "Flick",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Flick",
+      "EUen": "Flick",
+      "EUde": "Carlson",
+      "EUes": "Kamilo",
+      "USes": "Kamilo",
+      "EUfr": "Djason",
+      "USfr": "Djason",
+      "EUit": "Ivano",
+      "EUnl": "Flick",
+      "CNzh": "龙克斯",
+      "TWzh": "龍克斯",
+      "JPja": "レックス",
+      "KRko": "레온",
+      "EUru": "Флик"
+    }
+  },
+  {
+    "id": "cml",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Saharah",
+      "EUen": "Saharah",
+      "EUde": "Aziza",
+      "EUes": "Alcatifa",
+      "USes": "Alcatifa",
+      "EUfr": "Sarah",
+      "USfr": "Sarah",
+      "EUit": "Sahara",
+      "EUnl": "Saharah",
+      "CNzh": "骆岚",
+      "TWzh": "駱嵐",
+      "JPja": "ローラン",
+      "KRko": "사하라",
+      "EUru": "Сахара"
+    }
+  },
+  {
+    "id": "dga",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Copper",
+      "EUen": "Copper",
+      "EUde": "Harry",
+      "EUes": "Vigilio",
+      "USes": "Vigilio",
+      "EUfr": "Maret",
+      "USfr": "Maret",
+      "EUit": "Birro",
+      "EUnl": "Copper",
+      "CNzh": "警察叔叔",
+      "TWzh": "警察叔叔",
+      "JPja": "おまわりさん",
+      "KRko": "경찰관",
+      "EUru": "Коппер"
+    }
+  },
+  {
+    "id": "dgb",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Booker",
+      "EUen": "Booker",
+      "EUde": "Wuff",
+      "EUes": "Nocencio",
+      "USes": "Nocencio",
+      "EUfr": "Chausset",
+      "USfr": "Chausset",
+      "EUit": "Fido",
+      "EUnl": "Booker",
+      "CNzh": "警察叔叔",
+      "TWzh": "警察叔叔",
+      "JPja": "おまわりさん",
+      "KRko": "경찰관",
+      "EUru": "Букер"
+    }
+  },
+  {
+    "id": "doc",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Wilbur",
+      "EUen": "Wilbur",
+      "EUde": "Udo",
+      "EUes": "Rodri",
+      "USes": "Rodri",
+      "EUfr": "Rodrigue",
+      "USfr": "Rodrigue",
+      "EUit": "Dodoardo",
+      "EUnl": "Wilbur",
+      "CNzh": "陆德里",
+      "TWzh": "陸德里",
+      "JPja": "ロドリー",
+      "KRko": "로드리",
+      "EUru": "Уилбур"
+    }
+  },
+  {
+    "id": "dod",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Orville",
+      "EUen": "Orville",
+      "EUde": "Bodo",
+      "EUes": "Rafa",
+      "USes": "Rafa",
+      "EUfr": "Morris",
+      "USfr": "Morris",
+      "EUit": "Dodobaldo",
+      "EUnl": "Orville",
+      "CNzh": "莫里",
+      "TWzh": "莫里",
+      "JPja": "モーリー",
+      "KRko": "모리",
+      "EUru": "Орвилл"
+    }
+  },
+  {
+    "id": "fox",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Redd",
+      "EUen": "Redd",
+      "EUde": "Reiner",
+      "EUes": "Ladino",
+      "USes": "Ladino",
+      "EUfr": "Rounard",
+      "USfr": "Rounard",
+      "EUit": "Volpolo",
+      "EUnl": "Redd",
+      "CNzh": "狐利",
+      "TWzh": "狐利",
+      "JPja": "つねきち",
+      "KRko": "여욱",
+      "EUru": "Рэдд"
+    }
+  },
+  {
+    "id": "fsl",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Phineas",
+      "EUen": "Phineas",
+      "EUde": "Helios",
+      "EUes": "Elio",
+      "USes": "Elio",
+      "EUfr": "Hélium",
+      "USfr": "Hélium",
+      "EUit": "Elio",
+      "EUnl": "Phineas",
+      "CNzh": "博陆恩",
+      "TWzh": "博陸恩",
+      "JPja": "パロンチーノ",
+      "KRko": "파론티노",
+      "EUru": "Финеас"
+    }
+  },
+  {
+    "id": "grf",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Gracie",
+      "EUen": "Gracie",
+      "EUde": "Grazia",
+      "EUes": "Graciela",
+      "USes": "Graciela",
+      "EUfr": "Carla",
+      "USfr": "Carla",
+      "EUit": "Griffa",
+      "EUnl": "Gracie",
+      "CNzh": "葛瑞斯",
+      "TWzh": "葛瑞斯",
+      "JPja": "グレース",
+      "KRko": "그레이스",
+      "EUru": "Грейси"
+    }
+  },
+  {
+    "id": "gst",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Wisp",
+      "EUen": "Wisp",
+      "EUde": "Buhu",
+      "EUes": "Buh",
+      "USes": "Buh",
+      "EUfr": "Follet",
+      "USfr": "Follet",
+      "EUit": "Spirideo",
+      "EUnl": "Wisp",
+      "CNzh": "幽幽",
+      "TWzh": "幽幽",
+      "JPja": "ゆうたろう",
+      "KRko": "깨빈",
+      "EUru": "Уисп"
+    }
+  },
+  {
+    "id": "Gulliver",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Gulliver",
+      "EUen": "Gulliver",
+      "EUde": "Gulliver",
+      "EUes": "Gulliver",
+      "USes": "Gulliver",
+      "EUfr": "Gulliver",
+      "USfr": "Gulliver",
+      "EUit": "Gulliver",
+      "EUnl": "Gulliver",
+      "CNzh": "吕游",
+      "TWzh": "呂遊",
+      "JPja": "ジョニー",
+      "KRko": "죠니",
+      "EUru": "Гулливер"
+    }
+  },
+  {
+    "id": "Gullivarrr",
+    "version": "1.3.0",
+    "locale": {
+      "USen": "Gullivarrr",
+      "EUen": "Gullivarrr",
+      "EUde": "Gullivarrr",
+      "EUes": "Gullivarrr",
+      "USes": "Gullivarrr",
+      "EUfr": "Gullivarrr",
+      "USfr": "Gullivarrr",
+      "EUit": "Gullivarrr",
+      "EUnl": "Gullivarrr",
+      "CNzh": "海盗",
+      "TWzh": "海盜",
+      "JPja": "かいぞく",
+      "KRko": "해적",
+      "EUru": "Гулливарр"
+    }
+  },
+  {
+    "id": "Label",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Label",
+      "EUen": "Label",
+      "EUde": "Minna",
+      "EUes": "Tili",
+      "USes": "Tili",
+      "EUfr": "Tiquette",
+      "USfr": "Tiquette",
+      "EUit": "Beatrice",
+      "EUnl": "Label",
+      "CNzh": "绵儿",
+      "TWzh": "綿兒",
+      "JPja": "ことの",
+      "KRko": "고숙이",
+      "EUru": "Лэйбл"
+    }
+  },
+  {
+    "id": "hgh",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Mabel",
+      "EUen": "Mabel",
+      "EUde": "Tina",
+      "EUes": "Pili",
+      "USes": "Pili",
+      "EUfr": "Layette",
+      "USfr": "Layette",
+      "EUit": "Agostina",
+      "EUnl": "Mabel",
+      "CNzh": "绢儿",
+      "TWzh": "絹兒",
+      "JPja": "きぬよ",
+      "KRko": "고순이",
+      "EUru": "Мэйбл"
+    }
+  },
+  {
+    "id": "hgs",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Sable",
+      "EUen": "Sable",
+      "EUde": "Sina",
+      "EUes": "Mili",
+      "USes": "Mili",
+      "EUfr": "Cousette",
+      "USfr": "Cousette",
+      "EUit": "Filomena",
+      "EUnl": "Sable",
+      "CNzh": "麻儿",
+      "TWzh": "麻兒",
+      "JPja": "あさみ",
+      "KRko": "고옥이",
+      "EUru": "Сэйбл"
+    }
+  },
+  {
+    "id": "kpg",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Grams",
+      "EUen": "Grams",
+      "EUde": "Bonnie",
+      "EUes": "Rosauria",
+      "USes": "Rosauria",
+      "EUfr": "Mamiral",
+      "USfr": "Mamiral",
+      "EUit": "Remigia",
+      "EUnl": "Grams",
+      "CNzh": "阿玉婆婆",
+      "TWzh": "阿玉婆婆",
+      "JPja": "ゲコ",
+      "KRko": "귀녀",
+      "EUru": "Грэмс"
+    }
+  },
+  {
+    "id": "kpm",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Leilani",
+      "EUen": "Leilani",
+      "EUde": "Lore",
+      "EUes": "Marimar",
+      "USes": "Marimar",
+      "EUfr": "Liliane",
+      "USfr": "Liliane",
+      "EUit": "Ramona",
+      "EUnl": "Leilani",
+      "CNzh": "沽玉",
+      "TWzh": "沽玉",
+      "JPja": "クーコ",
+      "KRko": "갑순",
+      "EUru": "Лейлани"
+    }
+  },
+  {
+    "id": "kpp",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Kapp'n",
+      "EUen": "Kapp'n",
+      "EUde": "Käpten",
+      "EUes": "Capitán",
+      "USes": "Capitán",
+      "EUfr": "Amiral",
+      "USfr": "Amiral",
+      "EUit": "Remo",
+      "EUnl": "Kapp'n",
+      "CNzh": "航平",
+      "TWzh": "航平",
+      "JPja": "かっぺい",
+      "KRko": "갑돌",
+      "EUru": "Кэпн"
+    }
+  },
+  {
+    "id": "kps",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Leila",
+      "EUen": "Leila",
+      "EUde": "Lotte",
+      "EUes": "Conchita",
+      "USes": "Conchita",
+      "EUfr": "Lila",
+      "USfr": "Lila",
+      "EUit": "Romina",
+      "EUnl": "Leila",
+      "CNzh": "沽沽",
+      "TWzh": "沽沽",
+      "JPja": "クク",
+      "KRko": "꼬미",
+      "EUru": "Лейла"
+    }
+  },
+  {
+    "id": "lom",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Katie",
+      "EUen": "Katie",
+      "EUde": "Katja",
+      "EUes": "Cati",
+      "USes": "Cati",
+      "EUfr": "Cathie",
+      "USfr": "Cathie",
+      "EUit": "Micetta",
+      "EUnl": "Katie",
+      "CNzh": "咪露",
+      "TWzh": "咪露",
+      "JPja": "まいこちゃん",
+      "KRko": "미야",
+      "EUru": "Кейти"
+    }
+  },
+  {
+    "id": "mka",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Blanca",
+      "EUen": "Blanca",
+      "EUde": "Blanka",
+      "EUes": "Blanca",
+      "USes": "Blanca",
+      "EUfr": "Blanca",
+      "USfr": "Blanca",
+      "EUit": "Blanca",
+      "EUnl": "Blanca",
+      "CNzh": "无脸猫",
+      "TWzh": "無臉貓",
+      "JPja": "あやしいネコ",
+      "KRko": "아트고양이",
+      "EUru": "Бланка"
+    }
+  },
+  {
+    "id": "mnk",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Porter",
+      "EUen": "Porter",
+      "EUde": "Flip",
+      "EUes": "Estasio",
+      "USes": "Estasio",
+      "EUfr": "Lazare",
+      "USfr": "Lazare",
+      "EUit": "Ciufciuf",
+      "EUnl": "Porter",
+      "CNzh": "车长叔叔",
+      "TWzh": "車長叔叔",
+      "JPja": "えきいんさん",
+      "KRko": "역무원",
+      "EUru": "Портер"
+    }
+  },
+  {
+    "id": "mob",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Don",
+      "EUen": "Don",
+      "EUde": "Don",
+      "EUes": "Forma T.",
+      "USes": "Forma T.",
+      "EUfr": "Don",
+      "USfr": "Don",
+      "EUit": "Don",
+      "EUnl": "Don",
+      "CNzh": "开关叔叔",
+      "TWzh": "開關叔叔",
+      "JPja": "ラケットさん",
+      "KRko": "오루묵씨",
+      "EUru": "Дон"
+    }
+  },
+  {
+    "id": "mol",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Resetti",
+      "EUen": "Resetti",
+      "EUde": "Resetti",
+      "EUes": "Rese T.",
+      "USes": "Rese T.",
+      "EUfr": "Resetti",
+      "USfr": "Resetti",
+      "EUit": "Resetti",
+      "EUnl": "Resetti",
+      "CNzh": "电源叔叔",
+      "TWzh": "電源叔叔",
+      "JPja": "リセットさん",
+      "KRko": "도루묵씨",
+      "EUru": "Ресетти"
+    }
+  },
+  {
+    "id": "otg",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Lottie",
+      "EUen": "Lottie",
+      "EUde": "Karlotta",
+      "EUes": "Nuria",
+      "USes": "Nuria",
+      "EUfr": "Lou",
+      "USfr": "Lou",
+      "EUit": "Casimira",
+      "EUnl": "Lottie",
+      "CNzh": "巧美",
+      "TWzh": "巧美",
+      "JPja": "タクミ",
+      "KRko": "솜이",
+      "EUru": "Лотти"
+    }
+  },
+  {
+    "id": "ott",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Lyle",
+      "EUen": "Lyle",
+      "EUde": "Fred",
+      "EUes": "Sisebuto",
+      "USes": "Sisebuto",
+      "EUfr": "Lionel",
+      "USfr": "Lionel",
+      "EUit": "Frodolo",
+      "EUnl": "Lyle",
+      "CNzh": "阿本先生",
+      "TWzh": "阿本先生",
+      "JPja": "ホンマさん",
+      "KRko": "안심해씨",
+      "EUru": "Лайл"
+    }
+  },
+  {
+    "id": "owl",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Blathers",
+      "EUen": "Blathers",
+      "EUde": "Eugen",
+      "EUes": "Sócrates",
+      "USes": "Sócrates",
+      "EUfr": "Thibou",
+      "USfr": "Thibou",
+      "EUit": "Blatero",
+      "EUnl": "Blathers",
+      "CNzh": "傅达",
+      "TWzh": "傅達",
+      "JPja": "フータ",
+      "KRko": "부엉",
+      "EUru": "Блезерс"
+    }
+  },
+  {
+    "id": "ows",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Celeste",
+      "EUen": "Celeste",
+      "EUde": "Eufemia",
+      "EUes": "Estela",
+      "USes": "Estela",
+      "EUfr": "Céleste",
+      "USfr": "Céleste",
+      "EUit": "Celeste",
+      "EUnl": "Celeste",
+      "CNzh": "傅珂",
+      "TWzh": "傅珂",
+      "JPja": "フーコ",
+      "KRko": "부옥",
+      "EUru": "Селеста"
+    }
+  },
+  {
+    "id": "pck",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Pavé",
+      "EUen": "Pavé",
+      "EUde": "Pavo",
+      "EUes": "Conga",
+      "USes": "Conga",
+      "EUfr": "Roberto",
+      "USfr": "Roberto",
+      "EUit": "Pavão",
+      "EUnl": "Pavé",
+      "CNzh": "阿欢",
+      "TWzh": "阿歡",
+      "JPja": "ベルリーナ",
+      "KRko": "베르리나",
+      "EUru": "Паве"
+    }
+  },
+  {
+    "id": "pge",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Brewster",
+      "EUen": "Brewster",
+      "EUde": "Kofi",
+      "EUes": "Fígaro",
+      "USes": "Fígaro",
+      "EUfr": "Robusto",
+      "USfr": "Robusto",
+      "EUit": "Bartolo",
+      "EUnl": "Brewster",
+      "CNzh": "老板",
+      "TWzh": "老闆",
+      "JPja": "マスター",
+      "KRko": "마스터",
+      "EUru": "Брюстер"
+    }
+  },
+  {
+    "id": "pkn",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Jack",
+      "EUen": "Jack",
+      "EUde": "Jakob",
+      "EUes": "Soponcio",
+      "USes": "Soponcio",
+      "EUfr": "Jacqu'O",
+      "USfr": "Jacqu'O",
+      "EUit": "Fifonio",
+      "EUnl": "Jack",
+      "CNzh": "南瓜王",
+      "TWzh": "南瓜王",
+      "JPja": "パンプキング",
+      "KRko": "펌킹",
+      "EUru": "Джек"
+    }
+  },
+  {
+    "id": "plk",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Pelly",
+      "EUen": "Pelly",
+      "EUde": "Pelly",
+      "EUes": "Sol",
+      "USes": "Sol",
+      "EUfr": "Opélie",
+      "USfr": "Opélie",
+      "EUit": "Pelly",
+      "EUnl": "Pelly",
+      "CNzh": "宋信子",
+      "TWzh": "宋信子",
+      "JPja": "ぺりこ",
+      "KRko": "펠리",
+      "EUru": "Пелли"
+    }
+  },
+  {
+    "id": "plm",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Phyllis",
+      "EUen": "Phyllis",
+      "EUde": "Peggy",
+      "EUes": "Estrella",
+      "USes": "Estrella",
+      "EUfr": "Élisabec",
+      "USfr": "Élisabec",
+      "EUit": "Polly",
+      "EUnl": "Phyllis",
+      "CNzh": "宋信美",
+      "TWzh": "宋信美",
+      "JPja": "ぺりみ",
+      "KRko": "펠리미",
+      "EUru": "Филлис"
+    }
+  },
+  {
+    "id": "plo",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Pete",
+      "EUen": "Pete",
+      "EUde": "Peter",
+      "EUes": "Carturo",
+      "USes": "Carturo",
+      "EUfr": "Antoine",
+      "USfr": "Antoine",
+      "EUit": "Tino",
+      "EUnl": "Pete",
+      "CNzh": "程信雄",
+      "TWzh": "程信雄",
+      "JPja": "ぺりお",
+      "KRko": "펠리오",
+      "EUru": "Пит"
+    }
+  },
+  {
+    "id": "poo",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Harriet",
+      "EUen": "Harriet",
+      "EUde": "Trude",
+      "EUes": "Marilín",
+      "USes": "Marilín",
+      "EUfr": "Ginette",
+      "USfr": "Ginette",
+      "EUit": "Bigodina",
+      "EUnl": "Harriet",
+      "CNzh": "刀丽茹",
+      "TWzh": "刀麗茹",
+      "JPja": "カットリーヌ",
+      "KRko": "카트리나",
+      "EUru": "Харриет"
+    }
+  },
+  {
+    "id": "pyn",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Zipper",
+      "EUen": "Zipper",
+      "EUde": "Ohs",
+      "EUes": "Coti",
+      "USes": "Coti",
+      "EUfr": "Albin",
+      "USfr": "Albin",
+      "EUit": "Ovidio",
+      "EUnl": "Zipper",
+      "CNzh": "蹦蹦",
+      "TWzh": "蹦蹦",
+      "JPja": "ぴょんたろう",
+      "KRko": "토빗",
+      "EUru": "Зиппер"
+    }
+  },
+  {
+    "id": "rcm",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Timmy",
+      "EUen": "Timmy",
+      "EUde": "Nepp",
+      "EUes": "Tendo",
+      "USes": "Tendo",
+      "EUfr": "Méli",
+      "USfr": "Méli",
+      "EUit": "Mirco",
+      "EUnl": "Timmy",
+      "CNzh": "豆狸",
+      "TWzh": "豆狸",
+      "JPja": "まめきち",
+      "KRko": "콩돌이",
+      "EUru": "Тимми"
+    }
+  },
+  {
+    "id": "rco",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Tom Nook",
+      "EUen": "Tom Nook",
+      "EUde": "Tom Nook",
+      "EUes": "Tom Nook",
+      "USes": "Tom Nook",
+      "EUfr": "Tom Nook",
+      "USfr": "Tom Nook",
+      "EUit": "Tom Nook",
+      "EUnl": "Tom Nook",
+      "CNzh": "狸克",
+      "TWzh": "狸克",
+      "JPja": "たぬきち",
+      "KRko": "너굴",
+      "EUru": "Том Нук"
+    }
+  },
+  {
+    "id": "rct",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Tommy",
+      "EUen": "Tommy",
+      "EUde": "Schlepp",
+      "EUes": "Nendo",
+      "USes": "Nendo",
+      "EUfr": "Mélo",
+      "USfr": "Mélo",
+      "EUit": "Marco",
+      "EUnl": "Tommy",
+      "CNzh": "粒狸",
+      "TWzh": "粒狸",
+      "JPja": "つぶきち",
+      "KRko": "밤돌이",
+      "EUru": "Томми"
+    }
+  },
+  {
+    "id": "rei",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Jingle",
+      "EUen": "Jingle",
+      "EUde": "Chris",
+      "EUes": "Renato",
+      "USes": "Renato",
+      "EUfr": "Rodolphe",
+      "USfr": "Rodolphe",
+      "EUit": "Jingle",
+      "EUnl": "Jingle",
+      "CNzh": "铃铃鹿",
+      "TWzh": "鈴鈴鹿",
+      "JPja": "ジングル",
+      "KRko": "루돌",
+      "EUru": "Джингл"
+    }
+  },
+  {
+    "id": "Pascal",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Pascal",
+      "EUen": "Pascal",
+      "EUde": "Johannes",
+      "EUes": "Pascal",
+      "USes": "Pascal",
+      "EUfr": "Pascal",
+      "USfr": "Pascal",
+      "EUit": "Pasqualo",
+      "EUnl": "Pascal",
+      "CNzh": "阿獭",
+      "TWzh": "阿獺",
+      "JPja": "ラコスケ",
+      "KRko": "해탈한",
+      "EUru": "Паскаль"
+    }
+  },
+  {
+    "id": "Kicks",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Kicks",
+      "EUen": "Kicks",
+      "EUde": "Schubert",
+      "EUes": "Betunio",
+      "USes": "Betunio",
+      "EUfr": "Blaise",
+      "USfr": "Blaise",
+      "EUit": "Sciuscià",
+      "EUnl": "Kicks",
+      "CNzh": "薛革",
+      "TWzh": "薛革",
+      "JPja": "シャンク",
+      "KRko": "패트릭",
+      "EUru": "Кикс"
+    }
+  },
+  {
+    "id": "slo",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Leif",
+      "EUen": "Leif",
+      "EUde": "Gerd",
+      "EUes": "Gandulio",
+      "USes": "Gandulio",
+      "EUfr": "Racine",
+      "USfr": "Racine",
+      "EUit": "Florindo",
+      "EUnl": "Leif",
+      "CNzh": "然然",
+      "TWzh": "然然",
+      "JPja": "レイジ",
+      "KRko": "늘봉",
+      "EUru": "Лейф"
+    }
+  },
+  {
+    "id": "spn",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Harvey",
+      "EUen": "Harvey",
+      "EUde": "Harvey",
+      "EUes": "Fauno",
+      "USes": "Fauno",
+      "EUfr": "Joe",
+      "USfr": "Joe",
+      "EUit": "Fiorilio",
+      "EUnl": "Harvey",
+      "CNzh": "巴猎",
+      "TWzh": "巴獵",
+      "JPja": "パニエル",
+      "KRko": "파니엘",
+      "EUru": "Харви"
+    }
+  },
+  {
+    "id": "Isabelle",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Isabelle",
+      "EUen": "Isabelle",
+      "EUde": "Melinda",
+      "EUes": "Canela",
+      "USes": "Canela",
+      "EUfr": "Marie",
+      "USfr": "Marie",
+      "EUit": "Fuffi",
+      "EUnl": "Isabelle",
+      "CNzh": "西施惠",
+      "TWzh": "西施惠",
+      "JPja": "しずえ",
+      "KRko": "여울",
+      "EUru": "Изабель"
+    }
+  },
+  {
+    "id": "szo",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Digby",
+      "EUen": "Digby",
+      "EUde": "Moritz",
+      "EUes": "Candrés",
+      "USes": "Candrés",
+      "EUfr": "Max",
+      "USfr": "Max",
+      "EUit": "Fofò",
+      "EUnl": "Digby",
+      "CNzh": "西施德",
+      "TWzh": "西施德",
+      "JPja": "ケント",
+      "KRko": "켄트",
+      "EUru": "Дигби"
+    }
+  },
+  {
+    "id": "tap",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Luna",
+      "EUen": "Luna",
+      "EUde": "Serenada",
+      "EUes": "Alakama",
+      "USes": "Alakama",
+      "EUfr": "Serena",
+      "USfr": "Serena",
+      "EUit": "Sonia",
+      "EUnl": "Luna",
+      "CNzh": "梦美",
+      "TWzh": "夢美",
+      "JPja": "ゆめみ",
+      "KRko": "몽셰르",
+      "EUru": "Луна"
+    }
+  },
+  {
+    "id": "tkkA",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "K.K.",
+      "EUen": "K.K.",
+      "EUde": "K.K.",
+      "EUes": "Totakeke",
+      "USes": "Totakeke",
+      "EUfr": "Kéké",
+      "USfr": "Kéké",
+      "EUit": "K.K.",
+      "EUnl": "K.K.",
+      "CNzh": "K.K.",
+      "TWzh": "K.K.",
+      "JPja": "とたけけ",
+      "KRko": "K.K.",
+      "EUru": "К. К."
+    }
+  },
+  {
+    "id": "tkkB",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "DJ KK",
+      "EUen": "DJ KK",
+      "EUde": "DJ K.K.",
+      "EUes": "DJ KeKe",
+      "USes": "DJ KeKe",
+      "EUfr": "DJ Kéké",
+      "USfr": "DJ Kéké",
+      "EUit": "DJ K.K.",
+      "EUnl": "DJ K.K.",
+      "CNzh": "DJ KK",
+      "TWzh": "DJ KK",
+      "JPja": "DJ K.K",
+      "KRko": "DJ K.K.",
+      "EUru": "DJ KK"
+    }
+  },
+  {
+    "id": "ttlA",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Tortimer",
+      "EUen": "Tortimer",
+      "EUde": "Törtel",
+      "EUes": "Tórtimer",
+      "USes": "Tórtimer",
+      "EUfr": "Tortimer",
+      "USfr": "Tortimer",
+      "EUit": "Tortimer",
+      "EUnl": "Tortimer",
+      "CNzh": "寿伯",
+      "TWzh": "壽伯",
+      "JPja": "コトブキ",
+      "KRko": "고북",
+      "EUru": "Тортимер"
+    }
+  },
+  {
+    "id": "tuk",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Franklin",
+      "EUen": "Franklin",
+      "EUde": "Gernod",
+      "EUes": "Guindo",
+      "USes": "Guindo",
+      "EUfr": "Dindou",
+      "USfr": "Dindou",
+      "EUit": "Cedrone",
+      "EUnl": "Franklin",
+      "CNzh": "富蓝",
+      "TWzh": "富藍",
+      "JPja": "フランクリン",
+      "KRko": "프랭클린",
+      "EUru": "Франклин"
+    }
+  },
+  {
+    "id": "upa",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Shrunk",
+      "EUen": "Shrunk",
+      "EUde": "Samselt",
+      "EUes": "Dr. Sito",
+      "USes": "Dr. Sito",
+      "EUfr": "Ciboulot",
+      "USfr": "Ciboulot",
+      "EUit": "Strizzo",
+      "EUnl": "Shrunk",
+      "CNzh": "笑匠",
+      "TWzh": "笑匠",
+      "JPja": "ししょー",
+      "KRko": "스승",
+      "EUru": "Шранк"
+    }
+  },
+  {
+    "id": "wrl",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Wendell",
+      "EUen": "Wendell",
+      "EUde": "Winci",
+      "EUes": "Da Morsi",
+      "USes": "Da Morsi",
+      "EUfr": "Morsicus",
+      "USfr": "Morsicus",
+      "EUit": "Van Trik",
+      "EUnl": "Wendell",
+      "CNzh": "海项",
+      "TWzh": "海項",
+      "JPja": "セイイチ",
+      "KRko": "고파유",
+      "EUru": "Уэнделл"
+    }
+  },
+  {
+    "id": "xct",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Rover",
+      "EUen": "Rover",
+      "EUde": "Olli",
+      "EUes": "Fran",
+      "USes": "Fran",
+      "EUfr": "Charly",
+      "USfr": "Charly",
+      "EUit": "Girolamo",
+      "EUnl": "Rover",
+      "CNzh": "陌陌",
+      "TWzh": "陌陌",
+      "JPja": "みしらぬネコ",
+      "KRko": "낯선고양이",
+      "EUru": "Ровер"
+    }
+  },
+  {
+    "id": "Nook Miles Redemption",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Nook Miles Ticket",
+      "EUen": "Nook Miles Ticket",
+      "EUde": "Meilenticket",
+      "EUes": "cupón de millas Nook",
+      "USes": "cupón de millas Nook",
+      "EUfr": "ticket Miles Nook",
+      "USfr": "ticket points Nook",
+      "EUit": "coupon miglia di Nook",
+      "EUnl": "Nook-miles-bon",
+      "CNzh": "里数旅行券",
+      "TWzh": "哩數旅行券",
+      "JPja": "マイルりょこうけん",
+      "KRko": "마일 여행권",
+      "EUru": "билет за мили Нука"
+    }
+  },
+  {
+    "id": "Countdown",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Countdown",
+      "EUen": "Countdown",
+      "EUde": "Countdown",
+      "EUes": "cuenta atrás",
+      "USes": "Cuenta regresiva",
+      "EUfr": "Compte à rebours",
+      "USfr": "Compte à rebours",
+      "EUit": "Conto alla rovescia",
+      "EUnl": "Aftellen",
+      "CNzh": "倒数",
+      "TWzh": "倒數",
+      "JPja": "カウントダウン",
+      "KRko": "카운트다운",
+      "EUru": "Отсчет"
+    }
+  },
+  {
+    "id": "CowBoyFestival",
+    "version": "1.4.0",
+    "locale": {
+      "USen": "Cowboy Festival",
+      "EUen": "Cowboy Festival",
+      "EUde": "Cowboy-Festival",
+      "EUes": "Festival de los vaqueros",
+      "USes": "Festival de los vaqueros",
+      "EUfr": "Festival des cow-boys",
+      "USfr": "Festival des cowboys",
+      "EUit": "Festival cowboy",
+      "EUnl": "Cowboyfestival",
+      "CNzh": "牛仔节",
+      "TWzh": "牛仔節",
+      "JPja": "カウボーイまつ祭り",
+      "KRko": "카우보이 축제",
+      "EUru": "Фестиваль ковбоев"
+    }
+  },
+  {
+    "id": "FathersDay",
+    "version": "1.2.0",
+    "locale": {
+      "USen": "Father's Day",
+      "EUen": "Father's Day",
+      "EUde": "Vatertag",
+      "EUes": "Día del Padre",
+      "USes": "Día del Padre",
+      "EUfr": "Fête des pères",
+      "USfr": "Fête des pères",
+      "EUit": "Festa del papà",
+      "EUnl": "Vaderdag",
+      "CNzh": "父亲节",
+      "TWzh": "世界父親節",
+      "JPja": "ちち父のひ日",
+      "KRko": "아버지날",
+      "EUru": "День отца"
+    }
+  },
+  {
+    "id": "FishingConventionAutumn",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Fall Fishing Tourney",
+      "EUen": "Fall Fishing Tourney",
+      "EUde": "Herbst-Angelturnier",
+      "EUes": "T. de Pesca de otoño",
+      "USes": "T. de Pesca de otoño",
+      "EUfr": "Tournoi de pêche (automne)",
+      "USfr": "Tournoi de pêche (automne)",
+      "EUit": "Torneo di pesca autunnale",
+      "EUnl": "Herfstvistoernooi",
+      "CNzh": "秋季钓鱼大赛",
+      "TWzh": "秋季釣魚大會",
+      "JPja": "あき秋のつ釣りたいかい大会",
+      "KRko": "가을 낚시대회",
+      "EUru": "Осенний турнир «Мастер удочки»"
+    }
+  },
+  {
+    "id": "FishingConventionSpring",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Spring Fishing Tourney",
+      "EUen": "Spring Fishing Tourney",
+      "EUde": "Frühlings-Angelturnier",
+      "EUes": "T. de Pesca de primavera",
+      "USes": "T. de Pesca de primavera",
+      "EUfr": "Tournoi de pêche (printemps)",
+      "USfr": "Tournoi pêche (printemps)",
+      "EUit": "Torneo di pesca primaverile",
+      "EUnl": "Lentevistoernooi",
+      "CNzh": "春季钓鱼大赛",
+      "TWzh": "春季釣魚大會",
+      "JPja": "はる春のつ釣りたいかい大会",
+      "KRko": "봄 낚시대회",
+      "EUru": "Весенний турнир «Мастер удочки»"
+    }
+  },
+  {
+    "id": "FishingConventionSummer",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Summer Fishing Tourney",
+      "EUen": "Summer Fishing Tourney",
+      "EUde": "Sommer-Angelturnier",
+      "EUes": "T. de Pesca de verano",
+      "USes": "T. de Pesca de verano",
+      "EUfr": "Tournoi de pêche (été)",
+      "USfr": "Tournoi de pêche (été)",
+      "EUit": "Torneo di pesca estivo",
+      "EUnl": "Zomervistoernooi",
+      "CNzh": "夏季钓鱼大赛",
+      "TWzh": "夏季釣魚大會",
+      "JPja": "なつ夏のつ釣りたいかい大会",
+      "KRko": "여름 낚시대회",
+      "EUru": "Летний турнир «Мастер удочки»"
+    }
+  },
+  {
+    "id": "Fishing Tourney",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Fishing Tourney",
+      "EUen": "Fishing Tourney",
+      "EUde": "Angelturnier",
+      "EUes": "Torneo de Pesca",
+      "USes": "Torneo de Pesca",
+      "EUfr": "Tournoi de pêche",
+      "USfr": "Tournoi de pêche",
+      "EUit": "Torneo di pesca",
+      "EUnl": "Vistoernooi",
+      "CNzh": "冬季钓鱼大赛",
+      "TWzh": "冬季釣魚大會",
+      "JPja": "ふゆ冬のつ釣りたいかい大会",
+      "KRko": "겨울 낚시대회",
+      "EUru": "турнир «Мастер удочки»"
+    }
+  },
+  {
+    "id": "GrapeHarvestFestival",
+    "version": "1.4.0",
+    "locale": {
+      "USen": "Grape Harvest Festival",
+      "EUen": "Grape Harvest Festival",
+      "EUde": "Traubenlese-Festival",
+      "EUes": "La vendimia",
+      "USes": "La vendimia",
+      "EUfr": "Festival du raisin",
+      "USfr": "Festival du raisin",
+      "EUit": "Festival della vendemmia",
+      "EUnl": "Druivenoogstfestival",
+      "CNzh": "葡萄丰收节",
+      "TWzh": "葡萄豐收節",
+      "JPja": "ブドウのしゅうかくさい収穫祭",
+      "KRko": "포도 수확제",
+      "EUru": "День сбора винограда"
+    }
+  },
+  {
+    "id": "GyurouSyokujyo",
+    "version": "1.4.0",
+    "locale": {
+      "USen": "Cowherd & Weaver Girl Day",
+      "EUen": "Cowherd & Weaver Girl Day",
+      "EUde": "Kuhhirte-und-Weberin-Tag",
+      "EUes": "El pastor y la tejedora",
+      "USes": "El pastor y la tejedora",
+      "EUfr": "Le bouvier et la tisserande",
+      "USfr": "Le bouvier et la tisserande",
+      "EUit": "Il pastore e la filatrice",
+      "EUnl": "Veehoeder-en-weefsterdag",
+      "CNzh": "七夕",
+      "TWzh": "七夕",
+      "JPja": "ぎゅうろうしょくじょ牛郎織女の",
+      "KRko": "칠석",
+      "EUru": "День пастуха и ткачихи"
+    }
+  },
+  {
+    "id": "InsectConvention1",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Bug-Off",
+      "EUen": "Bug-Off",
+      "EUde": "Insektikus-Turnier",
+      "EUes": "Caza de Bichos",
+      "USes": "Caza de Insectos",
+      "EUfr": "Insectosafari",
+      "USfr": "Insectosafari",
+      "EUit": "Insettomania",
+      "EUnl": "Beestjesbeker",
+      "CNzh": "捕虫大赛",
+      "TWzh": "捕蟲大會",
+      "JPja": "ムシとりたいかい大会",
+      "KRko": "곤충채집대회",
+      "EUru": "Турнир «Мастер сачка»"
+    }
+  },
+  {
+    "id": "InsectConvention2",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Bug-Off",
+      "EUen": "Bug-Off",
+      "EUde": "Insektikus-Turnier",
+      "EUes": "Caza de Bichos",
+      "USes": "Caza de Insectos",
+      "EUfr": "Insectosafari",
+      "USfr": "Insectosafari",
+      "EUit": "Insettomania",
+      "EUnl": "Beestjesbeker",
+      "CNzh": "捕虫大赛",
+      "TWzh": "捕蟲大會",
+      "JPja": "ムシとりたいかい大会",
+      "KRko": "곤충채집대회",
+      "EUru": "Турнир «Мастер сачка»"
+    }
+  },
+  {
+    "id": "InsectConvention3",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Bug-Off",
+      "EUen": "Bug-Off",
+      "EUde": "Insektikus-Turnier",
+      "EUes": "Caza de Bichos",
+      "USes": "Caza de Insectos",
+      "EUfr": "Insectosafari",
+      "USfr": "Insectosafari",
+      "EUit": "Insettomania",
+      "EUnl": "Beestjesbeker",
+      "CNzh": "捕虫大赛",
+      "TWzh": "捕蟲大會",
+      "JPja": "ムシとりたいかい大会",
+      "KRko": "곤충채집대회",
+      "EUru": "Турнир «Мастер сачка»"
+    }
+  },
+  {
+    "id": "Bug-Off",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Bug-Off",
+      "EUen": "Bug-Off",
+      "EUde": "Insektikus-Turnier",
+      "EUes": "Caza de Bichos",
+      "USes": "Caza de Insectos",
+      "EUfr": "Insectosafari",
+      "USfr": "Insectosafari",
+      "EUit": "Insettomania",
+      "EUnl": "Beestjesbeker",
+      "CNzh": "捕虫大赛",
+      "TWzh": "捕蟲大會",
+      "JPja": "ムシとりたいかい大会",
+      "KRko": "곤충채집대회",
+      "EUru": "Турнир «Мастер сачка»"
+    }
+  },
+  {
+    "id": "MidAutumnFestival",
+    "version": "1.4.0",
+    "locale": {
+      "USen": "Moon-Viewing Day",
+      "EUen": "Moon-Viewing Day",
+      "EUde": "Mondfest",
+      "EUes": "Celebración de la Luna",
+      "USes": "Celebración de la Luna",
+      "EUfr": "Fête de la lune",
+      "USfr": "Fête de la Lune",
+      "EUit": "Festa della luna",
+      "EUnl": "Maanfeest",
+      "CNzh": "中秋节",
+      "TWzh": "中秋節",
+      "JPja": "おつきみ月見",
+      "KRko": "추석",
+      "EUru": "День луны"
+    }
+  },
+  {
+    "id": "Mom",
+    "version": "1.2.0",
+    "locale": {
+      "USen": "Mother's Day",
+      "EUen": "Mother's Day",
+      "EUde": "Muttertag",
+      "EUes": "Día de la Madre",
+      "USes": "Día de la Madre",
+      "EUfr": "Fête des mères",
+      "USfr": "Fête des mères",
+      "EUit": "Festa della mamma",
+      "EUnl": "Moederdag",
+      "CNzh": "母亲节",
+      "TWzh": "母親節",
+      "JPja": "はは母のひ日",
+      "KRko": "어머니날",
+      "EUru": "День матери"
+    }
+  },
+  {
+    "id": "SummerSolstice",
+    "version": "1.2.0",
+    "locale": {
+      "USen": "Summer Solstice",
+      "EUen": "Summer Solstice",
+      "EUde": "Sommersonnenwende",
+      "EUes": "Solsticio de verano",
+      "USes": "Solsticio de verano",
+      "EUfr": "Solstice d'été",
+      "USfr": "Solstice d'été",
+      "EUit": "Solstizio d'estate",
+      "EUnl": "Midzomer",
+      "CNzh": "夏至祭典",
+      "TWzh": "夏至祭典",
+      "JPja": "げしさい夏至祭",
+      "KRko": "하지 축제",
+      "EUru": "Праздник лета"
+    }
+  },
+  {
+    "id": "WinterSolstice",
+    "version": "1.2.0",
+    "locale": {
+      "USen": "Winter Solstice",
+      "EUen": "Winter Solstice",
+      "EUde": "Wintersonnenwende",
+      "EUes": "Solsticio de invierno",
+      "USes": "Solsticio de invierno",
+      "EUfr": "Solstice d'hiver",
+      "USfr": "Solstice d'hiver",
+      "EUit": "Solstizio d'inverno",
+      "EUnl": "Midwinter",
+      "CNzh": "冬至祭典",
+      "TWzh": "冬至祭典",
+      "JPja": "とうじさい冬至祭",
+      "KRko": "동지 축제",
+      "EUru": "Праздник зимы"
+    }
+  },
+  {
+    "id": "International Museum Day",
+    "version": "1.2.0",
+    "locale": {
+      "USen": "Museum Day",
+      "EUen": "Museum Day",
+      "EUde": "Museumstag",
+      "EUes": "Día del Museo",
+      "USes": "Día del Museo",
+      "EUfr": "Journée du musée",
+      "USfr": "Journée du musée",
+      "EUit": "Giornata dei musei",
+      "EUnl": "Museumdag",
+      "CNzh": "博物馆日",
+      "TWzh": "博物館日",
+      "JPja": "博物館の日",
+      "KRko": "박물관의 날",
+      "EUru": "день музеев"
+    }
+  },
+    {
+    "id": "Birthday",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "birthday",
+      "EUen": "birthday",
+      "EUde": "Geburtstag",
+      "EUes": "cumpleaños",
+      "USes": "cumpleaños",
+      "EUfr": "anniversaire",
+      "USfr": "fête",
+      "EUit": "compleanno",
+      "EUnl": "verjaardagsset",
+      "CNzh": "生日",
+      "TWzh": "生日",
+      "JPja": "バースデー",
+      "KRko": "생일",
+      "EUru": "Именины"
+    }
+  },
+  {
+    "id": "Nook Shopping Promotion",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Pocket Camp",
+      "EUen": "Pocket Camp",
+      "EUde": "Pocket Camp",
+      "EUes": "Pocket Camp",
+      "USes": "Pocket Camp",
+      "EUfr": "Pocket Camp",
+      "USfr": "Pocket Camp",
+      "EUit": "Pocket Camp",
+      "EUnl": "Pocket Camp",
+      "CNzh": "Pocket Camp",
+      "TWzh": "Pocket Camp",
+      "JPja": "どうぶつの森 ポケットキャンプ",
+      "KRko": "Pocket Camp",
+      "EUru": "Pocket Camp"
+    }
+  },
+   {
+    "id": "Nook Shopping Seasonal",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Nook Shopping Seasonal",
+      "EUen": "Nook Shopping Seasonal",
+      "EUde": "Nook Saisonale Einkäufe",
+      "EUes": "Nook Fechas Especiales",
+      "USes": "Nook Fechas Especiales",
+      "EUfr": "Nook Shopping saisonnier",
+      "USfr": "Nook Shopping saisonnier",
+      "EUit": "Nook Shopping stagionale",
+      "EUnl": "Nook Seizoensgebonden winkelen",
+      "CNzh": "季节性购物",
+      "TWzh": "季節性購物",
+      "JPja": "季節限定のショッピング",
+      "KRko": "쇼핑 계절",
+      "EUru": "Покупки Сезонные"
+    }
+  },
+  {
+    "id": "Starting items",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Starting items",
+      "EUen": "Starting items",
+      "EUde": "Startgegenstände",
+      "EUes": "Items del Comienzo",
+      "USes": "Items del Comienzo",
+      "EUfr": "Articles de départ",
+      "USfr": "Articles de départ",
+      "EUit": "Elementi iniziali",
+      "EUnl": "Startitems",
+      "CNzh": "起始项目",
+      "TWzh": "起始項目",
+      "JPja": "出発点",
+      "KRko": "시작 항목",
+      "EUru": "Стартовые предметы"
+    }
+  },
+   {
+    "id": "Nintendo; Nook Shopping",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Nintendo Update<br>Nook Miles",
+      "EUen": "Nintendo Update<br>Nook Miles",
+      "EUde": "Nintendo Update<br>Meilenticket",
+      "EUes": "Nintendo Update<br>Millas Nook",
+      "USes": "Nintendo Update<br>Millas Nook",
+      "EUfr": "Nintendo Update<br>Ticket Miles",
+      "USfr": "Nintendo Update<br>Ticket points",
+      "EUit": "Nintendo Update<br>Coupon miglia",
+      "EUnl": "Nintendo Update<br>Nook-miles",
+      "CNzh": "Nintendo Update<br>里数旅行券",
+      "TWzh": "Nintendo Update<br>哩數旅行券",
+      "JPja": "Nintendo Update<br>マイルりょこうけん",
+      "KRko": "Nintendo Update<br>마일 여행권",
+      "EUru": "Nintendo Update<br>билет за мили Нука"
+    }
+  },
+  {
+    "id": "Nook Shopping Daily Selection",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Nintendo Update<br>Nook Miles",
+      "EUen": "Nintendo Update<br>Nook Miles",
+      "EUde": "Nintendo Update<br>Meilenticket",
+      "EUes": "Nintendo Update<br>Millas Nook",
+      "USes": "Nintendo Update<br>Millas Nook",
+      "EUfr": "Nintendo Update<br>Ticket Miles",
+      "USfr": "Nintendo Update<br>Ticket points",
+      "EUit": "Nintendo Update<br>Coupon miglia",
+      "EUnl": "Nintendo Update<br>Nook-miles",
+      "CNzh": "Nintendo Update<br>里数旅行券",
+      "TWzh": "Nintendo Update<br>哩數旅行券",
+      "JPja": "Nintendo Update<br>マイルりょこうけん",
+      "KRko": "Nintendo Update<br>마일 여행권",
+      "EUru": "Nintendo Update<br>билет за мили Нука"
+    }
+  },
+  {
+    "id": "HHA",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "HHA",
+      "EUen": "HHA",
+      "EUde": "ASH",
+      "EUes": "AAD",
+      "USes": "AAD",
+      "EUfr": "AJD",
+      "USfr": "AJD",
+      "EUit": "ABC",
+      "EUnl": "HHA",
+      "CNzh": "HHA",
+      "TWzh": "HHA",
+      "JPja": "HHA",
+      "KRko": "HHA",
+      "EUru": "HHA"
+    }
+  },
+  {
+    "id": "Crafting",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Crafting",
+      "EUen": "Crafting",
+      "EUde": "Basteln",
+      "EUes": "Crafteable",
+      "USes": "Crafteable",
+      "EUfr": "Artisanat",
+      "USfr": "Artisanat",
+      "EUit": "Lavorazione",
+      "EUnl": "Bouwen",
+      "CNzh": "制作",
+      "TWzh": "製作",
+      "JPja": "クラフト",
+      "KRko": "제작",
+      "EUru": "ремесло"
+    }
+  },
+  {
+    "id": "Dodo Airlines",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Dodo Airlines",
+      "EUen": "Dodo Airlines",
+      "EUde": "Dodo Airlines",
+      "EUes": "Dodo Airlines",
+      "USes": "Dodo Airlines",
+      "EUfr": "Dodo Airlines",
+      "USfr": "Dodo Airlines",
+      "EUit": "Dodo Airlines",
+      "EUnl": "Dodo Airlines",
+      "CNzh": "DAL",
+      "TWzh": "DAL",
+      "JPja": "DAL",
+      "KRko": "DAL",
+      "EUru": "DAL"
+    }
+  },
+  {
+    "id": "Recycle box",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "Recycle box",
+      "EUen": "Recycle box",
+      "EUde": "Recycling-Box",
+      "EUes": "Caja de reciclaje",
+      "USes": "Caja de reciclaje",
+      "EUfr": "Boîte de recyclage",
+      "USfr": "Boîte de recyclage",
+      "EUit": "Riciclare la scatola",
+      "EUnl": "Recycle doos",
+      "CNzh": "回收箱",
+      "TWzh": "回收箱",
+      "JPja": "ごみ箱",
+      "KRko": "재활용 상자",
+      "EUru": "коробка для переработки"
+    }
+  },
+  {
+    "id": "New Year's Eve",
+    "version": "1.0.0",
+    "locale": {
+      "USen": "New Year's Eve",
+      "EUen": "New Year's Eve",
+      "EUde": "Recycling-Box",
+      "EUes": "Vispera de<br>Año Nuevo",
+      "USes": "Vispera de<br>Año Nuevo",
+      "EUfr": "réveillon de<br>Nouvel an",
+      "USfr": "réveillon de<br>Nouvel an",
+      "EUit": "Vigilia di Capodanno",
+      "EUnl": "Oudjaarsavond",
+      "CNzh": "除夕",
+      "TWzh": "除夕",
+      "JPja": "大晦日",
+      "KRko": "새해 전날",
+      "EUru": "Новогодняя ночь"
+    }
+  }
+  
+	
+  
+ ]

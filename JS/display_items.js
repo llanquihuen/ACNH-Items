@@ -1,13 +1,30 @@
-import getData from "../JS/fetch.js"
 let estaPag=1,
 xPag=24,
 itemsTitle =document.getElementById("items-titulo"),
 fragmentDom = document.createDocumentFragment();
+import getData from "../JS/fetch.js"
 
+let idioma = ""
+// console.log(localStorage.getItem("idioma"))
+if (localStorage.getItem("idioma")=== null){localStorage.setItem("idioma", "USes");}
+if (localStorage.getItem("idioma")=== "USen") idioma = ("USen");
+if (localStorage.getItem("idioma")=== "EUen") idioma = ("EUen");
+if (localStorage.getItem("idioma")=== "EUde") idioma = ("EUde");
+if (localStorage.getItem("idioma")=== "EUes") idioma = ("EUes");
+if (localStorage.getItem("idioma")=== "USes") idioma = ("USes");
+if (localStorage.getItem("idioma")=== "EUfr") idioma = ("EUfr");
+if (localStorage.getItem("idioma")=== "USfr") idioma = ("USfr");
+if (localStorage.getItem("idioma")=== "EUit") idioma = ("EUit");
+if (localStorage.getItem("idioma")=== "EUnl") idioma = ("EUnl");
+if (localStorage.getItem("idioma")=== "CNzh") idioma = ("CNzh");
+if (localStorage.getItem("idioma")=== "TWzh") idioma = ("TWzh");
+if (localStorage.getItem("idioma")=== "JPja") idioma = ("JPja");
+if (localStorage.getItem("idioma")=== "KRko") idioma = ("KRko");
+if (localStorage.getItem("idioma")=== "EUru") idioma = ("EUru");
 
 export default async function Display (items,wrapper, elemXpag,page) {
     let pageitem=0
-
+   
     ////-----------------CONTAR ITEMS
     function Contar (array){
         let i = 0;
@@ -22,7 +39,28 @@ export default async function Display (items,wrapper, elemXpag,page) {
     const titleCase = (string) => {return string.charAt(0).toUpperCase() + string.slice(1)};
 
     //CANTIDAD ITEMS
-    itemsTitle.innerHTML =`ITEMS<p class="mini">N° de Items: ${items.length}</p>`
+    let inter_trad = await getData ("./assets/translation/interfaz.json");
+    document.getElementById("itemsBotonB").innerHTML=`${inter_trad[4].locale[idioma]}`;
+    document.getElementById("filtrarpor").innerHTML=`${inter_trad[6].locale[idioma]}`;
+    document.getElementById("colores").innerHTML=`${inter_trad[7].locale[idioma]}`;
+    document.getElementById("tipo").innerHTML=`${inter_trad[8].locale[idioma]}`;
+    document.getElementById("searchBar").placeholder=`${inter_trad[9].locale[idioma]}`;
+    document.getElementById("lafrase").innerHTML=`${inter_trad[10].locale[idioma]}`;
+    document.getElementById("maxcol").innerHTML=`${inter_trad[11].locale[idioma]}`;
+    document.getElementById("misc").nextSibling.nextSibling.innerHTML=`${inter_trad[12].locale[idioma]}`;
+    document.getElementById("house").nextSibling.nextSibling.innerHTML=`${inter_trad[13].locale[idioma]}`;
+    document.getElementById("wall").nextSibling.nextSibling.innerHTML=`${inter_trad[14].locale[idioma]}`;
+
+
+
+    console.log(document.getElementById("house").nextSibling.nextSibling)
+
+
+
+
+
+
+    itemsTitle.innerHTML =`${inter_trad[3].locale[idioma]}<p class="mini">N° ${inter_trad[3].locale[idioma]}: ${items.length}</p>`
     wrapper.innerHTML="";
     page--;
     let totalPag = Math.ceil(items.length/ elemXpag)
@@ -35,6 +73,8 @@ export default async function Display (items,wrapper, elemXpag,page) {
         if (unItem.length == 0){
             // console.log("vacio")
         }else{
+            let index_tr = inter_trad.findIndex(inter => inter.id === unItem.variants[0]["source"][0]);
+            
             let itemElement = document.createElement("div");
             itemElement.setAttribute("id", `item_${unItem.variants[0].internalId}`);
             itemElement.classList.add("item");
@@ -45,71 +85,74 @@ export default async function Display (items,wrapper, elemXpag,page) {
 
             //PRECIOS
             if(unItem.variants[0].buy == -1){
-                itemElement.innerHTML += `<p class="precios opacity4"> No se compra </p><p class="precios" style="color:black"><br>Venta: ${(unItem.variants[0].sell)}<img class="bayas" src="assets/bayas.png" alt="bayas"></p>`
+                itemElement.innerHTML += `<p class="precios opacity4"> ${inter_trad[2].locale[idioma]} </p><p class="precios" style="color:black"><br>${inter_trad[1].locale[idioma]}: ${(unItem.variants[0].sell)}<img class="bayas" src="assets/bayas.png" alt="bayas"></p>`
             }else{
-                itemElement.innerHTML += `<p class="precios">Compra: ${(unItem.variants[0].buy)}<img class="bayas" src="assets/bayas.png" alt="bayas"><br>Venta: ${(unItem.variants[0].sell)}<img class="bayas" src="assets/bayas.png" alt="bayas"></p>`
+                itemElement.innerHTML += `<p class="precios">${inter_trad[0].locale[idioma]}: ${(unItem.variants[0].buy)}<img class="bayas" src="assets/bayas.png" alt="bayas"><br>${inter_trad[1].locale[idioma]}: ${(unItem.variants[0].sell)}<img class="bayas" src="assets/bayas.png" alt="bayas"></p>`
             }
 
             //GRID
 
             itemElement.innerHTML += `<img class="grilla" src="assets/grid/${unItem["size"].trim()}.png" alt="bayas">`
 
-
             //SOURCE (Esta mal optimizado, por el texto traducido)
             if((unItem.variants[0]["source"][0]) == "Crafting"){
                 let comprari = document.createElement("div");
                 comprari.setAttribute("id", `DIY_${i}`);
                 comprari.classList.add(`comprari`); 
-                comprari.innerHTML +=  `<img class="comprar" src="assets/DIY.png" alt="DIY"><p class="ctext">Crafteable</p>`
+                comprari.innerHTML +=  `<img class="comprar" src="assets/DIY.png" alt="DIY"><p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
                 itemElement.appendChild(comprari)
             }else if((unItem.variants[0]["source"][0]) == "Jack"){
-            itemElement.innerHTML +=  '<img class="comprar" src="assets/soponcio.png" alt="jack"><p class="ctext text_center">Soponcio</p>'
+            itemElement.innerHTML +=  `<img class="comprar" src="assets/soponcio.png" alt="jack"><p class="ctext text_center">${inter_trad[index_tr].locale[idioma]}</p>`
             }else if((unItem.variants[0]["source"][0]) == "Nook's Cranny"){
-                itemElement.innerHTML +=  '<img class="comprar nook" src="assets/nook.png" alt="nook"><p class="ctext text_center">  Tienda Mini Nook</p>'
+                itemElement.innerHTML +=  `<img class="comprar nook" src="assets/nook.png" alt="nook"><p class="ctext text_center">${inter_trad[index_tr].locale[idioma]}</p>`
             }else if((unItem.variants[0]["source"][0]) == "Nook Miles Redemption"){
-                itemElement.innerHTML +=  '<img class="comprar miles" src="assets/Nook_Miles.png" alt="millas"><p class="ctext">Millas Nook</p>'
+                itemElement.innerHTML +=  `<img class="comprar miles" src="assets/Nook_Miles.png" alt="millas"><p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else if((unItem.variants[0]["source"][0]) == "Cyrus"){
-                itemElement.innerHTML +=  '<img class="comprar boda" src="assets/cyrus.png" alt="boda"> <p class="ctext">Evento de Boda</p>'
+                itemElement.innerHTML +=  `<img class="comprar boda" src="assets/cyrus.png" alt="boda"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Nook Shopping Promotion"){
-                itemElement.innerHTML +=  '<img class="comprar " src="assets/pocket.png" alt="pocket"> <p class="ctext">Pocket Camp</p>'
+                itemElement.innerHTML +=  `<img class="comprar " src="assets/pocket.png" alt="pocket"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Flick"){
-                itemElement.innerHTML +=  '<img class="comprar " src="assets/kamilo.png" alt="kamilo"> <p class="ctext">Kamilo</p>'
+                itemElement.innerHTML +=  `<img class="comprar " src="assets/kamilo.png" alt="kamilo"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Bug-Off"){
-                itemElement.innerHTML +=  '<img class="comprar " src="assets/Net2.png" alt="insectos"> <p class="ctext">Caza de Insectos</p>'
+                itemElement.innerHTML +=  `<img class="comprar " src="assets/Net2.png" alt="insectos"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Fishing Tourney"){
-                itemElement.innerHTML +=  '<img class="comprar " src="assets/Fishing.png" alt="pesca"> <p class="ctext">Torneo de Pesca</p>'
+                itemElement.innerHTML +=  `<img class="comprar " src="assets/Fishing.png" alt="pesca"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "C.J."){
-                itemElement.innerHTML +=  '<img class="comprar " src="assets/cj2.png" alt="cj"> <p class="ctext">C.J.</p>'
+                itemElement.innerHTML +=  `<img class="comprar " src="assets/cj2.png" alt="cj"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Nook Shopping Seasonal"){
-                itemElement.innerHTML +=  '<img class="comprar " src="assets/especial.png" alt="especial"> <p class="ctext">Nook Fechas Especiales </p>'
+                itemElement.innerHTML +=  `<img class="comprar " src="assets/especial.png" alt="especial"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "HHA"){
-                itemElement.innerHTML +=  '<img class="comprar " src="assets/AAD.png" alt="aad"> <p class="ctext">Academia de Artes<br> Decorativas </p>'
+                itemElement.innerHTML +=  `<img class="comprar " src="assets/AAD.png" alt="aad"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Birthday"){
-                itemElement.innerHTML +=  '<img class="comprar cumple" src="assets/cupcake.png" alt="birthday"> <p class="ctext">Cumpleaños</p>'
+                itemElement.innerHTML +=  `<img class="comprar cumple" src="assets/cupcake.png" alt="birthday"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Mom"){
-                itemElement.innerHTML +=  '<img class="comprar mom" src="assets/mom2.png" alt="birthday"> <p class="ctext">Regalo Mamá</p>'
+                itemElement.innerHTML +=  `<img class="comprar mom" src="assets/mom2.png" alt="birthday"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Gulliver"){
-                itemElement.innerHTML +=  '<img class="comprar gul" src="assets/Gulliver.png" alt="gulliver"> <p class="ctext">Gulliver</p>'
+                itemElement.innerHTML +=  `<img class="comprar gul" src="assets/Gulliver.png" alt="gulliver"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Gullivarrr"){
-                itemElement.innerHTML +=  '<img class="comprar gull" src="assets/Gullivarrr.png" alt="gulliver2"> <p class="ctext">Gullivarrr</p>'
+                itemElement.innerHTML +=  `<img class="comprar gull" src="assets/Gullivarrr.png" alt="gulliver2"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "International Museum Day"){
-                itemElement.innerHTML +=  '<img class="comprar gul" src="assets/museo.png" alt="museo"> <p class="ctext">Dia del Museo</p>'
+                itemElement.innerHTML +=  `<img class="comprar gul" src="assets/museo.png" alt="museo"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Starting items"){
-                itemElement.innerHTML +=  '<img class="comprar gull" src="assets/tent.png" alt="birthday"> <p class="ctext">Items del Comienzo</p>'
+                itemElement.innerHTML +=  `<img class="comprar gull" src="assets/tent.png" alt="birthday"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Dodo Airlines"){
-                itemElement.innerHTML +=  '<img class="comprar" src="assets/dodo.png" alt="dodo"> <p class="ctext">Dodo Airlines</p>'
+                itemElement.innerHTML +=  `<img class="comprar" src="assets/dodo.png" alt="dodo"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Luna"){
-                itemElement.innerHTML +=  '<img class="comprar" src="assets/Alakama.png" alt="cama"> <p class="ctext">Alakama</p>'
+                itemElement.innerHTML +=  `<img class="comprar" src="assets/Alakama.png" alt="cama"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }else  if((unItem.variants[0]["source"][0]) == "Nintendo; Nook Shopping"){
-                itemElement.innerHTML +=  '<img class="comprar nint" src="assets/nintendo.png" alt="cama"> <p class="ctext">Nintendo Update<br>Millas Nook</p>'
+                itemElement.innerHTML +=  `<img class="comprar nint" src="assets/nintendo.png" alt="cama"> <p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
             }
             else{
                 itemElement.innerHTML +=  `<p class="ctext">${(unItem.variants[0]["source"][0])}</p>`
+                console.log(unItem.variants[0]["source"])
             }
 
             //STYLE
+          
             if (unItem.variants[0].themes[1] != undefined){
             itemElement.innerHTML += `<p class="extra">${unItem.variants[0].themes[0]} / ${unItem.variants[0].themes[1]}`
+            }else if((unItem.variants[0].themes[0] == undefined)){
+                console.log("Clase sin definir")
             }else{
                 itemElement.innerHTML += `<p class="extra">${unItem.variants[0].themes[0]}`
             }
@@ -225,63 +268,98 @@ export default async function Display (items,wrapper, elemXpag,page) {
             imag.classList.add("activeimag");
         })
     })
+
     
     let recipes = await getData("./assets/recipes.json");
     let reciPhotos = await getData("./assets/other.json");
+    let recipe_trad = await getData("./assets/translation/crafts2.json");
+
+
+
+    
 
     let DIYbutton = [...document.getElementsByClassName("comprari")];
     DIYbutton.forEach((diy) => {
         diy.addEventListener ("click", (e)=>{
             let aqui = (diy.parentElement);
-            Recetas(recipes, aqui,reciPhotos)
+            Recetas(recipes, aqui,reciPhotos,recipe_trad)
         })
     })
 
-   
-
-    function Recetas(recetas,donde,otherFoto){
-        let numRec = (donde.id.match(/\d+/g)[0])
-        
-        let diyElement = document.createElement("div");
-        diyElement.setAttribute("id", `lugarReceta${numRec}`);
-        diyElement.classList.add("itemReceta");
-        
-        let receFlex = document.createElement("div");
-        receFlex.setAttribute("id", `lugarFlex${numRec}`);
-        receFlex.classList.add("recetaFlex");
 
 
-        let index = recetas.findIndex(rece => rece["Crafted Item Internal ID"] === +numRec);
-        let unDiy = recetas[index]
-        let i=1
-        let comprari = document.createElement("div");
-        comprari.innerHTML +=`<img id="imagen_receta${numRec}" class="foto_receta" src="${unDiy.Image.slice(8,-2)}" alt="foto_receta">`;
-        comprari.setAttribute("id", `DIY_${i}`);
-        comprari.classList.add(`compraris`); 
-
-        comprari.innerHTML +=  `<div class="compr2"><img class="volver" src="assets/Go-back.ico" alt="DIY"><p class="ctext2">Volver</p></div>`        
-        diyElement.appendChild(comprari)
-
-
-        for(i=1;i<7;i++){
-            let index2 = otherFoto.findIndex(oth => oth.name === recetas[index][`Material ${i}`]);
-            if (index2 != -1){
-            // console.log(recetas[index][`Material ${String(i)}`])
-            receFlex.innerHTML +=`<div class="obj_receta"><p class="cantidad_receta">${recetas[index][`#${i}`]}</p> <img id="imagen_receta${i}" class="foto_receta" src="${otherFoto[index2].variants[0].inventoryImage}" alt="foto_receta"> </div>`
-            receFlex.innerHTML +=``;
-            diyElement.appendChild(receFlex)
-            // console.log(otherFoto[index2].variants[0].storageImage)
-            }
-        }
-        donde.appendChild(diyElement);
-    }
-    let goBack = [...document.getElementsByClassName("volver")];
-    goBack.forEach((gob) => {
-        gob.addEventListener ("click", (e)=>{
-            e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
-            console.log("holi")
-           
-        })
-   
-    })
+    
+    
 }
+        export async function Recetas(recetas,donde,otherFoto,traduc){
+            let numRec = (donde.id.match(/\d+/g)[0])
+            
+            let diyElement = document.createElement("div");
+            diyElement.setAttribute("id", `lugarReceta${numRec}`);
+            diyElement.classList.add("itemReceta");
+            
+            let receFlex = document.createElement("div");
+            receFlex.setAttribute("id", `lugarFlex${numRec}`);
+            receFlex.classList.add("recetaFlex");
+    
+    
+            let index = recetas.findIndex(rece => rece["Crafted Item Internal ID"] === +numRec);
+            let unDiy = recetas[index]
+    
+    
+            let i=1
+            let comprari = document.createElement("div");
+            comprari.innerHTML +=`<img id="imagen_receta${numRec}" class="foto_recetaBIG" src="${unDiy.Image.slice(8,-2)}" alt="foto_receta">`;
+            
+            //if (recetas.sourceSheet == "Other"){
+            // }else{
+            //     comprari.innerHTML +=`<img id="imagen_receta${numRec}" class="foto_receta" src="${unDiy.Image}" alt="foto_receta">`;
+            // }
+            
+            comprari.setAttribute("id", `DIY_${i}`);
+            comprari.classList.add(`compraris`); 
+            comprari.innerHTML +=  `<div class="compr2"><img class="volver" src="assets/Go-back.ico" alt="DIY"><p class="ctext2"></p></div>`        
+            diyElement.appendChild(comprari)
+    
+            
+            for(i=1;i<7;i++){
+                let index2 = otherFoto.findIndex(oth => oth.name === recetas[index][`Material ${i}`]);
+                if (recetas[index][`Material ${String(i)}`] != ""){
+                    // console.log(recetas[index][`Material ${String(i)}`])
+                    let index3 = traduc.findIndex(rece => rece.locale["USen"] === recetas[index][`Material ${String(i)}`]);
+    
+                    // console.log(traduc[index3])
+    
+                    // console.log(i)
+                    receFlex.innerHTML +=`<div class="obj_receta"><p class="cantidad_receta">${recetas[index][`#${i}`]}</p><img id="imagen_receta${i}" class="foto_receta" src="${otherFoto[index2].variants[0].inventoryImage}" alt="foto_receta"> <p class="trad">${traduc[index3].locale[idioma]}</p></div>`
+                    receFlex.innerHTML +=``;
+                    diyElement.appendChild(receFlex)
+                    // console.log(otherFoto[index2].variants[0].storageImage)
+                }
+            }
+            donde.appendChild(diyElement);
+            let manyim = (diyElement.parentNode.getElementsByClassName("manyimg"))
+            console.log("+++++++++++++++++++++++++++++++")
+            if (manyim.length != 0){
+                console.log(manyim[0])
+                manyim[0].classList.add("relative")
+    
+            }
+    
+            let goBack = [...document.getElementsByClassName("compr2")];
+            goBack.forEach((gobak) => {
+                gobak.addEventListener ("click", (e)=>{
+                    if (manyim.length != 0){
+                        manyim[0].classList.remove("relative")
+                    }
+                })
+            })
+            goBack.forEach((gobak) => {
+                gobak.addEventListener ("click", (e)=>{
+                    let gobackP = gobak.parentNode.parentNode
+                    console.log(gobackP)
+                    gobackP.remove();
+
+                })
+            })
+        }

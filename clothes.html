@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="assets/acnhIcon.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>Sitio ACNH</header>
@@ -15,43 +16,43 @@
             <div class="inicio">
             <a id="logo"href="#" rel="noopener noreferrer"><img  src="assets/logo.png" alt="logo"></a>
             <div class="div_buscador">
-                <a class="boton_top verde" href="index.html">Items</a>
+                <a id="itemsBotonA" class="boton_top verde" href="index.html"></a>
 
-                <h2>Busca aquí tu ropa de Animal Crossing New Horizons</h2>
-            <input id="searchBar" class="buscador" type="text" placeholder="Buscar...">
+                <h2 id="lafrase"></h2>
+            <input id="searchBar" class="buscador" type="text" placeholder="">
             </div>
             </div>
             <div id="check_btns2">
                 <div class="grid_1">
-                <a id="" class="trini" href="trini.html" rel="noopener noreferrer">
-                <img src="assets/Acnl-labelle.png" alt="logo">Reto de moda</a>
+                <a class="trini" href="trini.html" rel="noopener noreferrer">
+                <img src="assets/Acnl-labelle.png" alt="logo"><p id="botonTriniA"></p></a>
                 </div>
                 <div class="grid_2">
-                    <p class="ordenar_t">Filtrar por</p>
+                    <p id="filtrarpor"class="ordenar_t"></p>
                     <div class="checkers">
-                        <button class="boton_org" id="colores" type="submit">Colores</button>
-                        <button class="boton_org" id="tipo" type="submit">Tipo</button>
+                        <button class="boton_org" id="colores" type="submit"></button>
+                        <button class="boton_org" id="tipo" type="submit"></button>
                     </div>
                 </div>
                 
             </div>
             <div id="filtro_tipo" class="checkers che nodisplay">
                 <input class="boton_check" type="checkbox" name="items" id="dress" checked>
-                <label for="misc"> Vestidos <br>(Una Pieza)</label>
+                <label for="misc"></label>
                 <input class="boton_check" type="checkbox" name="items" id="tops" checked>
-                <label for="house"> Tops<br> (Poleras abrigos)</label>
+                <label for="house"></label>
                 <input class="boton_check" type="checkbox" name="items" id="bottoms" checked>
-                <label for="wall"> Bottoms<br> (Pantalones)</label>
+                <label for="wall"></label>
                 <input class="boton_check" type="checkbox" name="items" id="head" checked>
-                <label for="head"> Head<br> (Cabeza)</label>
+                <label for="head"> </label>
                 <input class="boton_check" type="checkbox" name="items" id="accessories" checked>
-                <label for="accessories"> Accesorios<br> (Accessorios Carteras)</label>
+                <label for="accessories"> </label>
                 <input class="boton_check" type="checkbox" name="items" id="shoes_socks" checked>
-                <label for="shoes_socks"> Pies<br> (Calzado y Calcetas)</label>
+                <label for="shoes_socks"> </label>
               
             </div>
             <div id="coloresSelect" class="colores_select nodisplay">
-                <p id="maxcol">Elige hasta 2 colores</p>
+                <p id="maxcol"></p>
 
                 <button class="colores_btn nodisplay" id="Red"></button>
                 <button class="colores_btn nodisplay" id="Pink"></button>
@@ -70,7 +71,7 @@
             </div> 
         </section>  
         <section class="container">
-            <div id="items-titulo" class="ropac">ROPA </div>
+            <div id="items-titulo" class="ropac">Loading...</div>
         
             <div id="lositemsropa"class="ropacontainer">
                 <img id="loadin" src="assets/b51.gif" alt="loading">
@@ -95,7 +96,7 @@
             </div>
             <div id="gridTr">
                 <select id="translate" class="traducir" name="Idioma">
-                    <option class="select-items"value="USes" selected disabled hidden>Cambiar Idioma</option>
+                    <option id="idiomaMostrar"class="select-items"value="US" selected disabled hidden></option>
                     <option class="select-items"value="USen">English(US)</option>
                     <option class="select-items"value="EUen">English(EU)</option>
                     <option class="select-items"value="EUde">Deutsch</option>
@@ -110,6 +111,8 @@
                     <option class="select-items"value="JPja">日本語</option>
                     <option class="select-items"value="KRko">한국어</option>
                     <option class="select-items"value="EUru">русский</option>
+
+    
                 </select>
                 <div></div>
             </div>  

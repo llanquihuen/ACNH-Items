@@ -12363,5 +12363,3239 @@
         "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/PltBushOsmathusYellow.png"
       }
     ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "cardboard box",
+    "patternTitle": null,
+    "diy": false,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": true,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in all tiers of shops, including Timmy & Tommy before the shop is opened",
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": false,
+    "tag": "Desk",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": "cardboard",
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_0_0.png",
+        "variation": "Plain",
+        "filename": "FtrCardboard_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "rPthPi8LRd5cpuddZ",
+        "colors": [
+          "Yellow",
+          "Yellow"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_1_0.png",
+        "variation": "Labeled",
+        "filename": "FtrCardboard_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "4fE8SB7Q9gBu6y6tZ",
+        "colors": [
+          "Yellow",
+          "Blue"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_2_0.png",
+        "variation": "Oranges",
+        "filename": "FtrCardboard_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "oeKqJ9CYzSav7ziZP",
+        "colors": [
+          "Yellow",
+          "Orange"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_3_0.png",
+        "variation": "Apples",
+        "filename": "FtrCardboard_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "Z8xLg3xTwQ7wr5vZs",
+        "colors": [
+          "White",
+          "Red"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_4_0.png",
+        "variation": "Peaches",
+        "filename": "FtrCardboard_Remake_4_0",
+        "variantId": "4_0",
+        "uniqueEntryId": "rf5voSYbjkv8Qcteq",
+        "colors": [
+          "White",
+          "Pink"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_5_0.png",
+        "variation": "Pears",
+        "filename": "FtrCardboard_Remake_5_0",
+        "variantId": "5_0",
+        "uniqueEntryId": "9TGvM96PPPDXNPmG2",
+        "colors": [
+          "White",
+          "Green"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_6_0.png",
+        "variation": "Cherries",
+        "filename": "FtrCardboard_Remake_6_0",
+        "variantId": "6_0",
+        "uniqueEntryId": "XcBHngsQ9jZqE5Jh2",
+        "colors": [
+          "Yellow",
+          "Red"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "ironwood dresser",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": true,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": "Wardrobe",
+    "tag": "Chest",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": "ironwood",
+    "customizationKitCost": 6,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrIronwoodChest_Remake_0_0.png",
+        "variation": "Birch",
+        "filename": "FtrIronwoodChest_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "MEmKytnNJNQAAGhYy",
+        "colors": [
+          "Beige",
+          "Black"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3196,
+        "buy": -1,
+        "sell": 3840,
+        "themes": [
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrIronwoodChest_Remake_1_0.png",
+        "variation": "Teak",
+        "filename": "FtrIronwoodChest_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "7tCHuJzQ3wBQ2CSzq",
+        "colors": [
+          "Orange",
+          "Black"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3196,
+        "buy": -1,
+        "sell": 3840,
+        "themes": [
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrIronwoodChest_Remake_2_0.png",
+        "variation": "Walnut",
+        "filename": "FtrIronwoodChest_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "Ysqa7ASFgy2GrtdhJ",
+        "colors": [
+          "Brown",
+          "Black"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3196,
+        "buy": -1,
+        "sell": 3840,
+        "themes": [
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrIronwoodChest_Remake_3_0.png",
+        "variation": "Old",
+        "filename": "FtrIronwoodChest_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "rQ4ugAuc7bYZ7sAWw",
+        "colors": [
+          "Brown",
+          "Black"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3196,
+        "buy": -1,
+        "sell": 3840,
+        "themes": [
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrIronwoodChest_Remake_4_0.png",
+        "variation": "Oak",
+        "filename": "FtrIronwoodChest_Remake_4_0",
+        "variantId": "4_0",
+        "uniqueEntryId": "knYruPBQSwncvreGe",
+        "colors": [
+          "Orange",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3196,
+        "buy": -1,
+        "sell": 3840,
+        "themes": [
+          "living room"
+        ]
+      }
+    ]
+  },{
+    "sourceSheet": "Miscellaneous",
+    "name": "wooden-block toy",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": false,
+    "tag": "Toy",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": "wooden block",
+    "customizationKitCost": 1,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrBlockBrick_Remake_0_0.png",
+        "variation": "Natural",
+        "filename": "FtrBlockBrick_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "zWPSy9goeuKvhLQ58",
+        "colors": [
+          "Beige",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Block color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3206,
+        "buy": -1,
+        "sell": 360,
+        "themes": [
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBlockBrick_Remake_1_0.png",
+        "variation": "Mixed wood",
+        "filename": "FtrBlockBrick_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "ChAiL8YqwswkuHdBu",
+        "colors": [
+          "Brown",
+          "Black"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Block color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3206,
+        "buy": -1,
+        "sell": 360,
+        "themes": [
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBlockBrick_Remake_2_0.png",
+        "variation": "Colorful",
+        "filename": "FtrBlockBrick_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "dnWLEazGvxQci55zt",
+        "colors": [
+          "Green",
+          "Colorful"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Block color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3206,
+        "buy": -1,
+        "sell": 360,
+        "themes": [
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBlockBrick_Remake_3_0.png",
+        "variation": "Pastel",
+        "filename": "FtrBlockBrick_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "thFvaJrPkCk2Joa9z",
+        "colors": [
+          "Aqua",
+          "Colorful"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Block color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3206,
+        "buy": -1,
+        "sell": 360,
+        "themes": [
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBlockBrick_Remake_4_0.png",
+        "variation": "Vivid",
+        "filename": "FtrBlockBrick_Remake_4_0",
+        "variantId": "4_0",
+        "uniqueEntryId": "vCs9NHY9jgceGstqH",
+        "colors": [
+          "Red",
+          "Colorful"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Block color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3206,
+        "buy": -1,
+        "sell": 360,
+        "themes": [
+          "child's room"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "cherry-blossom bonsai",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 201,
+    "hhaCategory": "Plant",
+    "interact": false,
+    "tag": "Plants",
+    "outdoor": true,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": "cherry blossoms",
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrBonsaiSakura.png",
+        "variation": null,
+        "filename": "FtrBonsaiSakura",
+        "variantId": null,
+        "uniqueEntryId": "CZhtuubFDhKpcjHR8",
+        "colors": [
+          "Pink",
+          "Brown"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 6030,
+        "buy": -1,
+        "sell": 3300,
+        "themes": [
+          "zen-style",
+          "fancy"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "pine bonsai tree",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 201,
+    "hhaCategory": "Plant",
+    "interact": false,
+    "tag": "Plants",
+    "outdoor": true,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrBonsaiPine.png",
+        "variation": null,
+        "filename": "FtrBonsaiPine",
+        "variantId": null,
+        "uniqueEntryId": "vsf87x7X4T9mExtap",
+        "colors": [
+          "Green",
+          "Brown"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3802,
+        "buy": -1,
+        "sell": 4200,
+        "themes": [
+          "zen-style"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Tools",
+    "name": "shovel",
+    "diy": true,
+    "customize": true,
+    "uses": 100,
+    "stackSize": 1,
+    "hhaBasePoints": 0,
+    "size": "1x1",
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "customizationKitCost": 1,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/ToolScoop_Remake_0_0.png",
+        "variation": "Red",
+        "filename": "ToolScoop_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "B6ejTnMqrR65wXv5z",
+        "colors": [],
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2099,
+        "buy": 2400,
+        "sell": 600,
+        "themes": []
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/ToolScoop_Remake_1_0.png",
+        "variation": "Yellow",
+        "filename": "ToolScoop_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "6sKHnKeEuPcLpjEF3",
+        "colors": [],
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2099,
+        "buy": 2400,
+        "sell": 600,
+        "themes": []
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/ToolScoop_Remake_2_0.png",
+        "variation": "Green",
+        "filename": "ToolScoop_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "SSzNaAfdGfnFoL8Qq",
+        "colors": [],
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2099,
+        "buy": 2400,
+        "sell": 600,
+        "themes": []
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/ToolScoop_Remake_3_0.png",
+        "variation": "Blue",
+        "filename": "ToolScoop_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "qiAf2KCaX5Xr57bXb",
+        "colors": [],
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2099,
+        "buy": 2400,
+        "sell": 600,
+        "themes": []
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/ToolScoop_Remake_4_0.png",
+        "variation": "Purple",
+        "filename": "ToolScoop_Remake_4_0",
+        "variantId": "4_0",
+        "uniqueEntryId": "bbbeRassLbyY8HCP3",
+        "colors": [],
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2099,
+        "buy": 2400,
+        "sell": 600,
+        "themes": []
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/ToolScoop_Remake_5_0.png",
+        "variation": "Pink",
+        "filename": "ToolScoop_Remake_5_0",
+        "variantId": "5_0",
+        "uniqueEntryId": "CZoPP24ecNvDxdNfY",
+        "colors": [],
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2099,
+        "buy": 2400,
+        "sell": 600,
+        "themes": []
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/ToolScoop_Remake_6_0.png",
+        "variation": "White",
+        "filename": "ToolScoop_Remake_6_0",
+        "variantId": "6_0",
+        "uniqueEntryId": "JLemP4xchhzB2BmLk",
+        "colors": [],
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2099,
+        "buy": 2400,
+        "sell": 600,
+        "themes": []
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/ToolScoop_Remake_7_0.png",
+        "variation": "Black",
+        "filename": "ToolScoop_Remake_7_0",
+        "variantId": "7_0",
+        "uniqueEntryId": "egJGqooiodvdWtv6Y",
+        "colors": [],
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2099,
+        "buy": 2400,
+        "sell": 600,
+        "themes": []
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "campfire",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 103,
+    "hhaCategory": "AC",
+    "interact": true,
+    "tag": "Fireplace",
+    "outdoor": true,
+    "speakerType": null,
+    "lightingType": "Candle",
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrBonfire.png",
+        "variation": null,
+        "filename": "FtrBonfire",
+        "variantId": null,
+        "uniqueEntryId": "9CianvzagBoXJohyr",
+        "colors": [
+          "Brown",
+          "Brown"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 1429,
+        "buy": -1,
+        "sell": 30,
+        "themes": [
+          "outdoors"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "oil barrel",
+    "patternTitle": null,
+    "diy": false,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in all tiers of shops, including Timmy & Tommy before the shop is opened",
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": false,
+    "tag": "Vehicle",
+    "outdoor": true,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrDrumcan_Remake_0_0.png",
+        "variation": "Light green",
+        "filename": "FtrDrumcan_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "8xdYsZWz5EbKg8anw",
+        "colors": [
+          "Green",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1567,
+        "buy": 650,
+        "sell": 162,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrumcan_Remake_1_0.png",
+        "variation": "Blue",
+        "filename": "FtrDrumcan_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "E6w9gYMWZEmhiJXLx",
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1567,
+        "buy": 650,
+        "sell": 162,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrumcan_Remake_2_0.png",
+        "variation": "Light blue",
+        "filename": "FtrDrumcan_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "rjnkcPh9Cvut4hRpL",
+        "colors": [
+          "Aqua",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1567,
+        "buy": 650,
+        "sell": 162,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrumcan_Remake_3_0.png",
+        "variation": "Orange",
+        "filename": "FtrDrumcan_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "xva6JeRbdeRdGiTtZ",
+        "colors": [
+          "Orange",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1567,
+        "buy": 650,
+        "sell": 162,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrumcan_Remake_4_0.png",
+        "variation": "Caution",
+        "filename": "FtrDrumcan_Remake_4_0",
+        "variantId": "4_0",
+        "uniqueEntryId": "FHgHq2eXaxyWDXdST",
+        "colors": [
+          "Yellow",
+          "Black"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1567,
+        "buy": 650,
+        "sell": 162,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrumcan_Remake_5_0.png",
+        "variation": "Red",
+        "filename": "FtrDrumcan_Remake_5_0",
+        "variantId": "5_0",
+        "uniqueEntryId": "NfBcd8AKJ33BxpMxs",
+        "colors": [
+          "Red",
+          "Red"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1567,
+        "buy": 650,
+        "sell": 162,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrumcan_Remake_6_0.png",
+        "variation": "Green",
+        "filename": "FtrDrumcan_Remake_6_0",
+        "variantId": "6_0",
+        "uniqueEntryId": "cr3LYhn4Tw3pPh8N4",
+        "colors": [
+          "Green",
+          "Green"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1567,
+        "buy": 650,
+        "sell": 162,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrumcan_Remake_7_0.png",
+        "variation": "Damaged",
+        "filename": "FtrDrumcan_Remake_7_0",
+        "variantId": "7_0",
+        "uniqueEntryId": "iBH8Y2jpScJXkbdpc",
+        "colors": [
+          "Brown",
+          "Brown"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1567,
+        "buy": 650,
+        "sell": 162,
+        "themes": [
+          "garage"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "log bench",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "2x1",
+    "surface": true,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": true,
+    "tag": "Sofa",
+    "outdoor": true,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": "log",
+    "customizationKitCost": 1,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrLogStoolL_Remake_0_0.png",
+        "variation": "Dark wood",
+        "filename": "FtrLogStoolL_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "KpHAa8CESiKWtadT7",
+        "colors": [
+          "Brown",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4042,
+        "buy": -1,
+        "sell": 600,
+        "themes": [
+          "garden"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrLogStoolL_Remake_1_0.png",
+        "variation": "Orange wood",
+        "filename": "FtrLogStoolL_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "SuNySzCAMoc3no4Gs",
+        "colors": [
+          "Orange",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4042,
+        "buy": -1,
+        "sell": 600,
+        "themes": [
+          "garden"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrLogStoolL_Remake_2_0.png",
+        "variation": "White wood",
+        "filename": "FtrLogStoolL_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "YkfgE6cbA7qwEWqjB",
+        "colors": [
+          "Beige",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4042,
+        "buy": -1,
+        "sell": 600,
+        "themes": [
+          "garden"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrLogStoolL_Remake_3_0.png",
+        "variation": "White birch",
+        "filename": "FtrLogStoolL_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "BHFw6FYJapJzftSWs",
+        "colors": [
+          "White",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4042,
+        "buy": -1,
+        "sell": 600,
+        "themes": [
+          "garden"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "cutting board",
+    "patternTitle": "Towel",
+    "diy": true,
+    "patternCustomize": true,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": false,
+    "tag": "Kitchen Things",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": 3,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_0_0.png",
+        "variation": "No finish",
+        "filename": "FtrCuttingboard_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "R9nmx9Q2c2LSaqjjq",
+        "colors": [
+          "Beige",
+          "Red"
+        ],
+        "pattern": "Red",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_0_1.png",
+        "variation": "No finish",
+        "filename": "FtrCuttingboard_Remake_0_1",
+        "variantId": "0_1",
+        "uniqueEntryId": "tbCjqii8PuQXpPy6K",
+        "colors": [
+          "Beige",
+          "Blue"
+        ],
+        "pattern": "Blue",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_0_2.png",
+        "variation": "No finish",
+        "filename": "FtrCuttingboard_Remake_0_2",
+        "variantId": "0_2",
+        "uniqueEntryId": "fY2ehetfFSryf2744",
+        "colors": [
+          "Beige",
+          "Yellow"
+        ],
+        "pattern": "Yellow",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_1_0.png",
+        "variation": "Cherry brown",
+        "filename": "FtrCuttingboard_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "b2ywJ6Cm9xdkWmcfE",
+        "colors": [
+          "Orange",
+          "Red"
+        ],
+        "pattern": "Red",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_1_1.png",
+        "variation": "Cherry brown",
+        "filename": "FtrCuttingboard_Remake_1_1",
+        "variantId": "1_1",
+        "uniqueEntryId": "G5iiNx5X6WCbkmmy8",
+        "colors": [
+          "Orange",
+          "Blue"
+        ],
+        "pattern": "Blue",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_1_2.png",
+        "variation": "Cherry brown",
+        "filename": "FtrCuttingboard_Remake_1_2",
+        "variantId": "1_2",
+        "uniqueEntryId": "pcE4HEdGZ66Hb2zbH",
+        "colors": [
+          "Orange",
+          "Yellow"
+        ],
+        "pattern": "Yellow",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_2_0.png",
+        "variation": "Dark",
+        "filename": "FtrCuttingboard_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "gjYBB5FPTDrHHbiPN",
+        "colors": [
+          "Brown",
+          "Red"
+        ],
+        "pattern": "Red",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_2_1.png",
+        "variation": "Dark",
+        "filename": "FtrCuttingboard_Remake_2_1",
+        "variantId": "2_1",
+        "uniqueEntryId": "gYmueZw6yxCWGmnqq",
+        "colors": [
+          "Brown",
+          "Blue"
+        ],
+        "pattern": "Blue",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_2_2.png",
+        "variation": "Dark",
+        "filename": "FtrCuttingboard_Remake_2_2",
+        "variantId": "2_2",
+        "uniqueEntryId": "QoaPxaYp9jQZjdHhz",
+        "colors": [
+          "Brown",
+          "Yellow"
+        ],
+        "pattern": "Yellow",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_3_0.png",
+        "variation": "Natural",
+        "filename": "FtrCuttingboard_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "KTntMquCDi9SJNyxY",
+        "colors": [
+          "Yellow",
+          "Red"
+        ],
+        "pattern": "Red",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_3_1.png",
+        "variation": "Natural",
+        "filename": "FtrCuttingboard_Remake_3_1",
+        "variantId": "3_1",
+        "uniqueEntryId": "nDvmAa4vhDu7o5YCD",
+        "colors": [
+          "Yellow",
+          "Blue"
+        ],
+        "pattern": "Blue",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCuttingboard_Remake_3_2.png",
+        "variation": "Natural",
+        "filename": "FtrCuttingboard_Remake_3_2",
+        "variantId": "3_2",
+        "uniqueEntryId": "aoy4aAhZgxfFPeSoP",
+        "colors": [
+          "Yellow",
+          "Yellow"
+        ],
+        "pattern": "Yellow",
+        "bodyCustomize": true,
+        "bodyTitle": "Finish",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3618,
+        "buy": -1,
+        "sell": 990,
+        "themes": [
+          "kitchen",
+          "shop"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "drinking fountain",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 83,
+    "hhaCategory": null,
+    "interact": true,
+    "tag": "Playground",
+    "outdoor": true,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": 4,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrDrinkingfountain_Remake_0_0.png",
+        "variation": "Ivory",
+        "filename": "FtrDrinkingfountain_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "8CZv66ph6jQhktPNM",
+        "colors": [
+          "Beige",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2319,
+        "buy": -1,
+        "sell": 2700,
+        "themes": [
+          "garden"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrinkingfountain_Remake_1_0.png",
+        "variation": "Gray",
+        "filename": "FtrDrinkingfountain_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "WPBvK3psRSd7LnPHA",
+        "colors": [
+          "Gray",
+          "Gray"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2319,
+        "buy": -1,
+        "sell": 2700,
+        "themes": [
+          "garden"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrinkingfountain_Remake_2_0.png",
+        "variation": "Brown",
+        "filename": "FtrDrinkingfountain_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "S8ToJeHk95jjQKr4z",
+        "colors": [
+          "Brown",
+          "Brown"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2319,
+        "buy": -1,
+        "sell": 2700,
+        "themes": [
+          "garden"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrDrinkingfountain_Remake_3_0.png",
+        "variation": "Black",
+        "filename": "FtrDrinkingfountain_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "qsxAsMBP75nzCcjFh",
+        "colors": [
+          "Black",
+          "Black"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 2319,
+        "buy": -1,
+        "sell": 2700,
+        "themes": [
+          "garden"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "lucky cat",
+    "patternTitle": null,
+    "diy": false,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 451,
+    "hhaCategory": "Doll",
+    "interact": false,
+    "tag": "Shop",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": 3,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrManekineko_Remake_0_0.png",
+        "variation": "White",
+        "filename": "FtrManekineko_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "zKpmmPT8YR7AQic6t",
+        "colors": [
+          "White",
+          "Yellow"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Variation",
+        "source": [
+          "Gulliver"
+        ],
+        "internalId": 131,
+        "buy": -1,
+        "sell": 1675,
+        "themes": [
+          "folk art",
+          "zen-style"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrManekineko_Remake_1_0.png",
+        "variation": "Black",
+        "filename": "FtrManekineko_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "qt7DaTSaQydteXm72",
+        "colors": [
+          "Black",
+          "Yellow"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Variation",
+        "source": [
+          "Gulliver"
+        ],
+        "internalId": 131,
+        "buy": -1,
+        "sell": 1675,
+        "themes": [
+          "folk art",
+          "zen-style"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "book",
+    "patternTitle": null,
+    "diy": false,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in the re-buyable slot in Nook's Cranny",
+    "hhaBasePoints": 103,
+    "hhaCategory": "SmallGoods",
+    "interact": false,
+    "tag": "Study",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrBookOpened_Remake_0_0.png",
+        "variation": "Western literature",
+        "filename": "FtrBookOpened_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "NjTf5TNrF5By3PyBN",
+        "colors": [
+          "White",
+          "Red"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3582,
+        "buy": 290,
+        "sell": 72,
+        "themes": [
+          "den",
+          "school"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBookOpened_Remake_1_0.png",
+        "variation": "Japanese literature",
+        "filename": "FtrBookOpened_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "ioqMDRcZznW9Xe856",
+        "colors": [
+          "White",
+          "Blue"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3582,
+        "buy": 290,
+        "sell": 72,
+        "themes": [
+          "den",
+          "school"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBookOpened_Remake_2_0.png",
+        "variation": "Encyclopedia",
+        "filename": "FtrBookOpened_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "i7xJZokE4LJ5HZxf4",
+        "colors": [
+          "White",
+          "Yellow"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3582,
+        "buy": 290,
+        "sell": 72,
+        "themes": [
+          "den",
+          "school"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBookOpened_Remake_3_0.png",
+        "variation": "Textbook",
+        "filename": "FtrBookOpened_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "ZDNwaSDDfoCPtQbsA",
+        "colors": [
+          "White",
+          "Green"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3582,
+        "buy": 290,
+        "sell": 72,
+        "themes": [
+          "den",
+          "school"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "mini DIY workbench",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": "Workbench",
+    "tag": "Work Bench",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": 4,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrWorkbenchS_Remake_0_0.png",
+        "variation": "Natural",
+        "filename": "FtrWorkbenchS_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "jGazK6f7jbFxGXTXB",
+        "colors": [
+          "Beige",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Paint color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3122,
+        "buy": -1,
+        "sell": 2580,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrWorkbenchS_Remake_1_0.png",
+        "variation": "Brown",
+        "filename": "FtrWorkbenchS_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "DEqvZYgF3AgSrHj4j",
+        "colors": [
+          "Orange",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Paint color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3122,
+        "buy": -1,
+        "sell": 2580,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrWorkbenchS_Remake_2_0.png",
+        "variation": "Ash brown",
+        "filename": "FtrWorkbenchS_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "ppwPAvtvaauBQ8Pcx",
+        "colors": [
+          "Brown",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Paint color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3122,
+        "buy": -1,
+        "sell": 2580,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrWorkbenchS_Remake_3_0.png",
+        "variation": "Gray",
+        "filename": "FtrWorkbenchS_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "4zzpDFWehtzhkGQtj",
+        "colors": [
+          "Gray",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Paint color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3122,
+        "buy": -1,
+        "sell": 2580,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrWorkbenchS_Remake_4_0.png",
+        "variation": "Yellow",
+        "filename": "FtrWorkbenchS_Remake_4_0",
+        "variantId": "4_0",
+        "uniqueEntryId": "FMn6YkLZSKmHZ9zin",
+        "colors": [
+          "Yellow",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Paint color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3122,
+        "buy": -1,
+        "sell": 2580,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrWorkbenchS_Remake_5_0.png",
+        "variation": "Green",
+        "filename": "FtrWorkbenchS_Remake_5_0",
+        "variantId": "5_0",
+        "uniqueEntryId": "9Xq2i9QgX2QGG2dY6",
+        "colors": [
+          "Green",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Paint color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3122,
+        "buy": -1,
+        "sell": 2580,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrWorkbenchS_Remake_6_0.png",
+        "variation": "Blue",
+        "filename": "FtrWorkbenchS_Remake_6_0",
+        "variantId": "6_0",
+        "uniqueEntryId": "CEWkPXzmjKQJzujm2",
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Paint color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3122,
+        "buy": -1,
+        "sell": 2580,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrWorkbenchS_Remake_7_0.png",
+        "variation": "Pink",
+        "filename": "FtrWorkbenchS_Remake_7_0",
+        "variantId": "7_0",
+        "uniqueEntryId": "QMkbq6NeFTcdKrFJR",
+        "colors": [
+          "Pink",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Paint color",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 3122,
+        "buy": -1,
+        "sell": 2580,
+        "themes": [
+          "garage"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "document stack",
+    "patternTitle": "Writing",
+    "diy": true,
+    "patternCustomize": true,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in the re-buyable slot in Nook's Cranny",
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": false,
+    "tag": "Office",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": 2,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrOfficePapers_Remake_0_0.png",
+        "variation": null,
+        "filename": "FtrOfficePapers_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "NW8389r8CQP22h6Bx",
+        "colors": [
+          "White",
+          "Aqua"
+        ],
+        "pattern": "Resource documents",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny",
+          "Crafting"
+        ],
+        "internalId": 1750,
+        "buy": 1600,
+        "sell": 400,
+        "themes": [
+          "office",
+          "den"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrOfficePapers_Remake_0_1.png",
+        "variation": null,
+        "filename": "FtrOfficePapers_Remake_0_1",
+        "variantId": "0_1",
+        "uniqueEntryId": "WKr7KoaznEM4CmvwS",
+        "colors": [
+          "White",
+          "Black"
+        ],
+        "pattern": "Text documents",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny",
+          "Crafting"
+        ],
+        "internalId": 1750,
+        "buy": 1600,
+        "sell": 400,
+        "themes": [
+          "office",
+          "den"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrOfficePapers_Remake_0_2.png",
+        "variation": null,
+        "filename": "FtrOfficePapers_Remake_0_2",
+        "variantId": "0_2",
+        "uniqueEntryId": "tEdFYTBXipPNgHEif",
+        "colors": [
+          "White",
+          "Red"
+        ],
+        "pattern": "Exam papers",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny",
+          "Crafting"
+        ],
+        "internalId": 1750,
+        "buy": 1600,
+        "sell": 400,
+        "themes": [
+          "office",
+          "den"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrOfficePapers_Remake_0_3.png",
+        "variation": null,
+        "filename": "FtrOfficePapers_Remake_0_3",
+        "variantId": "0_3",
+        "uniqueEntryId": "5yKf3Ly3bJXiaLL8s",
+        "colors": [
+          "White",
+          "Black"
+        ],
+        "pattern": "Storyboards",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny",
+          "Crafting"
+        ],
+        "internalId": 1750,
+        "buy": 1600,
+        "sell": 400,
+        "themes": [
+          "office",
+          "den"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "magazine",
+    "patternTitle": "Feature",
+    "diy": false,
+    "patternCustomize": true,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in the re-buyable slot in Nook's Cranny",
+    "hhaBasePoints": 103,
+    "hhaCategory": "SmallGoods",
+    "interact": false,
+    "tag": "Study",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": 1,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_0.png",
+        "variation": null,
+        "filename": "FtrMagagineOpened_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "ubFRtmXtA5tPzZu67",
+        "colors": [
+          "White",
+          "Yellow"
+        ],
+        "pattern": "Food",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3586,
+        "buy": 210,
+        "sell": 52,
+        "themes": [
+          "living room",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_1.png",
+        "variation": null,
+        "filename": "FtrMagagineOpened_Remake_0_1",
+        "variantId": "0_1",
+        "uniqueEntryId": "jp8LMYNvKuuzHMQmk",
+        "colors": [
+          "White",
+          "Red"
+        ],
+        "pattern": "Cars",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3586,
+        "buy": 210,
+        "sell": 52,
+        "themes": [
+          "living room",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_2.png",
+        "variation": null,
+        "filename": "FtrMagagineOpened_Remake_0_2",
+        "variantId": "0_2",
+        "uniqueEntryId": "HWAKztLbE26R24E3B",
+        "colors": [
+          "White",
+          "Purple"
+        ],
+        "pattern": "Fashion",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3586,
+        "buy": 210,
+        "sell": 52,
+        "themes": [
+          "living room",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_3.png",
+        "variation": null,
+        "filename": "FtrMagagineOpened_Remake_0_3",
+        "variantId": "0_3",
+        "uniqueEntryId": "jqGwP9z9ET7PmMjzJ",
+        "colors": [
+          "White",
+          "Blue"
+        ],
+        "pattern": "Outdoors",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3586,
+        "buy": 210,
+        "sell": 52,
+        "themes": [
+          "living room",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_4.png",
+        "variation": null,
+        "filename": "FtrMagagineOpened_Remake_0_4",
+        "variantId": "0_4",
+        "uniqueEntryId": "T6RRkWuSRGjQRzJxg",
+        "colors": [
+          "White",
+          "Aqua"
+        ],
+        "pattern": "Resorts",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3586,
+        "buy": 210,
+        "sell": 52,
+        "themes": [
+          "living room",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_5.png",
+        "variation": null,
+        "filename": "FtrMagagineOpened_Remake_0_5",
+        "variantId": "0_5",
+        "uniqueEntryId": "i8QEQcS7u9NNHfErk",
+        "colors": [
+          "White",
+          "Brown"
+        ],
+        "pattern": "Music",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3586,
+        "buy": 210,
+        "sell": 52,
+        "themes": [
+          "living room",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_6.png",
+        "variation": null,
+        "filename": "FtrMagagineOpened_Remake_0_6",
+        "variantId": "0_6",
+        "uniqueEntryId": "FNnGBX8fDGQYq3xEG",
+        "colors": [
+          "White",
+          "Colorful"
+        ],
+        "pattern": "Pop stars",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3586,
+        "buy": 210,
+        "sell": 52,
+        "themes": [
+          "living room",
+          "child's room"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "Papa bear",
+    "patternTitle": "Ribbon",
+    "diy": false,
+    "patternCustomize": true,
+    "size": "2x2",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in Nook's Cranny (upgraded only), in the third unique furniture slot",
+    "hhaBasePoints": 201,
+    "hhaCategory": "Doll",
+    "interact": false,
+    "tag": "Animal",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": "bear",
+    "series": null,
+    "customizationKitCost": 3,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrBearL_Remake_0_0.png",
+        "variation": "Cream",
+        "filename": "FtrBearL_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "qunSoiZCT2kFiCpLM",
+        "colors": [
+          "Orange",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1499,
+        "buy": 8500,
+        "sell": 2125,
+        "themes": [
+          "fancy",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBearL_Remake_5_3.png",
+        "variation": "Tweed",
+        "filename": "FtrBearL_Remake_5_3",
+        "variantId": "5_3",
+        "uniqueEntryId": "kDzaHhxpsmKoofNcm",
+        "colors": [
+          "Brown",
+          "Yellow"
+        ],
+        "pattern": "Yellow",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1499,
+        "buy": 8500,
+        "sell": 2125,
+        "themes": [
+          "fancy",
+          "child's room"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "Mama bear",
+    "patternTitle": "Shirt",
+    "diy": false,
+    "patternCustomize": true,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in Nook's Cranny (either upgrade tier) in the unique furniture slot",
+    "hhaBasePoints": 151,
+    "hhaCategory": "Doll",
+    "interact": false,
+    "tag": "Animal",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": "bear",
+    "series": null,
+    "customizationKitCost": 1,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrBearM_Remake_0_0.png",
+        "variation": "Cream",
+        "filename": "FtrBearM_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "9vctgTQ8hR8NAW7eY",
+        "colors": [
+          "Pink",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1500,
+        "buy": 2300,
+        "sell": 575,
+        "themes": [
+          "fancy",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBearM_Remake_5_3.png",
+        "variation": "Tweed",
+        "filename": "FtrBearM_Remake_5_3",
+        "variantId": "5_3",
+        "uniqueEntryId": "gimiNLaKzgWhoBoHo",
+        "colors": [
+          "Gray",
+          "Yellow"
+        ],
+        "pattern": "Yellow stripes",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1500,
+        "buy": 2300,
+        "sell": 575,
+        "themes": [
+          "fancy",
+          "child's room"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "Baby bear",
+    "patternTitle": "Shirt",
+    "diy": false,
+    "patternCustomize": true,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in the re-buyable slot in Nook's Cranny",
+    "hhaBasePoints": 103,
+    "hhaCategory": "Doll",
+    "interact": false,
+    "tag": "Animal",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": "bear",
+    "series": null,
+    "customizationKitCost": 1,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrBearS_Remake_0_0.png",
+        "variation": "Cream",
+        "filename": "FtrBearS_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "g2XmJfB8pFYwRq9F6",
+        "colors": [
+          "Beige",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1501,
+        "buy": 1800,
+        "sell": 450,
+        "themes": [
+          "fancy",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrBearS_Remake_5_3.png",
+        "variation": "Tweed",
+        "filename": "FtrBearS_Remake_5_3",
+        "variantId": "5_3",
+        "uniqueEntryId": "qjt78GA8vEf5xDW5W",
+        "colors": [
+          "Colorful",
+          "Yellow"
+        ],
+        "pattern": "Star",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1501,
+        "buy": 1800,
+        "sell": 450,
+        "themes": [
+          "fancy",
+          "child's room"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "upright piano",
+    "patternTitle": null,
+    "diy": false,
+    "patternCustomize": false,
+    "size": "2x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in Nook's Cranny (upgraded only), in the third unique furniture slot",
+    "hhaBasePoints": 251,
+    "hhaCategory": "MusicalInstrument",
+    "interact": true,
+    "tag": "Musical Instrument",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrPianoUpright_Remake_0_0.png",
+        "variation": "Black",
+        "filename": "FtrPianoUpright_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "24ad8eStN6hPFHehG",
+        "colors": [
+          "Black",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1081,
+        "buy": 53000,
+        "sell": 13250,
+        "themes": [
+          "music",
+          "expensive"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrPianoUpright_Remake_1_0.png",
+        "variation": "White",
+        "filename": "FtrPianoUpright_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "9jdLwLS36rfB8gnvw",
+        "colors": [
+          "White",
+          "Black"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1081,
+        "buy": 53000,
+        "sell": 13250,
+        "themes": [
+          "music",
+          "expensive"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrPianoUpright_Remake_2_0.png",
+        "variation": "Walnut",
+        "filename": "FtrPianoUpright_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "CB8bbj5TD2pLcegBh",
+        "colors": [
+          "Brown",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1081,
+        "buy": 53000,
+        "sell": 13250,
+        "themes": [
+          "music",
+          "expensive"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrPianoUpright_Remake_3_0.png",
+        "variation": "Maple",
+        "filename": "FtrPianoUpright_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "CntzvorcRkjz3oYEf",
+        "colors": [
+          "Beige",
+          "White"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 1081,
+        "buy": 53000,
+        "sell": 13250,
+        "themes": [
+          "music",
+          "expensive"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "zen cushion",
+    "patternTitle": "Upholstery",
+    "diy": false,
+    "patternCustomize": true,
+    "size": "1x1",
+    "surface": true,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in Nook's Cranny (either upgrade tier) in the unique furniture slot",
+    "hhaBasePoints": 151,
+    "hhaCategory": null,
+    "interact": true,
+    "tag": "Chair",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": 1,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrCushionJapan_Remake_0_0.png",
+        "variation": null,
+        "filename": "FtrCushionJapan_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "GkfQgQzsy4JM4ifnR",
+        "colors": [
+          "Blue",
+          "Blue"
+        ],
+        "pattern": "Deep blue",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 7047,
+        "buy": 500,
+        "sell": 125,
+        "themes": [
+          "zen-style",
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCushionJapan_Remake_0_1.png",
+        "variation": null,
+        "filename": "FtrCushionJapan_Remake_0_1",
+        "variantId": "0_1",
+        "uniqueEntryId": "Z7AkYQiT66nz89FRc",
+        "colors": [
+          "Blue",
+          "Aqua"
+        ],
+        "pattern": "Indigo",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 7047,
+        "buy": 500,
+        "sell": 125,
+        "themes": [
+          "zen-style",
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCushionJapan_Remake_0_2.png",
+        "variation": null,
+        "filename": "FtrCushionJapan_Remake_0_2",
+        "variantId": "0_2",
+        "uniqueEntryId": "ZstnRRu5SJGgDjdnt",
+        "colors": [
+          "Red",
+          "Pink"
+        ],
+        "pattern": "Azuki red",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 7047,
+        "buy": 500,
+        "sell": 125,
+        "themes": [
+          "zen-style",
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCushionJapan_Remake_0_3.png",
+        "variation": null,
+        "filename": "FtrCushionJapan_Remake_0_3",
+        "variantId": "0_3",
+        "uniqueEntryId": "AtezcjgkcyTANyfPu",
+        "colors": [
+          "Green",
+          "Green"
+        ],
+        "pattern": "Deep green",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 7047,
+        "buy": 500,
+        "sell": 125,
+        "themes": [
+          "zen-style",
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCushionJapan_Remake_0_4.png",
+        "variation": null,
+        "filename": "FtrCushionJapan_Remake_0_4",
+        "variantId": "0_4",
+        "uniqueEntryId": "tHxRrdHCNYEjZXTwD",
+        "colors": [
+          "Aqua",
+          "Colorful"
+        ],
+        "pattern": "Goldfish",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 7047,
+        "buy": 500,
+        "sell": 125,
+        "themes": [
+          "zen-style",
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCushionJapan_Remake_0_5.png",
+        "variation": null,
+        "filename": "FtrCushionJapan_Remake_0_5",
+        "variantId": "0_5",
+        "uniqueEntryId": "dRrJtY9YCpaJmvNpu",
+        "colors": [
+          "Red",
+          "Red"
+        ],
+        "pattern": "Crane",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 7047,
+        "buy": 500,
+        "sell": 125,
+        "themes": [
+          "zen-style",
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCushionJapan_Remake_0_6.png",
+        "variation": null,
+        "filename": "FtrCushionJapan_Remake_0_6",
+        "variantId": "0_6",
+        "uniqueEntryId": "X3nR3rYjXqpKSKRQN",
+        "colors": [
+          "Yellow",
+          "Purple"
+        ],
+        "pattern": "Gold",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 7047,
+        "buy": 500,
+        "sell": 125,
+        "themes": [
+          "zen-style",
+          "living room"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "painting set",
+    "patternTitle": "Drawing paper",
+    "diy": false,
+    "patternCustomize": true,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in the re-buyable slot in Nook's Cranny",
+    "hhaBasePoints": 103,
+    "hhaCategory": "SmallGoods",
+    "interact": false,
+    "tag": "Toy",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": 1,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrPaintset_Remake_0_0.png",
+        "variation": "Yellow",
+        "filename": "FtrPaintset_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "bRc7G9cizcrpBRW72",
+        "colors": [
+          "Yellow",
+          "White"
+        ],
+        "pattern": "Blank",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3965,
+        "buy": 510,
+        "sell": 127,
+        "themes": [
+          "school",
+          "child's room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrPaintset_Remake_3_3.png",
+        "variation": "White",
+        "filename": "FtrPaintset_Remake_3_3",
+        "variantId": "3_3",
+        "uniqueEntryId": "pF2yYvz4taRvGviJ9",
+        "colors": [
+          "White",
+          "Colorful"
+        ],
+        "pattern": "Still life",
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3965,
+        "buy": 510,
+        "sell": 127,
+        "themes": [
+          "school",
+          "child's room"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Tools",
+    "name": "flimsy shovel",
+    "diy": true,
+    "customize": false,
+    "uses": 40,
+    "stackSize": 1,
+    "hhaBasePoints": 0,
+    "size": "1x1",
+    "exchangePrice": 100,
+    "exchangeCurrency": "Nook Miles",
+    "sourceNotes": "Available after unlocking the shovel in the story",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/ToolShovelWood.png",
+        "variation": null,
+        "filename": "ToolShovelWood",
+        "variantId": null,
+        "uniqueEntryId": "PnLgMCQ34R3HxWqcT",
+        "colors": [],
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny",
+          "Crafting",
+          "Wilbur"
+        ],
+        "internalId": 3082,
+        "buy": 800,
+        "sell": 200,
+        "themes": []
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "log stool",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": true,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": true,
+    "tag": "Chair",
+    "outdoor": true,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": "log",
+    "customizationKitCost": 1,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrLogStoolS_Remake_0_0.png",
+        "variation": "Dark wood",
+        "filename": "FtrLogStoolS_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "bkEtT2tJC9hvkPeAw",
+        "colors": [
+          "Brown",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4038,
+        "buy": -1,
+        "sell": 480,
+        "themes": [
+          "garden"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrLogStoolS_Remake_1_0.png",
+        "variation": "Orange wood",
+        "filename": "FtrLogStoolS_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "wMBLREDHeGaj8rK2A",
+        "colors": [
+          "Orange",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4038,
+        "buy": -1,
+        "sell": 480,
+        "themes": [
+          "garden"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrLogStoolS_Remake_2_0.png",
+        "variation": "White wood",
+        "filename": "FtrLogStoolS_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "ALXdHxZxSkLD2Y9r8",
+        "colors": [
+          "Beige",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4038,
+        "buy": -1,
+        "sell": 480,
+        "themes": [
+          "garden"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrLogStoolS_Remake_3_0.png",
+        "variation": "White birch",
+        "filename": "FtrLogStoolS_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "MwRBDTfbBPCA62Fck",
+        "colors": [
+          "White",
+          "Beige"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4038,
+        "buy": -1,
+        "sell": 480,
+        "themes": [
+          "garden"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "log chair",
+    "patternTitle": "Cushion",
+    "diy": true,
+    "patternCustomize": true,
+    "size": "1x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": true,
+    "tag": "Sofa",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": "log",
+    "customizationKitCost": 3,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrLogSofaS_Remake_0_0.png",
+        "variation": "Dark wood",
+        "filename": "FtrLogSofaS_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "FGGhyTHbY9ez4Ez3j",
+        "colors": [
+          "Brown",
+          "Brown"
+        ],
+        "pattern": null,
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4039,
+        "buy": -1,
+        "sell": 960,
+        "themes": [
+          "garden",
+          "living room"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrLogSofaS_Remake_3_4.png",
+        "variation": "White birch",
+        "filename": "FtrLogSofaS_Remake_3_4",
+        "variantId": "3_4",
+        "uniqueEntryId": "728NN38nLD4y9mCWj",
+        "colors": [
+          "White",
+          "Aqua"
+        ],
+        "pattern": "Quilted",
+        "bodyCustomize": true,
+        "bodyTitle": "Lumber type",
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 4039,
+        "buy": -1,
+        "sell": 960,
+        "themes": [
+          "garden",
+          "living room"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Housewares",
+    "name": "rocket",
+    "patternTitle": null,
+    "diy": true,
+    "patternCustomize": false,
+    "size": "2x1",
+    "surface": false,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": false,
+    "tag": "Space",
+    "outdoor": true,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": null,
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrRocket.png",
+        "variation": null,
+        "filename": "FtrRocket",
+        "variantId": null,
+        "uniqueEntryId": "KkcXfWMrSimkgeyAT",
+        "colors": [
+          "White",
+          "Red"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Crafting"
+        ],
+        "internalId": 1441,
+        "buy": -1,
+        "sell": 20000,
+        "themes": [
+          "space"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Dress-Up",
+    "name": "gold armor",
+    "diy": true,
+    "hhaBasePoints": 103,
+    "size": "1x1",
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": null,
+    "seasonalAvailability": "All Year",
+    "mannequinPiece": false,
+    "style1": "Gorgeous",
+    "style2": "Cool",
+    "sortOrder": 1,
+    "villagerEquippable": true,
+    "primaryShape": "Overall",
+    "secondaryShape": "L",
+    "catalog": "Not for sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "clothGroupId": 458,
+    "variants": [
+      {
+        "variation": null,
+        "filename": "TopsTexOnepieceOverallLPlatearmorGold",
+        "uniqueEntryId": "8ioR3SX42LC2J8ynE",
+        "colors": [
+          "Yellow",
+          "Yellow"
+        ],
+        "source": [
+          "Crafting"
+        ],
+        "inventoryImage": "https://acnhcdn.com/latest/ClosetIcon/TopsTexOnepieceOverallLPlatearmorGold.png",
+        "storageImage": "https://acnhcdn.com/latest/FtrIcon/TopsTexOnepieceOverallLPlatearmorGold.png",
+        "internalId": 4590,
+        "labelThemes": [
+          "fairy tale",
+          "goth"
+        ],
+        "buy": -1,
+        "sell": 80000,
+        "themes": []
+      }
+    ]
   }
  ]

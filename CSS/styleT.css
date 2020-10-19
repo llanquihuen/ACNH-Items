@@ -56,7 +56,7 @@ footer{
 
 }
 .boton_top{
-    margin:1rem 3rem;
+    margin:2rem 2rem;
     align-self: start;
     background-color: rgb(152, 193, 255);
     color: rgb(60, 78, 105);
@@ -161,6 +161,7 @@ footer{
 
 
 #loadin{
+    margin-top: 160px;
     width: 100%;
     height: auto;
     align-self: center;
@@ -267,7 +268,7 @@ footer{
     width: 95%;
     display: flex;
     flex-wrap: wrap;
-    margin:0px 0px 0px 0px;
+    margin:1px 0px 2px 0px;
     /* grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr 1fr;
     column-gap: 5px; */
 
@@ -275,7 +276,7 @@ footer{
     text-align: left;
     /* display: flex;
     justify-content: space-between;  */
-    border:3px solid rgba(107, 0, 128, 0.459);
+    border:2px solid rgba(107, 0, 128, 0.9);
     border-radius: 15px;
     background-color: rgba(251, 218, 255, 0.692);
     /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
@@ -283,6 +284,7 @@ footer{
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
+
 
 
 
@@ -526,15 +528,14 @@ footer{
 
 
 
-
-
-
-
-
 #translate{
-    width: fit-content;
-    margin-left: 4rem;
-    margin-top: 2rem;
+    position: absolute;
+    width: 88px;
+    top:5px;
+    right: 5px;
+    font-size: 10px;
+    /* margin-left: 4rem;
+    margin-top: 2rem; */
 }
 #contgrid{
     display: grid;
@@ -576,9 +577,12 @@ footer{
     background-color:rgb(27, 11, 29);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    background: linear-gradient( rgba(154, 112, 189, 0.95), rgba(154, 112, 189, 0.95)), url("/assets/AC-Pattern-1.png");
+
 }
 .itemcontainer2{
-    background-color:rgb(154, 112, 189);
+    background: linear-gradient( rgba(223, 179, 236, 0.95), rgba(179, 126, 204, 0.95)), url("/assets/AC-Pattern-1.png");
+
 }
 .itemcontainer2::-webkit-scrollbar {
     width: 20px;
@@ -609,6 +613,8 @@ footer{
     grid-template-columns: 1fr 1fr;
     column-gap: 0.5rem;
     background-color:rgb(154, 112, 189);
+    background: linear-gradient( rgba(154, 112, 189, 0.8), rgba(154, 112, 189, 0.8)), url("/assets/AC-Pattern-1.png");
+
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     min-height: 60vh;
@@ -877,7 +883,7 @@ select { width: 400px; text-align-last:center; }
 
     max-height: 200px;
     min-width: 180px;
-    max-width: 210px;
+    max-width: 220px;
     grid-template-areas:
     "nombre nombre nombre  nombre  nombre  nombre  nombre  nombre  "
     "photo  photo  photo   photo   precios precios precios precios "
@@ -916,7 +922,7 @@ select { width: 400px; text-align-last:center; }
     width: 14px;
 }
 .comprar{
-    margin-top:-20px;
+    margin-top:-10px;
     height:90%;
     width: auto;
     align-self: center;
@@ -933,7 +939,17 @@ select { width: 400px; text-align-last:center; }
 .flexcol{
     margin-left: 20px;
 }
-
+.banderas{
+    position: absolute;
+    top:25px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+.banderas img{
+    width: 100%;
+    height: 60%;
+}
 
 
 
@@ -1035,6 +1051,7 @@ select { width: 400px; text-align-last:center; }
        margin-right: 20px;
         width: 32vw
     }
+  
     .flexcol{
         flex-direction: column;
         align-items: center;
@@ -1044,11 +1061,7 @@ select { width: 400px; text-align-last:center; }
 
 
 @media (max-width: 557px){
-    #translate{
-        width: 80%;
-        margin-left: 1rem;
-        margin-top: 2rem;
-    }
+  
     /* -----------TRINI----------- */
     
     .casilla{

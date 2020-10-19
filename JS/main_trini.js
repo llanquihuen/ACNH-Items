@@ -151,6 +151,27 @@ let itemsC =[];
 Ordenare(head)
 
 
+//Translate styles
+let estiloss = await getData ("./assets/translation/fashion.json");
+let arrEstil = [...document.getElementById("buscaTrini").getElementsByClassName("select-items")]
+arrEstil.forEach((clo)=>{
+    if(clo.value != 1 && clo.value != "allSlow"){
+        let index = estiloss.findIndex(x => x.locale["USen"] === clo.value);
+        console.log(clo.value)
+        console.log(estiloss[index].locale[idioma])
+        clo.innerHTML=estiloss[index].locale[idioma]
+    }
+})
+let otro = [...document.getElementById("translate").getElementsByClassName("select-items")]
+let indexidio = otro.findIndex(x => x.value === idioma);
+let esteidioma = (otro[indexidio].innerHTML)
+
+document.getElementById("idiomaMostrar").innerHTML=(esteidioma)
+let tempDiv = document.createElement("div");
+tempDiv.classList.add("banderas")
+tempDiv.innerHTML=`<img src="../assets/flags/${idioma}.png" alt="bandera" ></img>`
+
+document.getElementById("translate").insertAdjacentElement("afterend", tempDiv)
 async function DisplayTrini (items,wrapper, elemXpag,page) {
     ////-----------------CONTAR ITEMS
     function Contar (array){
@@ -166,7 +187,7 @@ async function DisplayTrini (items,wrapper, elemXpag,page) {
     const titleCase = (string) => {return string.charAt(0).toUpperCase() + string.slice(1)};
 
     //CANTIDAD ITEMS
-    itemsTitle.innerHTML =`Reto de Moda`
+    itemsTitle.innerHTML =``
     wrapper.innerHTML="";
     page--;
     let totalPag = Math.ceil(items.length/ elemXpag)
@@ -354,10 +375,12 @@ queIdioma.addEventListener("change", (e)=>{
     idioma = queIdioma.value
     buscaTrinii.value = 1
     document.getElementById("elestilo").innerHTML = ""
+    localStorage.setItem("idioma", idioma);
+    location.reload();
+    return false;
     TranslateAll(idioma)
     PrimerDisplay()
 
-    localStorage.setItem("idioma", idioma);
 })
 
 buscarRopa(head,fetchAsyncId)

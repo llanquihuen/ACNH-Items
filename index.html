@@ -15,17 +15,17 @@
             <div class="inicio">
             <a id="logo"href="#" rel="noopener noreferrer"><img  src="assets/logo.png" alt="logo"></a>
             <div class="div_buscador">
-                <a class="boton_top" href="clothes.html">Ropa</a>
-                <h2>Busca aquí tu item de Animal Crossing New Horizons</h2>
+                <a id="itemsBotonB" class="boton_top" href="clothes.html"></a>
+                <h2 id="lafrase"></h2>
 
-            <input id="searchBar" class="buscador" type="text" placeholder="Buscar...">
+            <input id="searchBar" class="buscador" type="text" placeholder="">
             </div>
             </div>
             <div id="check_btns">        
-                <p class="ordenar_t">Filtrar por</p>
+                <p id="filtrarpor" class="ordenar_t"></p>
                 <div class="checkers">
-                    <button class="boton_org" id="colores" type="submit">Colores</button>
-                    <button class="boton_org" id="tipo" type="submit">Tipo</button>
+                    <button class="boton_org" id="colores" type="submit"></button>
+                    <button class="boton_org" id="tipo" type="submit"></button>
                 </div>
                 
             </div>
@@ -57,7 +57,7 @@
             </div> 
         </section>  
         <section class="container">
-            <div id="items-titulo" class="tcontainer">ITEMS</div>
+            <div id="items-titulo" class="tcontainer">Loading...</div>
         
             <div id="lositems"class="itemcontainer">
             <img id="loadin" src="assets/b51.gif" alt="loading">
@@ -79,7 +79,7 @@
             </div>
             <div id="gridTr">
                 <select id="translate" class="traducir" name="Idioma">
-                    <option class="select-items"value="USes" selected disabled hidden>Cambiar Idioma</option>
+                    <option id="idiomaMostrar"class="select-items"value="US" selected disabled hidden></option>
                     <option class="select-items"value="USen">English(US)</option>
                     <option class="select-items"value="EUen">English(EU)</option>
                     <option class="select-items"value="EUde">Deutsch</option>
@@ -94,6 +94,8 @@
                     <option class="select-items"value="JPja">日本語</option>
                     <option class="select-items"value="KRko">한국어</option>
                     <option class="select-items"value="EUru">русский</option>
+
+    
                 </select>
                 <div></div>
             </div>  

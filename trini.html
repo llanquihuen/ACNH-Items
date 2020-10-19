@@ -16,8 +16,8 @@
                 <div class="div_buscador_trini flexcol">
                     <a id="logotrini"href="#" rel="noopener noreferrer"><img  src="assets/logo.png" alt="logo"></a>
                     <div class="div_buscador_trini">
-                    <a class="boton_top verde" href="index.html">Items</a>
-                    <a class="boton_top" href="clothes.html">Ropa</a>
+                    <a id="itemsBotonA" class="boton_top verde" href="index.html"></a>
+                    <a id="itemsBotonB" class="boton_top" href="clothes.html"></a>
                     </div>
                 </div>
             </div>
@@ -25,10 +25,10 @@
         </section>
         <section class="container">
             <div class="estilocont">
-            <h2 class="qEstilo">Que estilo buscas?</h2>
+            <h2 id="queestilo"class="qEstilo"></h2>
 
             <select id="buscaTrini" class="div_buscador2"name="Estilo">
-                <option class="select-items"value="1" selected disabled hidden>Elegir Estilo</option>
+                <option id="estilooo" class="select-items"value="1" selected disabled hidden></option>
                 <option class="select-items"value="everyday">Todoterreno</option>
                 <option class="select-items"value="fairy tale">De fantasía</option>
                 <option class="select-items"value="formal">Formal</option>
@@ -45,7 +45,7 @@
 
             </select>
             </div>
-            <div id="items-titulo" class="tricontainer">Reto de Moda </div>
+            <div id="items-titulo" class="tricontainer"></div>
 
             <div id="lositemstrini "class="item_trini">
 
@@ -67,7 +67,7 @@
                         <div class="overf"id="zapaT"></div>
                         <div class="overf"id="mochiT"></div>
                         <p id="estiloPri" class="realhidden estiloprimero">Primero elige el estilo</p>
-                        <button id="random" class="realhidden" type="submit">Vestir Random</button>
+                        <button id="random" class="realhidden" type="submit">Random</button>
                         <div class="flexB">
                             <p id="descr_1" class="descr"></p>
                             <!-- <button id="busquedaA" type="submit">Ver detalles en el catálogo de ropa</button> -->
@@ -92,13 +92,12 @@
                 <div id="detalle4"></div>
                 <div id="detalle5"></div>
                 <div id="detalle6"></div>
-
             </div>
         </section>
         <div id="contgrid">
             <div>
                 <select id="translate" class="traducir" name="Idioma">
-                    <option class="select-items"value="USes" selected disabled hidden>Cambiar Idioma</option>
+                    <option id="idiomaMostrar"class="select-items"value="US" selected disabled hidden></option>
                     <option class="select-items"value="USen">English(US)</option>
                     <option class="select-items"value="EUen">English(EU)</option>
                     <option class="select-items"value="EUde">Deutsch</option>

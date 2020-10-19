@@ -466,6 +466,7 @@ footer{
     width: auto;
     height:auto;
     filter: drop-shadow(20px 20px 20px  black);
+
 }
 #items-titulo{
     text-align: center;
@@ -492,7 +493,7 @@ footer{
 }
 #lositemsropa .item{
     border:3px solid rgba(28, 0, 128, 0.459);
-    background-color: rgba(218, 225, 255, 0.692);
+    background-color: rgba(168, 234, 236, 0.85);
 }
 #lositemsropa .nombre{
     background-color: rgba(13, 56, 196, 0.274);
@@ -926,13 +927,15 @@ border: 3px solid  rgb(255, 191, 166);
 
 
 .itemcontainer{
-    background-color:rgb(131, 255, 168);
+    background: linear-gradient( rgba(131, 255, 168, 0.658), rgba(131, 255, 168, 0.418)), url("/assets/AC-Pattern-1.png");
+    background-size: cover;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     min-height: 40vh;
 }
 .ropacontainer{
     background-color:rgb(128, 176, 216);
+    background: linear-gradient( rgba(128, 176, 216, 0.658), rgba(128, 176, 216, 0.418)), url("/assets/AC-Pattern-1.png");
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     min-height: 40vh;
@@ -971,8 +974,10 @@ border: 3px solid  rgb(255, 191, 166);
     padding: 0px;
     border:3px solid rgb(110, 191, 110);
     border-radius: 10px;
-    background-color: rgba(238, 255, 218, 0.692);
-    /* background: linear-gradient( rgba(131, 255, 168, 0.301), rgb(131, 255, 168)), url("/assets/back.jpg"); */
+    background-color: rgba(238, 255, 218, 0.918);
+    /* background: linear-gradient(rgb(45, 194, 144), rgba(130, 240, 154, 0.747)); */
+    /* background: linear-gradient(to top, rgba(198, 255, 198, 0.8), rgb(153, 209, 179)), url(../assets/AC-Pattern-2.png); */
+    background-size: cover;
 
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -1007,16 +1012,20 @@ border: 3px solid  rgb(255, 191, 166);
   }
 
 .ropac{
+    font-family: 'Fredericka the Great', cursive;
     color: rgb(238, 238, 238);
     font-size: 25px;
-    font-weight: bolder;
+    letter-spacing: 0.1em;
+    /* font-weight: bolder; */
     background-color:rgb(36, 63, 139);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 #loadin{
-    margin:0 auto;
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: 85%;
     height: auto;
     align-self: center;
@@ -1026,11 +1035,7 @@ border: 3px solid  rgb(255, 191, 166);
     grid-template-columns: 1fr 1fr;
     padding-bottom: 3rem;
 }
-#translate{
-    width: fit-content;
-    margin-left: 4rem;
-    margin-top: 2rem;
-}
+
 
 /* display: grid;
 grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr ;
@@ -1044,43 +1049,67 @@ border:3px solid rgb(110, 191, 110);
 border-radius: 10px; */
 .itemReceta{
     position: absolute;
-    background-color: rgba(228, 248, 214, 0.95);
+    background-color: rgb(119, 182, 166);
     display: grid;
     grid-template-rows: 2fr 4fr;
     border: 0px;
     width: 100%;
     height: 100%;
     z-index: 3;
+    overflow: hidden;
+    margin:0
+
 }
-.foto_receta{
+.foto_recetaBIG{
     width: 40%;
     height: auto;
-    
 }
+
 .cantidad_receta{
-    display: absolute;
+    position: absolute;
     text-align: center;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    width: 1.5rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
     color: black;
-    background-color: whitesmoke;
+    background-color: rgba(186, 247, 239, 0.9);
+    border-radius: 8px;
+    border: rgb(12, 240, 191) 1px solid;
+    font-size: 15px;
+    top:5px;
 }
 .obj_receta{
-    margin: auto 0;
+    position: relative;
+    margin: auto;
     width: 30%;
     height: auto;
 }
-.obj_receta img{
-    margin-top: -30%;
-    width: 100%;
+
+.foto_receta{
+    width: 98%;
     height:auto;
+
+}
+
+.trad{
+    position:absolute;
+    text-align: center;
+    font-size: 13px;
+    bottom:0px;
+    background-color: rgba(181, 253, 225, 0.7);
+    border: rgb(12, 240, 191) 1px solid;
+    border-radius: 4px;
+    width: 98%;
+
 }
 .recetaFlex{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     height: 100%;
+    background: linear-gradient(to top, rgba(198, 255, 231, 0.3), rgb(119, 182, 166)), url(../assets/AC-Pattern-2.png);
+    background-size: cover;
+
 }
 .compraris{
     display: flex;
@@ -1089,19 +1118,61 @@ border-radius: 10px; */
 }
 .compr2{
     height: 50%;
+    cursor: pointer;
+    overflow-y: hidden;
 }
 .volver{
     position: absolute;
+    top:2px;
     height: 35px;
-    width: 35px;
-    right: 0;
+    width: 50px;
+    right: 2px;
+    border: rgb(53, 148, 34) 1px solid;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432), inset 2px 2px 2px  rgb(255, 255, 255);
+
+    background-color: rgba(179, 255, 189, 0.692);
+    border-radius: 10px;
 }
-.ctext2{
-    position: relative;;
-    font-size: 12px;
-    top: 35px;
+.volver:hover{
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.432), inset 0px 1px 2px  rgb(255, 255, 255);
+}
+.volver:active{
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.432), inset 1px 1px 2px  rgb(7, 7, 7);
 }
 
+.ctext2{
+    position: absolute;
+    font-size: 12px;
+    top: 40px;
+    right: 2px;
+
+}
+.relative{
+    position: relative;;
+}
+.trad{
+    overflow-y: hidden;
+}
+.banderas{
+    position: absolute;
+    top:25px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+.banderas img{
+    width: 100%;
+    height: 60%;
+}
+#translate{
+    position: absolute;
+    width: 88px;
+    top:5px;
+    right: 5px;
+    font-size: 10px;
+    /* margin-left: 4rem;
+    margin-top: 2rem; */
+}
 
 
 @media (max-width: 1462px){
@@ -1161,6 +1232,18 @@ border-radius: 10px; */
     }
 }
 @media (max-width: 1162px){
+    .cantidad_receta{
+        font-size: 12px;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        width: 1.2rem;
+    }
+    .trad{
+    font-size: 12px;
+    line-height: 1.1;
+    overflow: hidden;
+
+    }
     .boton_top{
         padding: 0.8rem 1.8rem;
 
@@ -1215,6 +1298,28 @@ border-radius: 10px; */
     }
 }
 @media (max-width: 933px){
+    .volver{
+        top:3px;
+        right: 3px;
+        height: 30px;
+        width: 43px;
+    }
+    .ctext2{
+        right: 3px;
+
+        font-size: 10px;
+        top:36px
+    }
+    .cantidad_receta{
+        font-size: 12px;
+        height: 1rem;
+        line-height: 1rem;
+        width: 1rem;
+    }
+    .trad{
+        line-height: 1;
+        font-size: 9px;
+    }
     .remakp{
         margin-top: -7px;
         font-size: 12px;
@@ -1344,6 +1449,28 @@ border-radius: 10px; */
     }
 }
 @media (max-width: 709px){
+    .volver{
+        top:3px;
+        right: 3px;
+        height: 25px;
+        width: 35px;
+    }
+    .ctext2{
+        font-size: 10px;
+        top:32px
+    }
+    .cantidad_receta{
+        font-size: 10px;
+        height: .9rem;
+        line-height: .9rem;
+        width: .9rem;
+    }
+    .trad{
+        line-height: 0.9;
+        font-size: 8px;
+        border: none;
+
+    }
     .extra{
         margin-top:-14px;
         margin-right: -16px;
@@ -1565,7 +1692,7 @@ border-radius: 10px; */
     }
     #check_btns2{
         column-gap: 10px;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
     }
     .trini{
         padding-right: 5px;
@@ -1577,14 +1704,14 @@ border-radius: 10px; */
 
     .trini img{
         margin-right: 5px;
-    width: 54px;
-    height: auto;
-
+        width: 30px;
+        height: auto;
     }
-    #translate{
-        margin-left: 1rem;
-        margin-top: 2rem;
+    .trini p{
+        font-size: 10px;
+        margin:0;
     }
+ 
     .remakp{
         margin-top: -7px;
         font-size: 10px;
