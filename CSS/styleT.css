@@ -7,6 +7,7 @@
 
 
 body{
+    position: relative;
     background-image: url(../assets/y5mzeig307b41.png);
     background-size: cover;
     background-position: center;
@@ -80,7 +81,9 @@ footer{
 }
 #logotrini img{
     max-height: 100px;
-
+}
+#logotrini{
+    cursor: default;
 
 }
 .div_buscador{
@@ -497,7 +500,7 @@ footer{
     width:60px
 }
 .nint{
-    margin-left: -13px;
+    margin:0;
     width:55px;
     height: 40px;
 }
@@ -534,8 +537,27 @@ footer{
     top:5px;
     right: 5px;
     font-size: 10px;
+    line-height: 10px;
     /* margin-left: 4rem;
     margin-top: 2rem; */
+    cursor: pointer;
+
+}
+#translate2{
+    position: absolute;
+    top:25px;
+    right: 5px;
+    width: 40px;
+    height: 24px;
+    /* margin-left: 4rem;
+    margin-top: 2rem; */
+    opacity: 0;
+    cursor: pointer;
+}
+#idiomaMostrar{
+    background-color: rgb(233, 233, 233);
+    color:rgb(185, 185, 185)
+
 }
 #contgrid{
     display: grid;
@@ -1250,7 +1272,7 @@ select { width: 400px; text-align-last:center; }
         width: 13px;
     }
     .comprar{
-        margin-top:-20px;
+        margin:auto 0;
         height:90%;
         width: auto;
         align-self: center;

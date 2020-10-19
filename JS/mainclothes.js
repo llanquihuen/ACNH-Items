@@ -138,13 +138,23 @@ let esteidioma = (otro[indexidio].innerHTML)
 document.getElementById("idiomaMostrar").innerHTML=(esteidioma)
 let tempDiv = document.createElement("div");
 tempDiv.classList.add("banderas")
-tempDiv.innerHTML=`<img src="../assets/flags/${idioma}.png" alt="bandera" ></img>`
+tempDiv.innerHTML=`<img src="assets/flags/${idioma}.png" alt="bandera" ></img>`
 
 document.getElementById("translate").insertAdjacentElement("afterend", tempDiv)
 // console.log(bags)
 let queIdioma = document.getElementById("translate");
+let queIdioma2 = document.getElementById("translate2");
+
 console.log(queIdioma)
 queIdioma.addEventListener("change", (e)=>{
+    idioma = queIdioma.value
+    localStorage.setItem("idioma", idioma);
+    location.reload();
+    return false;
+    // TranslateAll(idioma)
+    // DisplayLocal(dressup,fetchAsyncId,xPag,estaPag)
+})
+queIdioma2.addEventListener("change", (e)=>{
     idioma = queIdioma.value
     localStorage.setItem("idioma", idioma);
     location.reload();

@@ -24,7 +24,7 @@ if (localStorage.getItem("idioma")=== "EUru") idioma = ("EUru");
 
 export default async function Display (items,wrapper, elemXpag,page) {
     let pageitem=0
-   
+
     ////-----------------CONTAR ITEMS
     function Contar (array){
         let i = 0;
@@ -53,13 +53,7 @@ export default async function Display (items,wrapper, elemXpag,page) {
 
 
 
-    console.log(document.getElementById("house").nextSibling.nextSibling)
-
-
-
-
-
-
+    // console.log(document.getElementById("house").nextSibling.nextSibling)
     itemsTitle.innerHTML =`${inter_trad[3].locale[idioma]}<p class="mini">N° ${inter_trad[3].locale[idioma]}: ${items.length}</p>`
     wrapper.innerHTML="";
     page--;
@@ -74,7 +68,7 @@ export default async function Display (items,wrapper, elemXpag,page) {
             // console.log("vacio")
         }else{
             let index_tr = inter_trad.findIndex(inter => inter.id === unItem.variants[0]["source"][0]);
-            
+
             let itemElement = document.createElement("div");
             itemElement.setAttribute("id", `item_${unItem.variants[0].internalId}`);
             itemElement.classList.add("item");
@@ -98,7 +92,7 @@ export default async function Display (items,wrapper, elemXpag,page) {
             if((unItem.variants[0]["source"][0]) == "Crafting"){
                 let comprari = document.createElement("div");
                 comprari.setAttribute("id", `DIY_${i}`);
-                comprari.classList.add(`comprari`); 
+                comprari.classList.add(`comprari`);
                 comprari.innerHTML +=  `<img class="comprar" src="assets/DIY.png" alt="DIY"><p class="ctext">${inter_trad[index_tr].locale[idioma]}</p>`
                 itemElement.appendChild(comprari)
             }else if((unItem.variants[0]["source"][0]) == "Jack"){
@@ -148,7 +142,7 @@ export default async function Display (items,wrapper, elemXpag,page) {
             }
 
             //STYLE
-          
+
             if (unItem.variants[0].themes[1] != undefined){
             itemElement.innerHTML += `<p class="extra">${unItem.variants[0].themes[0]} / ${unItem.variants[0].themes[1]}`
             }else if((unItem.variants[0].themes[0] == undefined)){
@@ -170,7 +164,7 @@ export default async function Display (items,wrapper, elemXpag,page) {
             //     itemElement.innerHTML += `<img class="interact" src="assets/interact6.png" alt="custom">`
             // }
 
-      
+
             // FOTO COLORES
             // console.log(unItem.name)
             // console.log(Contar(unItem.variants))
@@ -211,8 +205,8 @@ export default async function Display (items,wrapper, elemXpag,page) {
                 // console.log(variantes)
                 let parenti = document.createElement("div");
                 parenti.setAttribute("id", `many${i}`);
-                parenti.classList.add(`manyimg`);          
-        
+                parenti.classList.add(`manyimg`);
+
                 // console.log (parent)
                 for (i2 = 0;i2 < unItem.variants.length; i2++){
                     if(i2==0){
@@ -227,7 +221,7 @@ export default async function Display (items,wrapper, elemXpag,page) {
                 }
                 itemElement.appendChild(parenti)
             }
-                  
+
             //FOTO GRANDE
             itemElement.innerHTML +=`<img id="imagen_big${i}" class="photo" src="" alt="foto">`;
             fragmentDom.appendChild(itemElement);
@@ -245,11 +239,11 @@ export default async function Display (items,wrapper, elemXpag,page) {
             Display(items,fetchAsyncId,xPag,estaPag)
         }
     }
-    
 
 
-     
-    
+
+
+
 
     // BOTONES IMAGENES // BUSQUEDA IMAGEN
     let imagenp = [...document.getElementsByClassName("imagenpeq")];
@@ -269,14 +263,14 @@ export default async function Display (items,wrapper, elemXpag,page) {
         })
     })
 
-    
+
     let recipes = await getData("./assets/recipes.json");
     let reciPhotos = await getData("./assets/other.json");
     let recipe_trad = await getData("./assets/translation/crafts2.json");
 
 
 
-    
+
 
     let DIYbutton = [...document.getElementsByClassName("comprari")];
     DIYbutton.forEach((diy) => {
@@ -288,48 +282,48 @@ export default async function Display (items,wrapper, elemXpag,page) {
 
 
 
-    
-    
+
+
 }
         export async function Recetas(recetas,donde,otherFoto,traduc){
             let numRec = (donde.id.match(/\d+/g)[0])
-            
+
             let diyElement = document.createElement("div");
             diyElement.setAttribute("id", `lugarReceta${numRec}`);
             diyElement.classList.add("itemReceta");
-            
+
             let receFlex = document.createElement("div");
             receFlex.setAttribute("id", `lugarFlex${numRec}`);
             receFlex.classList.add("recetaFlex");
-    
-    
+
+
             let index = recetas.findIndex(rece => rece["Crafted Item Internal ID"] === +numRec);
             let unDiy = recetas[index]
-    
-    
+
+
             let i=1
             let comprari = document.createElement("div");
             comprari.innerHTML +=`<img id="imagen_receta${numRec}" class="foto_recetaBIG" src="${unDiy.Image.slice(8,-2)}" alt="foto_receta">`;
-            
+
             //if (recetas.sourceSheet == "Other"){
             // }else{
             //     comprari.innerHTML +=`<img id="imagen_receta${numRec}" class="foto_receta" src="${unDiy.Image}" alt="foto_receta">`;
             // }
-            
+
             comprari.setAttribute("id", `DIY_${i}`);
-            comprari.classList.add(`compraris`); 
-            comprari.innerHTML +=  `<div class="compr2"><img class="volver" src="assets/Go-back.ico" alt="DIY"><p class="ctext2"></p></div>`        
+            comprari.classList.add(`compraris`);
+            comprari.innerHTML +=  `<div class="compr2"><img class="volver" src="assets/Go-back.ico" alt="DIY"><p class="ctext2"></p></div>`
             diyElement.appendChild(comprari)
-    
-            
+
+
             for(i=1;i<7;i++){
                 let index2 = otherFoto.findIndex(oth => oth.name === recetas[index][`Material ${i}`]);
                 if (recetas[index][`Material ${String(i)}`] != ""){
                     // console.log(recetas[index][`Material ${String(i)}`])
                     let index3 = traduc.findIndex(rece => rece.locale["USen"] === recetas[index][`Material ${String(i)}`]);
-    
+
                     // console.log(traduc[index3])
-    
+
                     // console.log(i)
                     receFlex.innerHTML +=`<div class="obj_receta"><p class="cantidad_receta">${recetas[index][`#${i}`]}</p><img id="imagen_receta${i}" class="foto_receta" src="${otherFoto[index2].variants[0].inventoryImage}" alt="foto_receta"> <p class="trad">${traduc[index3].locale[idioma]}</p></div>`
                     receFlex.innerHTML +=``;
@@ -343,9 +337,9 @@ export default async function Display (items,wrapper, elemXpag,page) {
             if (manyim.length != 0){
                 console.log(manyim[0])
                 manyim[0].classList.add("relative")
-    
+
             }
-    
+
             let goBack = [...document.getElementsByClassName("compr2")];
             goBack.forEach((gobak) => {
                 gobak.addEventListener ("click", (e)=>{
