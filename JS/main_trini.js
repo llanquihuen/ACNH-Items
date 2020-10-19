@@ -374,7 +374,7 @@ let queIdioma2 = document.getElementById("translate2");
 
 console.log(queIdioma)
 queIdioma2.addEventListener("change", (e)=>{
-    idioma = queIdioma.value
+    idioma = queIdioma2.value
     localStorage.setItem("idioma", idioma);
     location.reload();
     return false;

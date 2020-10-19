@@ -118,7 +118,7 @@ queIdioma.addEventListener("change", (e)=>{
     // Display(items,fetchAsyncId,xPag,estaPag)
 })
 queIdioma2.addEventListener("change", (e)=>{
-    idioma = queIdioma.value
+    idioma = queIdioma2.value
     localStorage.setItem("idioma", idioma);
     location.reload();
     return false;
