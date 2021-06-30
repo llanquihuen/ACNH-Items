@@ -1,5 +1,5 @@
 [
-  {
+{
     "sourceSheet": "Other",
     "name": "acorn",
     "diy": false,
@@ -2044,38 +2044,6 @@
   },
   {
     "sourceSheet": "Other",
-    "name": "Cozy Turkey Day DIY",
-    "diy": false,
-    "stackSize": 1,
-    "exchangePrice": null,
-    "exchangeCurrency": null,
-    "sourceNotes": null,
-    "hhaBasePoints": null,
-    "tag": null,
-    "versionAdded": "1.6.0",
-    "unlocked": false,
-    "unlockNotes": null,
-    "inventoryFilename": "Book",
-    "storageFilename": null,
-    "variants": [
-      {
-        "filename": "FtrBookDIY",
-        "uniqueEntryId": "WfSB5eBmXt4vKqRJe",
-        "colors": [],
-        "source": [
-          ""
-        ],
-        "storageImage": null,
-        "internalId": 13787,
-        "buy": null,
-        "sell": null,
-        "themes": [],
-        "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/Book.png"
-      }
-    ]
-  },
-  {
-    "sourceSheet": "Other",
     "name": "custom design path permit",
     "diy": false,
     "stackSize": 1,
@@ -2119,7 +2087,7 @@
     "versionAdded": "1.0.0",
     "unlocked": true,
     "unlockNotes": null,
-    "inventoryFilename": "MyDesignPro",
+    "inventoryFilename": null,
     "storageFilename": null,
     "variants": [
       {
@@ -2134,7 +2102,7 @@
         "buy": -1,
         "sell": null,
         "themes": [],
-        "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/MyDesignPro.png"
+        "inventoryImage": null
       }
     ]
   },
@@ -2152,7 +2120,7 @@
     "unlocked": true,
     "unlockNotes": null,
     "inventoryFilename": "SmartphoneCase",
-    "storageFilename": "SmartphoneCase_Remake_0_0",
+    "storageFilename": null,
     "variants": [
       {
         "filename": "SmartphoneCase",
@@ -2161,7 +2129,7 @@
         "source": [
           "Nook Miles Redemption"
         ],
-        "storageImage": "https://acnhcdn.com/latest/FtrIcon/SmartphoneCase_Remake_0_0.png",
+        "storageImage": null,
         "internalId": 8760,
         "buy": -1,
         "sell": 9000,
@@ -2524,38 +2492,6 @@
   },
   {
     "sourceSheet": "Other",
-    "name": "festive wrapping paper",
-    "diy": true,
-    "stackSize": 10,
-    "exchangePrice": null,
-    "exchangeCurrency": null,
-    "sourceNotes": null,
-    "hhaBasePoints": 201,
-    "tag": null,
-    "versionAdded": "1.6.0",
-    "unlocked": false,
-    "unlockNotes": null,
-    "inventoryFilename": "WPaperOrnament",
-    "storageFilename": "WPaperOrnament",
-    "variants": [
-      {
-        "filename": "WPaperOrnament",
-        "uniqueEntryId": "S2tzdsHpXp8ReMh4N",
-        "colors": [],
-        "source": [
-          "Crafting"
-        ],
-        "storageImage": "https://acnhcdn.com/latest/FtrIcon/WPaperOrnament.png",
-        "internalId": 13792,
-        "buy": 1200,
-        "sell": 300,
-        "themes": [],
-        "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/WPaperOrnament.png"
-      }
-    ]
-  },
-  {
-    "sourceSheet": "Other",
     "name": "fish bait",
     "diy": true,
     "stackSize": 10,
@@ -2744,38 +2680,6 @@
         "sell": 900,
         "themes": [],
         "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/Shell2.png"
-      }
-    ]
-  },
-  {
-    "sourceSheet": "Other",
-    "name": "gift",
-    "diy": false,
-    "stackSize": 0,
-    "exchangePrice": null,
-    "exchangeCurrency": null,
-    "sourceNotes": null,
-    "hhaBasePoints": 0,
-    "tag": null,
-    "versionAdded": "1.6.0",
-    "unlocked": false,
-    "unlockNotes": null,
-    "inventoryFilename": "WBagOrnament",
-    "storageFilename": "DummyWrappingOrnament",
-    "variants": [
-      {
-        "filename": "DummyWrappingOrnament",
-        "uniqueEntryId": "taPAjf8b8PS88FdZA",
-        "colors": [],
-        "source": [
-          ""
-        ],
-        "storageImage": "https://acnhcdn.com/latest/FtrIcon/DummyWrappingOrnament.png",
-        "internalId": 13793,
-        "buy": 888,
-        "sell": 222,
-        "themes": [],
-        "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/WBagOrnament.png"
       }
     ]
   },
@@ -3198,38 +3102,6 @@
         "sell": 100,
         "themes": [],
         "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/Love.png"
-      }
-    ]
-  },
-  {
-    "sourceSheet": "Other",
-    "name": "Hip Reaction Collection",
-    "diy": false,
-    "stackSize": 1,
-    "exchangePrice": 2700,
-    "exchangeCurrency": "Nook Miles",
-    "sourceNotes": null,
-    "hhaBasePoints": 0,
-    "tag": null,
-    "versionAdded": "1.6.0",
-    "unlocked": true,
-    "unlockNotes": null,
-    "inventoryFilename": "HowtoBookExpansion",
-    "storageFilename": null,
-    "variants": [
-      {
-        "filename": "HowtoBookReaction",
-        "uniqueEntryId": "Eyap99SoXYKQtJdtS",
-        "colors": [],
-        "source": [
-          "Nook Miles Redemption"
-        ],
-        "storageImage": null,
-        "internalId": 13610,
-        "buy": -1,
-        "sell": null,
-        "themes": [],
-        "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/HowtoBookExpansion.png"
       }
     ]
   },
@@ -4299,7 +4171,7 @@
     "unlocked": true,
     "unlockNotes": null,
     "inventoryFilename": "PlaneTicket",
-    "storageFilename": "MilePlaneTicket",
+    "storageFilename": null,
     "variants": [
       {
         "filename": "MilePlaneTicket",
@@ -4308,7 +4180,7 @@
         "source": [
           "Nook Miles Redemption"
         ],
-        "storageImage": "https://acnhcdn.com/latest/FtrIcon/MilePlaneTicket.png",
+        "storageImage": null,
         "internalId": 5851,
         "buy": -1,
         "sell": 10000,
@@ -6219,38 +6091,6 @@
   },
   {
     "sourceSheet": "Other",
-    "name": "Pocket Camp phone case",
-    "diy": false,
-    "stackSize": 1,
-    "exchangePrice": null,
-    "exchangeCurrency": null,
-    "sourceNotes": null,
-    "hhaBasePoints": 178,
-    "tag": null,
-    "versionAdded": "1.6.0",
-    "unlocked": true,
-    "unlockNotes": null,
-    "inventoryFilename": "SmartphoneCaseComp",
-    "storageFilename": "SmartphoneCaseComp",
-    "variants": [
-      {
-        "filename": "SmartphoneCaseComp",
-        "uniqueEntryId": "cB4KmrbAxssgvXhNP",
-        "colors": [],
-        "source": [
-          "Nook Shopping Promotion"
-        ],
-        "storageImage": "https://acnhcdn.com/latest/FtrIcon/SmartphoneCaseComp.png",
-        "internalId": 13439,
-        "buy": 2000,
-        "sell": 500,
-        "themes": [],
-        "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/SmartphoneCaseComp.png"
-      }
-    ]
-  },
-  {
-    "sourceSheet": "Other",
     "name": "Pocket Organization Guide",
     "diy": false,
     "stackSize": 1,
@@ -6839,7 +6679,7 @@
     "unlocked": true,
     "unlockNotes": null,
     "inventoryFilename": "BookRecipe",
-    "storageFilename": "DummyCraftingRecipe",
+    "storageFilename": null,
     "variants": [
       {
         "filename": "DIYbookNormalTools",
@@ -6848,7 +6688,7 @@
         "source": [
           "Nook Miles Redemption"
         ],
-        "storageImage": "https://acnhcdn.com/latest/FtrIcon/DummyCraftingRecipe.png",
+        "storageImage": null,
         "internalId": 9221,
         "buy": -1,
         "sell": null,
@@ -9591,38 +9431,6 @@
   },
   {
     "sourceSheet": "Other",
-    "name": "Top 6 Stylish Hairstyles",
-    "diy": false,
-    "stackSize": 1,
-    "exchangePrice": 1800,
-    "exchangeCurrency": "Nook Miles",
-    "sourceNotes": null,
-    "hhaBasePoints": 0,
-    "tag": null,
-    "versionAdded": "1.6.0",
-    "unlocked": true,
-    "unlockNotes": null,
-    "inventoryFilename": "HowtoBookHair",
-    "storageFilename": null,
-    "variants": [
-      {
-        "filename": "HowtoBookHairRock",
-        "uniqueEntryId": "7bC3au49Axxr4p5L5",
-        "colors": [],
-        "source": [
-          "Nook Miles Redemption"
-        ],
-        "storageImage": null,
-        "internalId": 13766,
-        "buy": -1,
-        "sell": null,
-        "themes": [],
-        "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/HowtoBookHair.png"
-      }
-    ]
-  },
-  {
-    "sourceSheet": "Other",
     "name": "Top 8 Cool Hairstyles",
     "diy": false,
     "stackSize": 1,
@@ -9714,38 +9522,6 @@
         "sell": null,
         "themes": [],
         "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/HowtoBookHair.png"
-      }
-    ]
-  },
-  {
-    "sourceSheet": "Other",
-    "name": "transfer kit",
-    "diy": false,
-    "stackSize": 1,
-    "exchangePrice": null,
-    "exchangeCurrency": null,
-    "sourceNotes": null,
-    "hhaBasePoints": 0,
-    "tag": null,
-    "versionAdded": "1.6.0",
-    "unlocked": true,
-    "unlockNotes": null,
-    "inventoryFilename": "TentWhite",
-    "storageFilename": null,
-    "variants": [
-      {
-        "filename": "PlayerMovingHousingKit",
-        "uniqueEntryId": "WGRQ4YBzp3QpDNFMm",
-        "colors": [],
-        "source": [
-          ""
-        ],
-        "storageImage": null,
-        "internalId": 13346,
-        "buy": 40,
-        "sell": 10,
-        "themes": [],
-        "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/TentWhite.png"
       }
     ]
   },
@@ -12585,6 +12361,195 @@
         "sell": 105,
         "themes": [],
         "inventoryImage": "https://acnhcdn.com/latest/MenuIcon/PltBushOsmathusYellow.png"
+      }
+    ]
+  },
+  {
+    "sourceSheet": "Miscellaneous",
+    "name": "cardboard box",
+    "patternTitle": null,
+    "diy": false,
+    "patternCustomize": false,
+    "size": "1x1",
+    "surface": true,
+    "exchangePrice": null,
+    "exchangeCurrency": null,
+    "sourceNotes": "Available in all tiers of shops, including Timmy & Tommy before the shop is opened",
+    "hhaBasePoints": 103,
+    "hhaCategory": null,
+    "interact": false,
+    "tag": "Desk",
+    "outdoor": false,
+    "speakerType": null,
+    "lightingType": null,
+    "catalog": "For sale",
+    "versionAdded": "1.0.0",
+    "unlocked": true,
+    "unlockNotes": null,
+    "set": null,
+    "series": "cardboard",
+    "customizationKitCost": null,
+    "variants": [
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_0_0.png",
+        "variation": "Plain",
+        "filename": "FtrCardboard_Remake_0_0",
+        "variantId": "0_0",
+        "uniqueEntryId": "rPthPi8LRd5cpuddZ",
+        "colors": [
+          "Yellow",
+          "Yellow"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "inventoryImage": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_1_0.png",
+        "variation": "Labeled",
+        "filename": "FtrCardboard_Remake_1_0",
+        "variantId": "1_0",
+        "uniqueEntryId": "4fE8SB7Q9gBu6y6tZ",
+        "colors": [
+          "Yellow",
+          "Blue"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_2_0.png",
+        "variation": "Oranges",
+        "filename": "FtrCardboard_Remake_2_0",
+        "variantId": "2_0",
+        "uniqueEntryId": "oeKqJ9CYzSav7ziZP",
+        "colors": [
+          "Yellow",
+          "Orange"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_3_0.png",
+        "variation": "Apples",
+        "filename": "FtrCardboard_Remake_3_0",
+        "variantId": "3_0",
+        "uniqueEntryId": "Z8xLg3xTwQ7wr5vZs",
+        "colors": [
+          "White",
+          "Red"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_4_0.png",
+        "variation": "Peaches",
+        "filename": "FtrCardboard_Remake_4_0",
+        "variantId": "4_0",
+        "uniqueEntryId": "rf5voSYbjkv8Qcteq",
+        "colors": [
+          "White",
+          "Pink"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_5_0.png",
+        "variation": "Pears",
+        "filename": "FtrCardboard_Remake_5_0",
+        "variantId": "5_0",
+        "uniqueEntryId": "9TGvM96PPPDXNPmG2",
+        "colors": [
+          "White",
+          "Green"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
+      },
+      {
+        "image": "https://acnhcdn.com/latest/FtrIcon/FtrCardboard_Remake_6_0.png",
+        "variation": "Cherries",
+        "filename": "FtrCardboard_Remake_6_0",
+        "variantId": "6_0",
+        "uniqueEntryId": "XcBHngsQ9jZqE5Jh2",
+        "colors": [
+          "Yellow",
+          "Red"
+        ],
+        "pattern": null,
+        "bodyCustomize": false,
+        "bodyTitle": null,
+        "source": [
+          "Nook's Cranny"
+        ],
+        "internalId": 3672,
+        "buy": 120,
+        "sell": 30,
+        "themes": [
+          "garage"
+        ]
       }
     ]
   },
@@ -15633,4 +15598,4 @@
       }
     ]
   }
-]
+ ]

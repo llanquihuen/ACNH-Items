@@ -22,7 +22,7 @@ xPag=255;
 
 
 // const titleCase = (string) => {return string.charAt(0).toUpperCase() + string.slice(1)};
-const removeAccents = (str) => {return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")};
+// const removeAccents = (str) => {return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")};
 
 
 
@@ -106,22 +106,8 @@ function Translate (array,tr,varia,idioma){
 }
 
 let idioma = ""
-console.log(localStorage.getItem("idioma"))
 if (localStorage.getItem("idioma")=== null){localStorage.setItem("idioma", "USes");}
-if (localStorage.getItem("idioma")=== "USen") idioma = ("USen");
-if (localStorage.getItem("idioma")=== "EUen") idioma = ("EUen");
-if (localStorage.getItem("idioma")=== "EUde") idioma = ("EUde");
-if (localStorage.getItem("idioma")=== "EUes") idioma = ("EUes");
-if (localStorage.getItem("idioma")=== "USes") idioma = ("USes");
-if (localStorage.getItem("idioma")=== "EUfr") idioma = ("EUfr");
-if (localStorage.getItem("idioma")=== "USfr") idioma = ("USfr");
-if (localStorage.getItem("idioma")=== "EUit") idioma = ("EUit");
-if (localStorage.getItem("idioma")=== "EUnl") idioma = ("EUnl");
-if (localStorage.getItem("idioma")=== "CNzh") idioma = ("CNzh");
-if (localStorage.getItem("idioma")=== "TWzh") idioma = ("TWzh");
-if (localStorage.getItem("idioma")=== "JPja") idioma = ("JPja");
-if (localStorage.getItem("idioma")=== "KRko") idioma = ("KRko");
-if (localStorage.getItem("idioma")=== "EUru") idioma = ("EUru");
+idioma = localStorage.getItem("idioma")
 
 function TranslateAll(lang){
 Translate(dress,dress_tr,dress_var,lang)
