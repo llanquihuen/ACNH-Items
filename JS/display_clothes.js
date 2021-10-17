@@ -51,7 +51,7 @@ export async function DisplayLocal (items,wrapper, elemXpag,page) {
 
 
 
-    itemsTitle.innerHTML =`${inter_trad[4].locale[idioma]}<p class="mini">N° ${inter_trad[3].locale[idioma]}: ${items.length}</p>`
+    itemsTitle.innerHTML =`${inter_trad[4].locale[idioma]}<p class="mini">N° ${inter_trad[4].locale[idioma]}: ${items.length}</p>`
     wrapper.innerHTML="";
     page--;
     let totalPag = Math.ceil(items.length/ elemXpag)
